@@ -1,0 +1,608 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-09",
+  "plan_version": "v1.1",
+  "project": "WorkBuddy / 晓助手 1.0.7 Linux 迁移",
+  "repository_root": ".",
+  "baseline": {
+    "tree_sha": "c7cea0e5fe084101c20b18b9a470763c0e44beba",
+    "commit_sha": "4ef75b18004ec7e902d46cb9d4d69270e5ad2655",
+    "verified_files": 447,
+    "expected_files": 476,
+    "missing_test_files": 29,
+    "git_history_available": true,
+    "record_kind": "verified_git_source_with_historical_snapshot_statistics",
+    "snapshot_record": "docs/linux-port/research/source-snapshot-2026-11-09.json",
+    "note": "447/476 是调研快照历史统计；本次已核对远端完整树含 476 个文件，当前使用稀疏检出，仅检出文档与基线，未删除其他文件。"
+  },
+  "execution_policy": {
+    "default_executor_count": 1,
+    "delegation_enabled": false,
+    "execute_only_ready_tasks": true,
+    "allow_fake_success": false,
+    "publish_authorized": false,
+    "windows_required_for_linux_port": false,
+    "windows_regression_condition": "仅同时维护/发布旧 Windows 产品时启用；不作为独立 Linux 任务依赖"
+  },
+  "path_note": "任务中的源码路径相对于仓库根目录；本文件在 docs/linux-port。源码完整性统计为 2026-11-09 调研快照记录，不代表 GitHub 当前仓库缺文件。",
+  "task_statuses": [
+    "TODO",
+    "IN_PROGRESS",
+    "BLOCKED",
+    "DONE"
+  ],
+  "platform_states": [
+    "planned",
+    "build_passed",
+    "runtime_passed",
+    "acceptance_passed"
+  ],
+  "tasks": [
+    {
+      "id": "T00",
+      "title": "完整源码与迁移基线",
+      "status": "TODO",
+      "depends_on": [],
+      "environments": [
+        "DEV-HOST"
+      ],
+      "scope_paths": [
+        "tests/",
+        "docs/linux-port/PROGRESS.md"
+      ],
+      "acceptance": [
+        "在实际 checkout 核对源码及测试完整性；仅缺失时恢复原件并核对散列",
+        "记录真实 Git 提交和工作区状态；不要把 tree SHA 当作 commit SHA",
+        "保留旧源码基线和 Linux 独立入口；无需 Windows 回归即可完成"
+      ],
+      "handoff_path": "docs/linux-port/handoffs/T00.md",
+      "evidence_directory": "artifacts/linux-port/T00/",
+      "evidence": [],
+      "implementation_started": false,
+      "optional_environments": [
+        "WIN-REG：仅维护旧 Windows 产品时"
+      ]
+    },
+    {
+      "id": "T01",
+      "title": "开发环境与目标系统探针",
+      "status": "TODO",
+      "depends_on": [],
+      "environments": [
+        "DEV-HOST",
+        "UOS-X64"
+      ],
+      "scope_paths": [
+        "global.json",
+        "docs/linux-port/ENVIRONMENTS.md"
+      ],
+      "acceptance": [
+        "记录本机 SDK 可用性",
+        "选定开发机最小控制台/窗口/中文/选择文件/SQLite 冒烟或替代环境",
+        "可访问 UOS amd64 并记录系统信息"
+      ],
+      "handoff_path": "docs/linux-port/handoffs/T01.md",
+      "evidence_directory": "artifacts/linux-port/T01/",
+      "evidence": [],
+      "implementation_started": false,
+      "optional_environments": [
+        "WIN-REG：仅维护旧 Windows 产品时"
+      ]
+    },
+    {
+      "id": "T02",
+      "title": "平台契约和能力模型",
+      "status": "TODO",
+      "depends_on": [
+        "T00"
+      ],
+      "environments": [
+        "DESIGN"
+      ],
+      "scope_paths": [
+        "src/WorkAssistant.Platform.Abstractions/",
+        "docs/linux-port/CONTRACTS.md"
+      ],
+      "acceptance": [
+        "文件、事务、IPC、进程、凭据契约明确",
+        "批准绑定、失败、取消及能力不可用语义明确",
+        "不可等价的 Windows 行为单列"
+      ],
+      "handoff_path": "docs/linux-port/handoffs/T02.md",
+      "evidence_directory": "artifacts/linux-port/T02/",
+      "evidence": [],
+      "implementation_started": false
+    },
+    {
+      "id": "T03",
+      "title": "现代构建与回归入口",
+      "status": "TODO",
+      "depends_on": [
+        "T00",
+        "T01",
+        "T02"
+      ],
+      "environments": [
+        "DEV-HOST",
+        "LINUX-X64"
+      ],
+      "scope_paths": [
+        "Xiao.Linux.sln",
+        "Directory.Build.props",
+        "global.json",
+        "tests/WorkAssistant.CrossPlatform.Tests/",
+        "scripts/linux/verify.py"
+      ],
+      "acceptance": [
+        "net10 入口构建通过并锁依赖",
+        "旧源码基线保留，Linux 构建入口隔离；旧 net48 运行验证为条件性",
+        "验证入口产生真实机器可读证据"
+      ],
+      "handoff_path": "docs/linux-port/handoffs/T03.md",
+      "evidence_directory": "artifacts/linux-port/T03/",
+      "evidence": [],
+      "implementation_started": false,
+      "optional_environments": [
+        "WIN-REG：仅维护旧 Windows 产品时"
+      ]
+    },
+    {
+      "id": "T04",
+      "title": "共享 Agent 与模型协议迁移",
+      "status": "TODO",
+      "depends_on": [
+        "T03"
+      ],
+      "environments": [
+        "DEV-HOST",
+        "LINUX-X64"
+      ],
+      "scope_paths": [
+        "src/WorkAssistant.Core/",
+        "src/WorkAssistant.Infrastructure/"
+      ],
+      "acceptance": [
+        "FakeModel 多轮/预算/拒绝/取消/子任务回归",
+        "模型协议解析有相关行为测试",
+        "共享逻辑无直接 Windows 平台依赖"
+      ],
+      "handoff_path": "docs/linux-port/handoffs/T04.md",
+      "evidence_directory": "artifacts/linux-port/T04/",
+      "evidence": [],
+      "implementation_started": false,
+      "optional_environments": [
+        "WIN-REG：仅维护旧 Windows 产品时"
+      ]
+    },
+    {
+      "id": "T05",
+      "title": "XDG、凭据与 SQLite",
+      "status": "TODO",
+      "depends_on": [
+        "T03"
+      ],
+      "environments": [
+        "LINUX-X64",
+        "UOS-X64"
+      ],
+      "scope_paths": [
+        "src/WorkAssistant.Infrastructure/",
+        "src/WorkAssistant.Platform.Linux/"
+      ],
+      "acceptance": [
+        "XDG 目录和 Secret Service 不可用路径验证",
+        "旧库备份/导入/WAL/并发/恢复验证",
+        "API Key 不明文导出或记录"
+      ],
+      "handoff_path": "docs/linux-port/handoffs/T05.md",
+      "evidence_directory": "artifacts/linux-port/T05/",
+      "evidence": [],
+      "implementation_started": false
+    },
+    {
+      "id": "T06",
+      "title": "安全打开与项目配置读取",
+      "status": "TODO",
+      "depends_on": [
+        "T02",
+        "T03"
+      ],
+      "environments": [
+        "LINUX-X64",
+        "UOS-X64"
+      ],
+      "scope_paths": [
+        "src/WorkAssistant.Tools/VerifiedFiles.cs",
+        "src/WorkAssistant.Tools/WorkspacePolicy.cs",
+        "src/WorkAssistant.Infrastructure/ProjectConfigurationFiles.cs",
+        "src/WorkAssistant.Platform.Linux/"
+      ],
+      "acceptance": [
+        "链接/越界/大小写/目录替换的反向测试",
+        "workspace 和项目配置读取均纳入",
+        "不退化为字符串前缀安全判断"
+      ],
+      "handoff_path": "docs/linux-port/handoffs/T06.md",
+      "evidence_directory": "artifacts/linux-port/T06/",
+      "evidence": [],
+      "implementation_started": false
+    },
+    {
+      "id": "T07",
+      "title": "成果提交、移动与恢复",
+      "status": "TODO",
+      "depends_on": [
+        "T06"
+      ],
+      "environments": [
+        "LINUX-X64",
+        "UOS-X64"
+      ],
+      "scope_paths": [
+        "src/WorkAssistant.Core/DurableFiles.cs",
+        "src/WorkAssistant.Tools/VerifiedFiles.cs",
+        "src/WorkAssistant.Tools/OutputRecovery.cs",
+        "src/WorkAssistant.Platform.Linux/"
+      ],
+      "acceptance": [
+        "同卷/禁止覆盖/审批基线验证",
+        "异常与中断保留恢复证据",
+        "可见性/持久性/外部竞争保证分别说明"
+      ],
+      "handoff_path": "docs/linux-port/handoffs/T07.md",
+      "evidence_directory": "artifacts/linux-port/T07/",
+      "evidence": [],
+      "implementation_started": false
+    },
+    {
+      "id": "T08",
+      "title": "Host 与 Worker 通信",
+      "status": "TODO",
+      "depends_on": [
+        "T04",
+        "T05"
+      ],
+      "environments": [
+        "LINUX-X64",
+        "UOS-X64"
+      ],
+      "scope_paths": [
+        "src/WorkAssistant.Infrastructure/TaskHostClient.cs",
+        "src/WorkAssistant.Host/IsolatedTool.cs",
+        "src/WorkAssistant.Host/Program.cs",
+        "src/WorkAssistant.Platform.Linux/"
+      ],
+      "acceptance": [
+        "两条通道均验证对端/nonce/权限/帧限制",
+        "任务与批准绑定、取消、断开复核通过",
+        "有错误对端和失效握手反向测试"
+      ],
+      "handoff_path": "docs/linux-port/handoffs/T08.md",
+      "evidence_directory": "artifacts/linux-port/T08/",
+      "evidence": [],
+      "implementation_started": false
+    },
+    {
+      "id": "T09",
+      "title": "进程树与资源限制",
+      "status": "TODO",
+      "depends_on": [
+        "T08"
+      ],
+      "environments": [
+        "LINUX-X64",
+        "UOS-X64"
+      ],
+      "scope_paths": [
+        "src/WorkAssistant.Infrastructure/ProcessJob.cs",
+        "src/WorkAssistant.Platform.Linux/",
+        "tests/WorkAssistant.Linux.IntegrationTests/"
+      ],
+      "acceptance": [
+        "超时/退出/崩溃/OOM 无遗留持续写入者",
+        "探测用户服务和控制器权限",
+        "线程预算与进程政策分别处理"
+      ],
+      "handoff_path": "docs/linux-port/handoffs/T09.md",
+      "evidence_directory": "artifacts/linux-port/T09/",
+      "evidence": [],
+      "implementation_started": false
+    },
+    {
+      "id": "T10",
+      "title": "原文件编辑能力门禁",
+      "status": "TODO",
+      "depends_on": [
+        "T02",
+        "T07"
+      ],
+      "environments": [
+        "LINUX-X64"
+      ],
+      "scope_paths": [
+        "src/WorkAssistant.Tools/AtomicTextTransaction.cs",
+        "src/WorkAssistant.Platform.Linux/",
+        "src/WorkAssistant.Core/"
+      ],
+      "acceptance": [
+        "不满足契约的覆盖操作默认明确拒绝",
+        "提案/批准/新文件成果流程可用",
+        "保留 Windows TxF；工具描述与真实能力一致"
+      ],
+      "handoff_path": "docs/linux-port/handoffs/T10.md",
+      "evidence_directory": "artifacts/linux-port/T10/",
+      "evidence": [],
+      "implementation_started": false,
+      "optional_environments": [
+        "WIN-REG：仅维护旧 Windows 产品时"
+      ]
+    },
+    {
+      "id": "T11",
+      "title": "UOS 无 GUI 垂直闭环",
+      "status": "TODO",
+      "depends_on": [
+        "T04",
+        "T05",
+        "T07",
+        "T09",
+        "T10"
+      ],
+      "environments": [
+        "UOS-X64"
+      ],
+      "scope_paths": [
+        "tests/WorkAssistant.Linux.IntegrationTests/",
+        "scripts/linux/verify.py"
+      ],
+      "acceptance": [
+        "独立 Host 安全读取并生成核验成果",
+        "审批拒绝和取消通过",
+        "持久化后重启可回查且失败不伪报成功"
+      ],
+      "handoff_path": "docs/linux-port/handoffs/T11.md",
+      "evidence_directory": "artifacts/linux-port/T11/",
+      "evidence": [],
+      "implementation_started": false
+    },
+    {
+      "id": "T12",
+      "title": "Avalonia 基础界面与 MVVM",
+      "status": "TODO",
+      "depends_on": [
+        "T03",
+        "T04"
+      ],
+      "environments": [
+        "DEV-HOST",
+        "UOS-X64"
+      ],
+      "scope_paths": [
+        "src/WorkAssistant.Desktop.Avalonia/"
+      ],
+      "acceptance": [
+        "项目/会话/输入/流式消息/基础设置可用",
+        "视图模型不直接依赖 WPF",
+        "选定开发机 GUI 不可用时记录替代环境"
+      ],
+      "handoff_path": "docs/linux-port/handoffs/T12.md",
+      "evidence_directory": "artifacts/linux-port/T12/",
+      "evidence": [],
+      "implementation_started": false
+    },
+    {
+      "id": "T13",
+      "title": "桌面集成、审批与任务体验",
+      "status": "TODO",
+      "depends_on": [
+        "T11",
+        "T12"
+      ],
+      "environments": [
+        "UOS-X64"
+      ],
+      "scope_paths": [
+        "src/WorkAssistant.Desktop.Avalonia/",
+        "src/WorkAssistant.Platform.Linux/"
+      ],
+      "acceptance": [
+        "UI 接真实 Host",
+        "审批/队列/成果打开/中文/缩放验证",
+        "托盘等差异有明确能力提示"
+      ],
+      "handoff_path": "docs/linux-port/handoffs/T13.md",
+      "evidence_directory": "artifacts/linux-port/T13/",
+      "evidence": [],
+      "implementation_started": false
+    },
+    {
+      "id": "T14",
+      "title": "办公文档与文本 PDF 回归",
+      "status": "TODO",
+      "depends_on": [
+        "T04",
+        "T07"
+      ],
+      "environments": [
+        "LINUX-X64",
+        "UOS-X64"
+      ],
+      "scope_paths": [
+        "src/WorkAssistant.Tools/",
+        "tests/WorkAssistant.CrossPlatform.Tests/",
+        "samples/"
+      ],
+      "acceptance": [
+        "CSV/XLSX/DOCX/PPTX/PDF 合成样例校验",
+        "数值/结构/成果证据满足原范围",
+        "目标 WPS/LibreOffice 呈现验证"
+      ],
+      "handoff_path": "docs/linux-port/handoffs/T14.md",
+      "evidence_directory": "artifacts/linux-port/T14/",
+      "evidence": [],
+      "implementation_started": false,
+      "optional_environments": [
+        "WIN-REG：仅维护旧 Windows 产品时"
+      ]
+    },
+    {
+      "id": "T15",
+      "title": "Linux OCR 依赖与受控执行",
+      "status": "TODO",
+      "depends_on": [
+        "T09",
+        "T14"
+      ],
+      "environments": [
+        "UOS-X64"
+      ],
+      "scope_paths": [
+        "src/WorkAssistant.Tools/PdfOcr.cs",
+        "assets/ocr/",
+        "tests/WorkAssistant.Linux.IntegrationTests/"
+      ],
+      "acceptance": [
+        "按 RID 加载 Linux 原生库",
+        "扫描/混合页/缓存/取消/超限验证",
+        "中英识别及低置信度提示验证"
+      ],
+      "handoff_path": "docs/linux-port/handoffs/T15.md",
+      "evidence_directory": "artifacts/linux-port/T15/",
+      "evidence": [],
+      "implementation_started": false
+    },
+    {
+      "id": "T16",
+      "title": "deb、自包含包与可信升级",
+      "status": "TODO",
+      "depends_on": [
+        "T05",
+        "T13",
+        "T14",
+        "T15"
+      ],
+      "environments": [
+        "UOS-X64"
+      ],
+      "scope_paths": [
+        "scripts/linux/package.py",
+        "src/WorkAssistant.Platform.Linux/",
+        "docs/linux-port/"
+      ],
+      "acceptance": [
+        "干净机安装/升级/卸载和数据保留",
+        "架构/签名/摘要验证",
+        "不沿用 Windows EXE 更新器"
+      ],
+      "handoff_path": "docs/linux-port/handoffs/T16.md",
+      "evidence_directory": "artifacts/linux-port/T16/",
+      "evidence": [],
+      "implementation_started": false
+    },
+    {
+      "id": "T17",
+      "title": "UOS V25 amd64 首版验收",
+      "status": "TODO",
+      "depends_on": [
+        "T16"
+      ],
+      "environments": [
+        "UOS-X64"
+      ],
+      "scope_paths": [
+        "docs/linux-port/",
+        "artifacts/linux-port/"
+      ],
+      "acceptance": [
+        "声明范围内业务/安全/文档/系统门禁通过",
+        "未验证能力和限制列入发行说明",
+        "证据与被发布二进制绑定"
+      ],
+      "handoff_path": "docs/linux-port/handoffs/T17.md",
+      "evidence_directory": "artifacts/linux-port/T17/",
+      "evidence": [],
+      "implementation_started": false
+    },
+    {
+      "id": "T18",
+      "title": "UOS V20 与 arm64 扩展",
+      "status": "TODO",
+      "depends_on": [
+        "T17"
+      ],
+      "environments": [
+        "UOS-X64",
+        "UOS-ARM64"
+      ],
+      "scope_paths": [
+        "src/WorkAssistant.Platform.Linux/",
+        "scripts/linux/",
+        "docs/linux-port/"
+      ],
+      "acceptance": [
+        "每个 OS×架构分别保存验收",
+        "旧系统库/GPU/OCR 实测",
+        "明确支持与不支持能力"
+      ],
+      "handoff_path": "docs/linux-port/handoffs/T18.md",
+      "evidence_directory": "artifacts/linux-port/T18/",
+      "evidence": [],
+      "implementation_started": false
+    },
+    {
+      "id": "T19",
+      "title": "麒麟、deepin、openKylin 扩展",
+      "status": "TODO",
+      "depends_on": [
+        "T18"
+      ],
+      "environments": [
+        "MATRIX"
+      ],
+      "scope_paths": [
+        "src/WorkAssistant.Platform.Linux/",
+        "scripts/linux/",
+        "docs/linux-port/"
+      ],
+      "acceptance": [
+        "每个声明组合分别保存安装/桌面/业务/安全结果",
+        "不同发行版发布方式核实",
+        "可选能力差异和未覆盖项公开"
+      ],
+      "handoff_path": "docs/linux-port/handoffs/T19.md",
+      "evidence_directory": "artifacts/linux-port/T19/",
+      "evidence": [],
+      "implementation_started": false
+    },
+    {
+      "id": "T20",
+      "title": "LoongArch 全链路预研",
+      "status": "TODO",
+      "depends_on": [
+        "T02",
+        "T03"
+      ],
+      "environments": [
+        "LOONGARCH-RESEARCH"
+      ],
+      "scope_paths": [
+        "docs/linux-port/loongarch-feasibility.md"
+      ],
+      "acceptance": [
+        "运行时/Skia/SQLite/OCR/工具链有来源与实际探针",
+        "结论为继续/替代路线/暂缓之一",
+        "不把预研成功等同于完整产品支持"
+      ],
+      "handoff_path": "docs/linux-port/handoffs/T20.md",
+      "evidence_directory": "artifacts/linux-port/T20/",
+      "evidence": [],
+      "implementation_started": false
+    }
+  ],
+  "baseline_policy": "Windows 与 UOS 独立验证；任一 OS 可承担 Linux 代码开发；Windows 回归不阻挡独立 UOS 分支。",
+  "environment_roles": {
+    "DEV-HOST": "macOS、Windows 或 Linux 中选定的一种日常开发环境；无需三者齐备",
+    "WIN-REG": "仅验证旧 Windows 产品时选用，不是 Linux 开发前置",
+    "UOS-X64": "首发实际目标系统验收"
+  }
+}

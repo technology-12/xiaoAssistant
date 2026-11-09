@@ -1,0 +1,1077 @@
+{
+  "schema_version": 1,
+  "baseline_id": "windows-1.0.7",
+  "record_kind": "verified-source-file-lock",
+  "commit_sha": "4ef75b18004ec7e902d46cb9d4d69270e5ad2655",
+  "record_date": "2026-11-09",
+  "note": "冻结本次调研验证的应用源码/配置/解决方案文件，非完整仓库锁，不包含未下载的测试文件。",
+  "files": [
+    {
+      "path": "Directory.Build.props",
+      "git_blob_sha1": "977ee9455a673d7edb8bfdac70b581a57e3e7855",
+      "sha256": "ec79ad1008f1167993860af0991c320507d00dca3d738e83b8ddc45d4550b4e3"
+    },
+    {
+      "path": "Win7WorkAssistant.sln",
+      "git_blob_sha1": "b645ac9fa468bfd55922634c1564df3c854deb90",
+      "sha256": "8612b45b5978c5c6c7053f98afb70baddded19ed131e997c0e6ce9d7c22880f5"
+    },
+    {
+      "path": "Xiao.Native.sln",
+      "git_blob_sha1": "a7408a6a5faacac3f7a59235e70036c373a5145b",
+      "sha256": "199f922402df303eb4afd5c26accb97aa8684389d9572c74a1f4f02019734741"
+    },
+    {
+      "path": "Xiao.OpenCode.sln",
+      "git_blob_sha1": "a7408a6a5faacac3f7a59235e70036c373a5145b",
+      "sha256": "199f922402df303eb4afd5c26accb97aa8684389d9572c74a1f4f02019734741"
+    },
+    {
+      "path": "config/app.defaults.json",
+      "git_blob_sha1": "3525ad3d0395b1b90941169841f9e2b9abfd3439",
+      "sha256": "df580ee49004ba453fe9faa79bf453d6ace9a8d1eff8b91420a0f8c201a4f5e0"
+    },
+    {
+      "path": "config/kernel.policy.json",
+      "git_blob_sha1": "93c139e9c58c836eb5e94cf644e1225060b8fe14",
+      "sha256": "154470d0f52f522ef12d4ad70b97ade142a331dccd53c7a8cc332c12ee50c0a5"
+    },
+    {
+      "path": "src-xp/Directory.Build.props",
+      "git_blob_sha1": "eb9b7437e519841f911d5d9e26f6cd25e1fc0222",
+      "sha256": "f6b1ef2a50b061daa3bbe4e1bee8e320b45d514cac5c3d28c8213704705efac6"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Compatibility.Xp/Async/AsyncInfrastructure.cs",
+      "git_blob_sha1": "0141ebd3305616e923ec518b238b655df18a6db7",
+      "sha256": "d1962f78d66215093d79befc59d910d30073a0526da01cbaeb97a59ad904dcb6"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Compatibility.Xp/Async/XpLogicalContext.cs",
+      "git_blob_sha1": "3d27492db5e28ab278f73213d41bc2404a57d453",
+      "sha256": "0640b27ab54bb6a4997fc367f2cc2b2c84ba1ca13a8778435c096be2d79d9a72"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Compatibility.Xp/IO/Compression/ZipArchiveShim.cs",
+      "git_blob_sha1": "a65f1d253548e192c4b304b7e2a1aca6c06cdc0e",
+      "sha256": "05e17d7ea3e5533088a0c26be952885eb326007ea95e10dc46e27b04654b75f6"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Compatibility.Xp/IO/XpPipeExtensions.cs",
+      "git_blob_sha1": "4f11d514b6ce3d7ce27b8d652010ceb014209937",
+      "sha256": "52d8c3f5bccbd7cf674dab77082bc0a520b55298f13f93a3bf9abbc8cfa21eec"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Compatibility.Xp/IO/XpStreamExtensions.cs",
+      "git_blob_sha1": "e6e0ed8599573e1fa3590d13ef40f470a7afbbc3",
+      "sha256": "eda1de6274936c3930be26b6a4c571d07febf8c99269fee50526d9da51cb37d6"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Compatibility.Xp/Net/HttpClientShim.cs",
+      "git_blob_sha1": "5481832d045cb57052df9122cd9fcae6c462f616",
+      "sha256": "65550377baaeafe2a5f4f467c73852ef6dd150c1a9abfb115e4209b1f2d99fef"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Compatibility.Xp/Net/HttpListenerExtensions.cs",
+      "git_blob_sha1": "3afc2cd1d52ab03c03c572107f9263f6b0f03947",
+      "sha256": "b89b9b750aee07624cb9e9c058e2131ec56d21f0544f0b0ff732db515c1e6567"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Compatibility.Xp/Threading/VolatileShim.cs",
+      "git_blob_sha1": "5a42179fcdcda8f2360a32dadf70215bbe992854",
+      "sha256": "1358f8ba59b54e8297e4a21e0ddc4c5b1ce7aeeaa31e9ad97d5e12e16a9d5809"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Compatibility.Xp/Threading/XpRegex.cs",
+      "git_blob_sha1": "485fa1f1e4739c0af60cb1a159ffa54b9d4eaeb7",
+      "sha256": "264dfbcc94748e5e2462fa1a2754daeeb3c69c801e3e61accab683c5f7045bb8"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Compatibility.Xp/Threading/XpTask.cs",
+      "git_blob_sha1": "67d79d61880a3aad2f86a98bb538d1722746b99d",
+      "sha256": "07447282d47f7741a95a94c702fa6107f52be222388eac64a5a09fa7a45db3e6"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Compatibility.Xp/WorkAssistant.Compatibility.Xp.csproj",
+      "git_blob_sha1": "99963e1a0794c511e0aa70386cc4a86686cd1524",
+      "sha256": "5ad1121539080c89205b252c51b0c6b9aac1b3f11e3238022fd798e8a8c434d0"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Core.Xp/WorkAssistant.Core.Xp.csproj",
+      "git_blob_sha1": "0ff66a9f2ac3461d15a27df5394a4fc8fe58a77e",
+      "sha256": "2be9139f6ec86d5d8807cd0649e2fdc47687aeb380034af5d57b14f49c93b400"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Desktop.Xp/WorkAssistant.Desktop.Xp.csproj",
+      "git_blob_sha1": "bea2903b01df41b67b62b804d1a40388ab2a0c0d",
+      "sha256": "1b0a97826ba3e64dbafc052bf4684af05ef5c9b44d824212dc0f7d046db839d5"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Desktop.Xp/app.manifest",
+      "git_blob_sha1": "7331cea25467593071a2de54eac0a2f3a0fca30f",
+      "sha256": "4052640f42893f26ba9572a86927d1b1b9b7805d13c7528db5c1d7ba9a770a05"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Desktop/MainWindow.Xp.xaml",
+      "git_blob_sha1": "971e8e566a91439a106597796cd1f76db371ce31",
+      "sha256": "4d8752dd15ca25b4c0d9c903ed41800f85e6f432fa53b93b410673c76a9f5ffa"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Host.Xp/WorkAssistant.Host.Xp.csproj",
+      "git_blob_sha1": "88d2923288debe2889739142f87d171bd07f7f9f",
+      "sha256": "7b89df6f038441a655bb1d508706a0941842c8472ca16fe92bad33e7defd0a6a"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Host/IsolatedTool.Xp.cs",
+      "git_blob_sha1": "b3e8de6b8053818e57bb99ec17d86cd9deb21ac4",
+      "sha256": "002623691d3505ed05ca0f965886c64aeb7a6e6d5f86dd6d4fa4b4c26868c0ad"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Infrastructure.Xp/WorkAssistant.Infrastructure.Xp.csproj",
+      "git_blob_sha1": "ab6a9b8699df4103cfc9e5d5e6a498838252ae5f",
+      "sha256": "7b1a9e43122fad13b5c865950185a3f7e414ce54642b202038d2ca212b76e63b"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Infrastructure/EnvironmentReport.Xp.cs",
+      "git_blob_sha1": "8a95a7a9798e5f7fd4724f01b6c0bfd670581c51",
+      "sha256": "664f2a859b05fdfa2fe6777f1b7c74ece9543bf5f24f24b3a03f0bad5841b5fd"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Infrastructure/LimitedReadStream.Xp.cs",
+      "git_blob_sha1": "379a0e837764860a15b51d68fdb0726a72de3863",
+      "sha256": "adb0ddc24dacf5a520993ede741573ab4d6234d75c5de91b4372592a2a32ab00"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Infrastructure/ProjectConfigurationFiles.Xp.cs",
+      "git_blob_sha1": "1d55be59be9c842a8b00cece6ed83c8269f21e5b",
+      "sha256": "d582e9b2c46403892077c33e76df4af62e11f31ab45fe7568eebfd095b6239ef"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Infrastructure/TaskHostClient.Xp.cs",
+      "git_blob_sha1": "9937c41403a3dff37d4fd13ef5d40e0fcbc7b4a0",
+      "sha256": "710cc60609f1f5ae351d1190031a3e2bc0a3a50fe555d6fe42b0f408b55fd67c"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Infrastructure/TrustedUpdates.Xp.cs",
+      "git_blob_sha1": "5390f772e29c9637c51bcd607f989821d98ac578",
+      "sha256": "cb3226eff2a5e1b025ea8474961fe3be9612ad0f52245db09d05c8215818112e"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Launcher.Xp/WorkAssistant.Launcher.Xp.csproj",
+      "git_blob_sha1": "e48589bec99c69700abc2ae39dafb172fa06d2bd",
+      "sha256": "978664a62c09ad1f56c598994da24302ea82711fe48e5d17c1896c01c007521c"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Launcher/Program.Xp.cs",
+      "git_blob_sha1": "73f2669b84e31155aa0d327c7f422d33762e6f7c",
+      "sha256": "3ddea041a25e2ce1a751d0908fa110d8b2398afbf530229a286a351dd69ac3c0"
+    },
+    {
+      "path": "src-xp/WorkAssistant.OpenCode.Xp/WorkAssistant.OpenCode.Xp.csproj",
+      "git_blob_sha1": "761caba064a7056522a47e39563cfea96bce2c4c",
+      "sha256": "73c73253dfd6ccba2dd4b6903f2adacbe187d2876abdd43f73b5d42eb4d70262"
+    },
+    {
+      "path": "src-xp/WorkAssistant.OpenCode/OpenCodeConnection.Xp.cs",
+      "git_blob_sha1": "aeaeddc6462a9a15a1fa3b4b00b286c389ce5028",
+      "sha256": "ea42759bcfcb1db7b82109d5ae3345cce764379fb38c54ea9766db673fd18ca1"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Tests.Console.Xp/WorkAssistant.Tests.Console.Xp.csproj",
+      "git_blob_sha1": "d9e7bdb1cb52041c1d0a21edae7b41f9ae27ee36",
+      "sha256": "510cb3114ea1b73ffb55f9a0dc97157570f843f71e86781940d3f266725322b7"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Tests.Console/Program.Xp.cs",
+      "git_blob_sha1": "24f08cdda0f1567ba07eb8bfb622ae758e7e4927",
+      "sha256": "5aa430d576de13adf579f3a96457ec018a276a4701296da8b7fc8b8b6964ca53"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Tests.Console/XpCompatTests.Xp.cs",
+      "git_blob_sha1": "7ad7ee32556624aae5b96ac56ccfa582e88f3254",
+      "sha256": "ec526ebdde7005b1f1e238448f4eb0ace665a685ea6f67e96c9eb42ea09f5705"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Tests.Console/XpCompression.Xp.cs",
+      "git_blob_sha1": "fdb75a25404c055af8c9f1a0482abf35b63a86f7",
+      "sha256": "a78a902040d87752f4bceae64d274d8f252e9005d9231767ffb544c4153a922f"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Tests.Console/XpEditRecoveryTests.Xp.cs",
+      "git_blob_sha1": "f27dbdfde32f9438217aaabf21ac5754f8b558c8",
+      "sha256": "5f293bdb3927ebb71fd07b510bdcbcd5184c4aa92b11f7cc13bcc404dba59c4c"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Tools.Xp/WorkAssistant.Tools.Xp.csproj",
+      "git_blob_sha1": "62a0fe16d950ac0a205cd049f88aaaf8f5c291cc",
+      "sha256": "fa447179a21b00fc23a99147447a6feae95457810ee21e8243138da4e6765414"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Tools/AtomicTextTransaction.Xp.cs",
+      "git_blob_sha1": "f8fbde78fc1208a3df4cc502b3984743476b0a2c",
+      "sha256": "b3ed4feca49c4b866b95434f2b0c7a4db17238c2564c58a3bad4ddf2bc214f2a"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Tools/CsvReading.Xp.cs",
+      "git_blob_sha1": "cd1f5f37b980a599dbb2f6f967d757b1af24bb13",
+      "sha256": "4883a3df50704fdb7f6c6a67fe31c0c7a7eed45ef1481b85532f4fc55e44928f"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Tools/OfficeCapabilities.Xp.cs",
+      "git_blob_sha1": "9a2471087bf3185ecbf0c2bf7d48b41c90b61aab",
+      "sha256": "dd17247dc93f8ddf43d6887cd400fd8163776f6d10bd5f3ed1b81f61f2f7eb79"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Tools/PdfObjectIndex.Xp.cs",
+      "git_blob_sha1": "7005975bf132454fa9e153b3ee1007c65284d495",
+      "sha256": "76f421e0f51b8c9614f422b988a4e376ea0f4846a4cde193a23ac1250cc93d6c"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Tools/PdfText.Xp.cs",
+      "git_blob_sha1": "6b1b4ae20bf92a75c128e6f8b6aa291d9c33cb02",
+      "sha256": "0e8965cd7f0284acd4cbb08a529c5ace27e5db45b529ed04d6df6a878c693c4c"
+    },
+    {
+      "path": "src-xp/WorkAssistant.Tools/VerifiedFiles.Xp.cs",
+      "git_blob_sha1": "907d27c3d17f5a8a7f7005561e4b7b1dc9ea22c2",
+      "sha256": "0bb0051382ed72cdde1ffb38bb3238da275095b260d62c7544478da2e861f5ff"
+    },
+    {
+      "path": "src-xp/Xiao.Xp.sln",
+      "git_blob_sha1": "a270b2be443c49f05680f6d4e011d4bcef6f00b7",
+      "sha256": "cbdb64e0753cbba9039aa718648f66658326fa053e99c7aad40a55cd2393b7e9"
+    },
+    {
+      "path": "src/WorkAssistant.Core/AgentController.cs",
+      "git_blob_sha1": "c08a6793f78e77ed52901a3baf448326dcf779fa",
+      "sha256": "c4f28a5f3f7015ff79de6d4147a9d7c679200436f95c688a99030a30527ea770"
+    },
+    {
+      "path": "src/WorkAssistant.Core/AgentExecutionPolicy.cs",
+      "git_blob_sha1": "50e66b2ebbb591cddd398303c613c58e569bb779",
+      "sha256": "538b453dc64fd59d0d51b556c7b4d8662e3ecb98f752a52c670032cb9e5fb26a"
+    },
+    {
+      "path": "src/WorkAssistant.Core/AgentLoopGuard.cs",
+      "git_blob_sha1": "f98d9f4e15a997fedafb3d7ed38229c9f81479c2",
+      "sha256": "a6569969a5ed06a238e41c6be80f95635a29266a0197193cc1b544e5ae0bc08f"
+    },
+    {
+      "path": "src/WorkAssistant.Core/AgentRole.cs",
+      "git_blob_sha1": "6e819cad6f1a99530338b0d52f03098ec0ffb8d9",
+      "sha256": "53a1b3400a01bc16c79679c95c89ea6f9884ff6996f0dc6878e8bcbf12eafaaa"
+    },
+    {
+      "path": "src/WorkAssistant.Core/AgentToolRegistry.cs",
+      "git_blob_sha1": "2765c421f13f4c3dbc9754bbaaeed609be519220",
+      "sha256": "066aaf2d0c17958ec4af41a72f38a2da5f54d82a6f53116c7425345b8a6bfa92"
+    },
+    {
+      "path": "src/WorkAssistant.Core/ConversationContextManager.cs",
+      "git_blob_sha1": "32402700bb0180fc27e4f80a7f9a48dc3a3aa50c",
+      "sha256": "7811c92ea4ec34dbceee7b19d96da6be8005e69dd8cb4131ad841d1554497063"
+    },
+    {
+      "path": "src/WorkAssistant.Core/DurableFiles.cs",
+      "git_blob_sha1": "e1837c8c0a17238333cb0aad8a509b566accfff1",
+      "sha256": "72c4399b3e81fd34a21473e22c47d4d533e50d200dc9d5c2c24bb480f7f7bc24"
+    },
+    {
+      "path": "src/WorkAssistant.Core/ErrorCodes.cs",
+      "git_blob_sha1": "cec42ac221ef361e266512c15b51c71a7f2a62b9",
+      "sha256": "971b07edfedf5c4b048976dcc506a8d455978c1c042c02fbba558e5cfa1c7e26"
+    },
+    {
+      "path": "src/WorkAssistant.Core/FakeModelClient.cs",
+      "git_blob_sha1": "5d489b436cb0385ad5d6d4b420c226a9bfebb0c7",
+      "sha256": "15d2879e5647b8d3b923dcc3c70c74317e55da6fc6ac826518fa3946132d552c"
+    },
+    {
+      "path": "src/WorkAssistant.Core/Interfaces.cs",
+      "git_blob_sha1": "cacb7c361608189ad76a4d97195da4d32c08d1a0",
+      "sha256": "a09ae4f83bf6098d8d4483bfeeb34684ba993fe1f475742745ab6478adff0a79"
+    },
+    {
+      "path": "src/WorkAssistant.Core/ModelContextBudget.cs",
+      "git_blob_sha1": "cfd1c32732f74731e2aba136b677ff84cbf814e6",
+      "sha256": "a608624221bd0fc7705df2091f919cc146a4e1afebb801b6a0086346351f9a9c"
+    },
+    {
+      "path": "src/WorkAssistant.Core/ModelOutputTruncatedException.cs",
+      "git_blob_sha1": "d436804082625d1bbe72b320aa5ef164f804f2a7",
+      "sha256": "d040660a9f3094680ad297c27b3ca931161fa2dbd0342ae4d798cc6dd5b98ef3"
+    },
+    {
+      "path": "src/WorkAssistant.Core/ModelProtocol.cs",
+      "git_blob_sha1": "f7281b702900cc64321056dc717b78d69d695bb3",
+      "sha256": "c3e92fdb6fa4a3703baadf914a96671a297e5ae753c4dfa04cff7b2f81640ad0"
+    },
+    {
+      "path": "src/WorkAssistant.Core/ModelRequestJson.cs",
+      "git_blob_sha1": "b7168148d31eeb9d2aedebc52a8cd08e30dc7650",
+      "sha256": "ba117331532c8931dc9fe52cc35bad4a15a7775a0d15f198012ecf34967c485c"
+    },
+    {
+      "path": "src/WorkAssistant.Core/ModelRetryInfo.cs",
+      "git_blob_sha1": "feef23c3528d316b53179532fd91f1a3f32ee801",
+      "sha256": "ceea395bb3c5e14e8da991ffc5022b0d898ff254c01ee984bb5647d430562068"
+    },
+    {
+      "path": "src/WorkAssistant.Core/ProjectRecord.cs",
+      "git_blob_sha1": "051f45d4047a264dc1b8ef87df8f3890c92b1dcf",
+      "sha256": "568b3e62c4b95aec027037139336965636cd9782566ad98fd6c6e2f85ebca926"
+    },
+    {
+      "path": "src/WorkAssistant.Core/SkillDefinition.cs",
+      "git_blob_sha1": "8877c672c7be50344cc062c11d5d43ab035d1362",
+      "sha256": "d5aecce844633a9e24d3cad341351955b5447b8e4306d14bb54695106bf348e1"
+    },
+    {
+      "path": "src/WorkAssistant.Core/SubAgents.cs",
+      "git_blob_sha1": "47a42115a4b6b17f2cdbe8ec95c71ccc771a6def",
+      "sha256": "8d41c9cef817a9a09b18bc02cc5b8fe3d3d8fe476bf5d3bf44aeb906f18e5cc9"
+    },
+    {
+      "path": "src/WorkAssistant.Core/SystemPrompts.cs",
+      "git_blob_sha1": "2447abdc1e63e9189cf8aa7311207d158ef93599",
+      "sha256": "a3a1819cc5c69017190d95e0d10e47358a1073690a0ebd0b94d7c6ac97f6ce63"
+    },
+    {
+      "path": "src/WorkAssistant.Core/TaskInterruption.cs",
+      "git_blob_sha1": "44aad488933d3635fca1797a696a0d259c524325",
+      "sha256": "a36d63c4d9e478a627f32bd0a4743bf3434ad0feeb6bf15438a327611b90f3ed"
+    },
+    {
+      "path": "src/WorkAssistant.Core/TaskPermissionMode.cs",
+      "git_blob_sha1": "17daff69480bb6de0d55e9da3ef9829386ad1c57",
+      "sha256": "880dd725de31fef76985df7b9a25b0c6da972efc2168a9b96f6b42e3fa4ff2b6"
+    },
+    {
+      "path": "src/WorkAssistant.Core/TaskPlanning.cs",
+      "git_blob_sha1": "24eb1037495c2df1dc1329769287f4f837f0ff6f",
+      "sha256": "2b710523e79f458a5acc129ee035069be10b8da4cbb8096948d3a86d2b713f60"
+    },
+    {
+      "path": "src/WorkAssistant.Core/TaskRecords.cs",
+      "git_blob_sha1": "da7499b721bd2b66dd4843b8a307f8321a93af14",
+      "sha256": "2d819636a8ec6a263dfc98d17803a1b8966b05a04276533f4e01bac2b5480083"
+    },
+    {
+      "path": "src/WorkAssistant.Core/TextEditApproval.cs",
+      "git_blob_sha1": "1f4574dac6943620f9459dc0857b7fbcc168fdcb",
+      "sha256": "f2f492271ca765c1ffd363bb0f5dbfb1b4c34554c7bafb97bcf19908a0e0941b"
+    },
+    {
+      "path": "src/WorkAssistant.Core/TextEditProposal.cs",
+      "git_blob_sha1": "34720d01fae40e29f5238c651841b3e5d0899794",
+      "sha256": "1d399cb3c5ce55f5ddb0b727d5cb70daf7c0d4d1a451779cbb61b600b23f1fd6"
+    },
+    {
+      "path": "src/WorkAssistant.Core/ToolContracts.cs",
+      "git_blob_sha1": "df47b48bc6f7b4dd2d584ebda583138bc405092a",
+      "sha256": "bc49ce3467fd4245959e62395da089c7e560a80d104703f43b575b8f636d3850"
+    },
+    {
+      "path": "src/WorkAssistant.Core/ToolDispatcher.cs",
+      "git_blob_sha1": "468226e0343055eaa964ffbf6f7ef49d743047ee",
+      "sha256": "cfa560c0630c2f72047ebc32723d873406b33902748504f1150042e120147f2c"
+    },
+    {
+      "path": "src/WorkAssistant.Core/ToolResultJson.cs",
+      "git_blob_sha1": "dcd72f37e96a27ac7e0d18bc04aaecb102eba292",
+      "sha256": "8261d339fe6b5888774f3600225c8764a87a1a6b0934f9a637f4252af9ba7b38"
+    },
+    {
+      "path": "src/WorkAssistant.Core/UserQuestions.cs",
+      "git_blob_sha1": "e2b8e46147d9064fa9c8229f69a77ac8d112503c",
+      "sha256": "c2dd42580d323bf8cec9afb004935c60bd6e7f23cff3db96b428a309a411fa4b"
+    },
+    {
+      "path": "src/WorkAssistant.Core/WorkAssistant.Core.csproj",
+      "git_blob_sha1": "528e6a2b45133ea88c3e777a2c728afd4fafe358",
+      "sha256": "ac87c0ab45db18d5ca6d1fa79293c7806fac339b2fbbf098d75d15b7c14dcee9"
+    },
+    {
+      "path": "src/WorkAssistant.Core/XpRuntime.cs",
+      "git_blob_sha1": "3620dc3ff8ab328476a33820dde0cc6d545dfaf5",
+      "sha256": "b65456772b7a93457752c5fd320350ffcfc7348002c6de33c33f7cdaceda7763"
+    },
+    {
+      "path": "src/WorkAssistant.Core/packages.lock.json",
+      "git_blob_sha1": "0d35c01fd6d3700e25a7ff3454dccc92fa546398",
+      "sha256": "2fb479745cb239c38c215e503416a87940c4afe83efe21fde311fc98fbee40c7"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/App.xaml",
+      "git_blob_sha1": "6574f3864b83b70c41a9e8114dbcc420b6eba5bc",
+      "sha256": "ae3d04a009031fcac0e3ae47a0bb6c3a3ba73f352fb6d8fce211ec1ec4064538"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/App.xaml.cs",
+      "git_blob_sha1": "f7a441df2f5a04998337203297b77c110eb59be9",
+      "sha256": "8b3d3e32fc19ba1c3cf32f48962602b02d2556059de4e27f77bbebc912d2fbf1"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/ApprovalWindow.xaml",
+      "git_blob_sha1": "cf4edbada056feea0fa587abc94429e0ef9bf941",
+      "sha256": "19bacfaf051b807958aaa916964be836f55c9ac5edce7312820adab9331e0cdc"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/ApprovalWindow.xaml.cs",
+      "git_blob_sha1": "9d2bbfbcf3d77f23c1b197bd90419dd5d49e13f3",
+      "sha256": "9bdfb3e8f27f3a497686e8011d997f3806d38f794f4c504b316878c30cba1143"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Assets/AppIcon.ico",
+      "git_blob_sha1": "5ebedfc7262b445fe95668b71e70562394c0520b",
+      "sha256": "32d36aafe068dcf14c1eb530496b1bd7d79bcdab544d50f07344a27feeb288d2"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Assets/AppIcon.png",
+      "git_blob_sha1": "961261d0baa67feef5e6844f10dd571a96e3a0d7",
+      "sha256": "583a64bda74a02fc63b98614c97da2a7e121f158f32acf65caab4edd7e4ef941"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Assets/AppIcon.svg",
+      "git_blob_sha1": "102aa8238e0b64900467da3d0cc9195f3a333450",
+      "sha256": "b98f5b0a19a8180e8c57f1eb105b8f1fcf179f1edb49a5ae15d4fe08db288d8c"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Converters.cs",
+      "git_blob_sha1": "cf2b9baddda70b8be3c5cd178ce7bb4cdbcc03c6",
+      "sha256": "3ab532e284408608dd4974b1ac869c20c7273254375b9d29c7a4da5b8038386d"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/DiagnosticsWindow.xaml",
+      "git_blob_sha1": "17de5d2b386ffa81b7dd0e675752617d784d1022",
+      "sha256": "425752a9ef52dc6019e0ba5760c105175b23abad57222744d8e7bf2552846231"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/DiagnosticsWindow.xaml.cs",
+      "git_blob_sha1": "2d4db37c26814f884849e852bcda3e7bbb714a47",
+      "sha256": "a0ad0134a22e68a9066f21d8c6b7afcf781830cb8bf7703c55e43990f0bbe614"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MainViewModel.Permissions.cs",
+      "git_blob_sha1": "8a6f27b6e9d8b0cac528aefa15e05e3c8af806d6",
+      "sha256": "3a41a97435b9cc7f4d1a6d132dcf9108eda2de2b79e186f95c43d43cd9134bae"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MainViewModel.Projects.cs",
+      "git_blob_sha1": "d1051c48cf67fdc62cfb41eef8fd744260c54810",
+      "sha256": "569c5d814b371eb85898cb0c449fcbb001ec50ab86af1667ce6e38c22a99f3b2"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MainViewModel.Runtime.cs",
+      "git_blob_sha1": "0b2794b8ad342558f550f94c766c37e823f10545",
+      "sha256": "24a5381a3a429af3d5e5c68bd2b6d035d08dd6be64bb007c093d4ddbf399a20b"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MainViewModel.cs",
+      "git_blob_sha1": "810cfd5e04d83ded067d65b4595b119e2b63b6d8",
+      "sha256": "ad22534a9c54e652c20936dfed8ae723d559de2b996eb9e7d2da66e91642358d"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MainWindow.Projects.cs",
+      "git_blob_sha1": "41199bcd4aaa18c5144c03ca3c3e26c66f4658be",
+      "sha256": "20d129133afcc9059ce7523d05191721a3e670618e4cd0d701ab7b23591d4790"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MainWindow.xaml",
+      "git_blob_sha1": "c3f8b31d87f72366c87f8e6fe6924a7bc018f3db",
+      "sha256": "7fc3bdf5294623cbe645fcf9dee9120d6766eacd55d8c241863e4e7d9016518f"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MainWindow.xaml.cs",
+      "git_blob_sha1": "28b4618db2b7993e474cc497a43e0df9f3ffcc7a",
+      "sha256": "a131b2e2fd091d26e7ec83e9c4dfb6d736ff5a008e1079390ef34bc56162c268"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MaintenanceWindow.cs",
+      "git_blob_sha1": "ed035664cdb85940b9b8f97ba5e49b762678be4e",
+      "sha256": "ec6cd888f51b1fa9f005cbaa47fd383d123fbd0017d491d0063f9cd8636cf0b1"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Mvvm.cs",
+      "git_blob_sha1": "8de074a08906a906779a9945feaa827c0969549d",
+      "sha256": "0a75c136980d82a37e8ede18c3d68850a3424be8b3a8be970a10ac50d63050b1"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Presentation/ConversationItem.cs",
+      "git_blob_sha1": "f5e1009cc232323593ac71a46c4906a0ddfaf573",
+      "sha256": "ec3b80ac72eb039574c9a348dc176fc084ce5639958fdfa3512b432c4a79e7e6"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Presentation/ProjectItemVm.cs",
+      "git_blob_sha1": "520b14a5c319a78f9ea043c18aca8118e4ae54a4",
+      "sha256": "14ab9938b964044a686508dc04c95e7cbfe1aaf32dbfe73d89fb5f62640a47f1"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Presentation/QuestionCardVm.cs",
+      "git_blob_sha1": "be434ff8edc05e7ebf624c14c8702ce5a825921e",
+      "sha256": "382ab48fa509a45884edf42fbea69eaac3cc3c5efcee9f3c84c3ca66c98c23bf"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/ProductionWindows.cs",
+      "git_blob_sha1": "2ef954f3a864e32c3ab1cf1bf81189e391700cb4",
+      "sha256": "6e5a86582f9ec86a7f75c61970a6c490b84152e19de903283bed3bca3dce3cac"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/ProjectEditorWindow.cs",
+      "git_blob_sha1": "ae4456c8193dbf0720cfbcfec50379b7fba3c7c7",
+      "sha256": "59dd2db202193f689d089f21b135999f68b71173dace8b486e57e4c0dcb35fc1"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/SettingsWindow.xaml",
+      "git_blob_sha1": "434f5194ce3c22bb432ccf7cf066f2609194bd60",
+      "sha256": "55493d0ad53e96b331c2268616efe38a75eefbf538c304765a89d2f9aa7e68f3"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/SettingsWindow.xaml.cs",
+      "git_blob_sha1": "dc689d3a5edce839632bbe5c5f44f7e77616c009",
+      "sha256": "ab3416c855ac2e6740d52f490c3acc848ac344934836fad4daa2eeed99eda5a7"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/SkillLibraryWindow.cs",
+      "git_blob_sha1": "e66542051e4f51a12f753430d85fcedc1a780753",
+      "sha256": "1f5f434353312c71524abf3e63cda5553659e7b1376a664caeab59545e58ff0e"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Themes/Controls.xaml",
+      "git_blob_sha1": "4e97ebe1f7821ab8a2abc2d16dceb42dfa435f90",
+      "sha256": "f8121b45e961750b33481726891108d2a98d6c36d97cd4629dbd4707916d2a8d"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Themes/Icons.xaml",
+      "git_blob_sha1": "767bf95f031d8ffe11ba96f2977631b352947ac4",
+      "sha256": "434be5621a8609f44346999e89b0c79d8fd75d994e399185b4bf4886f0975520"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Themes/Studio.xaml",
+      "git_blob_sha1": "c46f0062ec22a0160a4180d4a5cfbf1f3a1c0c9c",
+      "sha256": "15fa0a22cb469876108ea7b6d23e3ca4464a9bdd5f83f12749176e8e40245a0e"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Themes/Tokens.xaml",
+      "git_blob_sha1": "3d307b0d848e179d487f7d0d583695309dcb1724",
+      "sha256": "15906a00a75c98e6cdfbe1dcc6f803e83c17e53739e62c2b6a94332c6f530d3e"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/UserInputProvider.cs",
+      "git_blob_sha1": "556d6abb3e0581f4527500f0a0eebafa9b6b0f12",
+      "sha256": "9b58002aeb2d6206e441c81957e362fc9b0e4ba064620669f569aaf5779062db"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/WorkAssistant.Desktop.csproj",
+      "git_blob_sha1": "59dbb8cf8f394d723c665520c3c5413dfcf92af0",
+      "sha256": "4f32196cc72e1af58c0ab91a6d1ef14b9683949aa112cc681083e9517e1234c1"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/app.manifest",
+      "git_blob_sha1": "5d52b04ab19ea1b760b554915eda87eaee0e4dc2",
+      "sha256": "5309dda773cd66f61a5d076775b2429b96e8f29771e73552592bcf3edafb00b6"
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/packages.lock.json",
+      "git_blob_sha1": "cba6b02c5025a56573852a6011d7ec55f5b49785",
+      "sha256": "3623db32190451e12a58f6e746704153e0d54e63bf6bbef2c620db7e8f2d4b75"
+    },
+    {
+      "path": "src/WorkAssistant.Host/ArtifactHandoff.cs",
+      "git_blob_sha1": "2b0b4d98efd39feb3541a28df53aa89b270dfa94",
+      "sha256": "24dd1c995e222e868c9218a4c217fe38e2bfc77538bc3883579afb047380c63f"
+    },
+    {
+      "path": "src/WorkAssistant.Host/DelegateTasksTool.cs",
+      "git_blob_sha1": "57f8ffd278d43b22a0170f52df21d2710a125921",
+      "sha256": "7f833dabf7c90a48baec77fbbe8a995d53733b696a2795c6e6b917ebdb3e03e0"
+    },
+    {
+      "path": "src/WorkAssistant.Host/FileReferenceTool.cs",
+      "git_blob_sha1": "c2e4a2d5493c55418444f193c8d4e199f739853d",
+      "sha256": "ba5b59d520279ba8a078d5aa77eff20d3398f5c7430fb2ab3bd02ae3437264c6"
+    },
+    {
+      "path": "src/WorkAssistant.Host/ImportTaskArtifactsTool.cs",
+      "git_blob_sha1": "40994e3a9959614d2602fcebd7d0d6056cf65558",
+      "sha256": "2e9949495bf5fdc1676de4a734d0a3c67b7810e1ea139a61f8697b34a72c344b"
+    },
+    {
+      "path": "src/WorkAssistant.Host/IsolatedTool.cs",
+      "git_blob_sha1": "0174858507e9d91f3789b419ccefb6d02779c7da",
+      "sha256": "893720a95833c238a2e5fa254ad287c7f301d764b6bd0f3fba681246c08a2c48"
+    },
+    {
+      "path": "src/WorkAssistant.Host/Program.cs",
+      "git_blob_sha1": "3090fb425230121917facbc8b42ad5f2b95da34d",
+      "sha256": "65709e7a742f9fb63e527191719754a4697e76b85611b0993bb217d8cef4522a"
+    },
+    {
+      "path": "src/WorkAssistant.Host/ProjectCommandsTool.cs",
+      "git_blob_sha1": "eae3d94670b122296ab527d2d0fde149582a5ac1",
+      "sha256": "b647902eada027db7b87ee79d5fd53ea88b2436df2225db859904114908505fd"
+    },
+    {
+      "path": "src/WorkAssistant.Host/SkillReferenceTool.cs",
+      "git_blob_sha1": "cabd2a1a6d062acf73a5585c9eb80b22a4b825b8",
+      "sha256": "504704645a5c6d04c304082f5af9e1cfc732d77eef10ebdb929bcb9fb46b448b"
+    },
+    {
+      "path": "src/WorkAssistant.Host/WorkAssistant.Host.csproj",
+      "git_blob_sha1": "8d50ab62d610a67ebc97dee673b00d05acaa2606",
+      "sha256": "680fa5ba86f21358c4ab8c7b260fb2427b9e54b065cc74dc390de5e17eb9a7cb"
+    },
+    {
+      "path": "src/WorkAssistant.Host/WorkspaceToolPermissions.cs",
+      "git_blob_sha1": "9c9c761186031ef76aed898843c5c8a26fa49b95",
+      "sha256": "340083b66a92e15394a0e12fedfb8543b4911bbcb5b29b2714531e970ae6a308"
+    },
+    {
+      "path": "src/WorkAssistant.Host/packages.lock.json",
+      "git_blob_sha1": "806091d18047087a3ce3512a1cf0711d3d892d43",
+      "sha256": "123c61d0a27f1bdf8a72b30d3d739bf8cb8339cc1bdebee6c847b07ab23cec48"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/AnthropicMessageCodec.cs",
+      "git_blob_sha1": "4b5bba170fc9f62435f42d67e532b083d3d0bda7",
+      "sha256": "f6b85e4354ebe8cc14f870e0094c8797390c700227eafaa8b3822103d6c567f2"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/AnthropicModelClient.cs",
+      "git_blob_sha1": "06734a0afe45ef1960e1fa702b6ff4c959f9e327",
+      "sha256": "0d7e40da258e09b23556865ddff642332c87aa6e5af89279084f031cf14ece12"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ApplicationDataPaths.cs",
+      "git_blob_sha1": "12bec6284dc0939a523c146bb88892031d43297f",
+      "sha256": "d7f52bc33d96b9d0f33e2a71bc48b86345a59eb25966994f554af68867e7a731"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/DefaultOfficeSkillRouter.cs",
+      "git_blob_sha1": "e6ec241c03fda387f00e4213a8d9d13e10e7df68",
+      "sha256": "bf23b1702d843d51938cd1037cd712b5bdd54454680db05deb0f45e6c26250ed"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/EnvironmentReport.cs",
+      "git_blob_sha1": "76712e1bc8bfd5c65e75e6e8adcaa61e61512ea2",
+      "sha256": "fdc17f50fc8a47baa8a678c5b151a7efc1a137ba59606f80dee771bbb6a39fad"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/HostFailureInfo.cs",
+      "git_blob_sha1": "b38c05fcaa893a433b35b65d98f0e0985bdb51c7",
+      "sha256": "3dcace3ad6201be2bdc7c4acef577cff45123201f7aa1a89db1b25c1409c8705"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/HostProtocol.cs",
+      "git_blob_sha1": "955620230751740cc111e6a0a3bb478b5a5b2973",
+      "sha256": "d33c7e963d875cbfd854a4d5b3b3dba9b1660c8ec0637cd87eadb329b62649c7"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/HttpModelClient.cs",
+      "git_blob_sha1": "11f6eb7f6c02acb2fbef80225887ced16a85d99c",
+      "sha256": "c6ce4027be1a27ee1d2d2dae3eef980be2477846c00516514a8698eb5bf601f0"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/LimitedReadStream.cs",
+      "git_blob_sha1": "842ced5ca8de1cca5687fe9da2101c99beef6077",
+      "sha256": "296fde31ee416b9ed05a6c883eb61d17b6a5784a52790152a67f46ec8864e61d"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/LocalConversationArchive.cs",
+      "git_blob_sha1": "e671586d40018880e15802be8a3747933012f000",
+      "sha256": "6c36ee81ba0d8e12461b94d5936318080743d77955f4144710441413853fde69"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/LocalTaskStore.cs",
+      "git_blob_sha1": "5ca9e94bbf888bb032f13ccb9ab82017f7cab105",
+      "sha256": "ac10c1d3f7fa9f3cd1ba426e99722628c360a8fd26f3c0211d5ca6d2342c935b"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/MarkdownConfiguration.cs",
+      "git_blob_sha1": "14ea12f72777b83f301c6d4b57849abd940ca98e",
+      "sha256": "3a74880640e2d34ef8671b5b2a35edfb2d3c5203c4e0b1b138cf73349d78a233"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ModelCapabilities.cs",
+      "git_blob_sha1": "6ee30409acce83b3536dc3c133c56ce5dbd4f0cd",
+      "sha256": "b069a1b6b5151a8277ee57c49525d0aaf629b795d357d3fe646c67e5f67f9824"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ModelCapabilityCache.cs",
+      "git_blob_sha1": "a2affdeecae4b1323a2af5ddc12fb262b566642b",
+      "sha256": "d4b518a9224f42a60d4b29b475665f049b94760778474061215763a03bb18b4a"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ModelClientFactory.cs",
+      "git_blob_sha1": "83dcf676d6d12346f292a6fd5fd384bc00954a35",
+      "sha256": "dd98008f54a14e97929f11122fcdc5e741e2538044741717a2ed86067df11125"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ModelConnectionProbe.cs",
+      "git_blob_sha1": "f4ac2735cedde805203ce48a6d859d8d05e2d933",
+      "sha256": "2d6239f4bec6a85da4a52f6170fa1164821b1bd5f2fcb9444a60e824ee2a3a9d"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ModelResponseLimits.cs",
+      "git_blob_sha1": "8b99f32001d9e9d1eb25ad05a7cb7f81e9733cd6",
+      "sha256": "0608952ed602077da67532ec3dd68653e3ddb591920c160af391640251d8dc53"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ModelRetryPolicy.cs",
+      "git_blob_sha1": "f56028717b0b200238204a46e5acaa7f999acfe4",
+      "sha256": "10c419a7d4bb66846142f44edd3c8b255472ca6309ea29ce878ce4c3f2232040"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ModelServiceError.cs",
+      "git_blob_sha1": "e0e9c6095d44568f4dfc3d9b299f2e93027ae1d8",
+      "sha256": "a2021eecf547b97b4ec9e1c7557e0f044d1817e99e10b7c390ac09b3347edcc2"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/NativeRuntimeBootstrap.cs",
+      "git_blob_sha1": "be37de6a765e30e21e3207ed31f9c8f91108ee43",
+      "sha256": "76b9391d52e4260c65a6cf499bd5e89aa34001054704be0287702c3095183147"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ProcessJob.cs",
+      "git_blob_sha1": "211b4fb2a9ad7586c6f936262584879fe05879ad",
+      "sha256": "b064cd55931050933f832b01f3c777165c6ac8d154592a1430a92642877d3209"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ProjectConfigurationFiles.cs",
+      "git_blob_sha1": "af77e998af796a1de8673bf328598cec5eacc02a",
+      "sha256": "27cf99a7d320c44cd773ca275189d894d52ea661d2b3b5229a306bd1fb3abcbc"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/SerializedApprovalChannel.cs",
+      "git_blob_sha1": "a4acade3e93be5be13e3a334b37fd988facf7e4d",
+      "sha256": "3b7be2c9912f897b39418bc534e8f2c4e11f270c3b273e29fdf32242b5d7c89b"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/SettingsStore.cs",
+      "git_blob_sha1": "a3b85039db3e7755a4e5832f26dea2d3b928096d",
+      "sha256": "5bcba8be74fb25c41bad3270b1802b41ab5467bc50f8b7d34461f597c77bdd8d"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/SkillCatalog.cs",
+      "git_blob_sha1": "cf457d7340652b1428cf479f4f218e2197bb5ca7",
+      "sha256": "989db3648c9d3412b28264d1e4140dbca92a89e684b875efec181a64509be90b"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/SqliteStateStore.cs",
+      "git_blob_sha1": "21b43b31e7ca5cbd1179b36f27722d970ba3d05f",
+      "sha256": "ea83bb46deef6ddf812315e2eb2cba104309531f96c45a8e27a6a4096d61b011"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/TaskHostClient.cs",
+      "git_blob_sha1": "293d0e31902764244d09d93ba7049ad4ad22cc0f",
+      "sha256": "50762c9aafba9e25d05e057f900dcc2866b0479490e90993451ffb78ed7d96bf"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/TrustedUpdates.cs",
+      "git_blob_sha1": "8cb97c3bd3faccc37e7420486e069dd8ad57b636",
+      "sha256": "38e82614de4ba0defd3d432706819a548d3fd343069953af1811e92468a968e2"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/WorkAssistant.Infrastructure.csproj",
+      "git_blob_sha1": "26c51ca4b61da69e784f67ca733331f134e8cb2e",
+      "sha256": "2c642c476ffbfe8d2c8b212a7f5e4562cf444b305cd085edcc882daf14b0cf94"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/WorkspaceAgentConfiguration.cs",
+      "git_blob_sha1": "899a8c88287e26e9dae6a5080763b9966f9065eb",
+      "sha256": "10ae28dc81888a83873b0147ee27d2efd1f028da70c49789e4b321ec2c37691e"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/WorkspaceModelCatalog.cs",
+      "git_blob_sha1": "f3433c3b72f2016c7f95fdb01129e5349f714964",
+      "sha256": "233696e89658ef476bfc537dada9f4b5d51d9daf3b33925e40b6e6cde1022b88"
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/packages.lock.json",
+      "git_blob_sha1": "5c835c347887c5628bc135188769423a736d5b03",
+      "sha256": "e87d6cb91adb6ae00f0b8fc9bb77933aaae2a3e8173b2cabfc57b6d3ef4cfd46"
+    },
+    {
+      "path": "src/WorkAssistant.Launcher/Program.cs",
+      "git_blob_sha1": "879861f42d3e12cce544df0e40a2ba73bca2b37e",
+      "sha256": "bce28d217eb3187bfef119f98ecd72d2847313fd3185ffe7a87d7b9e26766156"
+    },
+    {
+      "path": "src/WorkAssistant.Launcher/WorkAssistant.Launcher.csproj",
+      "git_blob_sha1": "fe98aae3925eee396f23b1f7a221d7d460f745c4",
+      "sha256": "608cfc3d525d9a6c4f841eb521996cef8059b0551fbb534cff56e97bc4b05e5c"
+    },
+    {
+      "path": "src/WorkAssistant.OpenCode/OpenCodeConnection.cs",
+      "git_blob_sha1": "c2ed07d56517cef930f9370970f197017547ead1",
+      "sha256": "3389cbbeb90ab055d0c310386900036b6837e6c7a38d07552b3a6e3ff6d3bbbf"
+    },
+    {
+      "path": "src/WorkAssistant.OpenCode/OpenCodeGatewayClient.cs",
+      "git_blob_sha1": "e1757fa4ae365f3a51af49ea905ff8f033f41aa7",
+      "sha256": "c59c780c99f32862cc91506ad5c7680eeb610525ed6bb465fba944c5fc4dbdf4"
+    },
+    {
+      "path": "src/WorkAssistant.OpenCode/OpenCodeTaskRunner.cs",
+      "git_blob_sha1": "b5c9e9bd1d25e008d74ecd85599476014acdc478",
+      "sha256": "b7e3294c576ef207ea945cebae0424fd049c41f951ef37510a002c96c20d1b25"
+    },
+    {
+      "path": "src/WorkAssistant.OpenCode/WorkAssistant.OpenCode.csproj",
+      "git_blob_sha1": "b11fec1f68cffca29e2881a24fc4501576ecb127",
+      "sha256": "5dbc8a9c0560e8a0ec89c18a0a5cd4d7d2cc94937b3ce867fd982125ca6691ec"
+    },
+    {
+      "path": "src/WorkAssistant.OpenCode/packages.lock.json",
+      "git_blob_sha1": "e9cb6572c745d29f688494a8e1f90e208b1b4fca",
+      "sha256": "d53adbb80aa368427499b4e6163ed0c14ab595811ce0167256e5257e47f73456"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/AgentToolBase.cs",
+      "git_blob_sha1": "21ecf5bb44c55f9382bcb93ae64053c2a7311340",
+      "sha256": "b9ebea01643bb50481ee461b3cb8704e5f9c410b91628556da497119d20fba37"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/AggregateCsvTool.cs",
+      "git_blob_sha1": "705488b7218b3c90c248a4d91c4397bd00cfaab6",
+      "sha256": "14709916329d3fdcf74160d7a29d92e0fb3ae42474545a2566595b0a24fa6ed0"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/AggregateTableTool.cs",
+      "git_blob_sha1": "62aa13548f6c5a51f6f98fda09508ea107701be9",
+      "sha256": "ca0214b54b4d29c82a834cd6cc495207c67bbdc34d0f0b6b36718c828c426769"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/ArtifactDelivery.cs",
+      "git_blob_sha1": "f16aecbd062fb1363abdc5989ad83e09aa9bd0bf",
+      "sha256": "eb29ba361421941d851354923a17140393b6fbca0cf155a9baca9271b6b6f01a"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/AskUserTool.cs",
+      "git_blob_sha1": "e3f3a8916d89b9fea001e0aab2c7872f0f202864",
+      "sha256": "4a8b2780b72c3a2c0f5dbf37e3bf96c8a2a9ea0406365ecbe8eeaf448c023938"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/Assets/PresentationBase.pptx",
+      "git_blob_sha1": "43e46f08aa1d8542a3bd1159c3a6b52f47dc43f8",
+      "sha256": "cccad513959b2f6df3dc41e00f19e6ad5ce4d20757eaaa50552bcf65d61a4a56"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/Assets/python-pptx-LICENSE.txt",
+      "git_blob_sha1": "67ebe716ec4b2d64d6146b5e7cecd77ac7af9b79",
+      "sha256": "7652f271e46d0d533e9dc463f3b5fcbdcacf4d6a9c8d6b554d15efd0f37f6132"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/AtomicTextTransaction.cs",
+      "git_blob_sha1": "06a8a6adfc7c106d94eff7826fe99ebc5ec15fea",
+      "sha256": "0134f6e61ce441b3f95bb6976790cceefede80399d87e2b0a6ceba48c34e251b"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/CommitTextEditTool.cs",
+      "git_blob_sha1": "78eb5c47d8bb2ba875e55950027d3c6dbda3815b",
+      "sha256": "4cc90276880df197580afb85a74150c0c4bd294847df6d345bc6bfacc8bd7789"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/CsvReading.cs",
+      "git_blob_sha1": "ccb5d54d56974d544f3a5e9e41a145fe5ef57a6e",
+      "sha256": "fe9a8082e8424b852d21d11213a358fa9ce22b22a98131c6dc0066ce9e9c5935"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/DocumentLimits.cs",
+      "git_blob_sha1": "cde15a8f3e8911787ef9f1746da6bc9c02ab99a4",
+      "sha256": "fe658cb24dbd2bbca6565e20f0b5e5cfdd09833d01913291479b490ef34267cc"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/DocumentTextTools.cs",
+      "git_blob_sha1": "91fbc126604d31abd36e1dee28e276bc40756476",
+      "sha256": "e7e9d2ff4417d08ad343dfaf598c3dacc10e6a079c5fa20b1b8ea02b09bee413"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/DocumentWorkspaceTool.cs",
+      "git_blob_sha1": "b0466d33372f62304b77ceb534b4de9d223b4f68",
+      "sha256": "74b69edaf5a33f9f0f17cf950b5d6e2251a581857f1e7f2a564c5752de69407f"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/DocxWriting.cs",
+      "git_blob_sha1": "a352df55949e7470983e30dd246fd88aadb04487",
+      "sha256": "aa16de642bbef9f1b96163fd3f5ba6614282dfb353b844744955d1f59363baf9"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/DraftSkillTool.cs",
+      "git_blob_sha1": "cdc6f7f7a22b71e29dddc3a3ac75e06e796bcec1",
+      "sha256": "ad9ba58d6e8f095e91a4c8cb976ec66315d30d5bd12f24cee22766e41ceba63b"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/ExportSummaryTool.cs",
+      "git_blob_sha1": "34f6a5bbab7dc8c53991b5c7d4068cb25ba2c50c",
+      "sha256": "6083cd9132d4907dab9e80b6dc1d8c9f767e3287570a14aee6829f559d0cfafb"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/ExportValidators.cs",
+      "git_blob_sha1": "e774659c6000f8573991dd21bc9425e4fcf4a1e4",
+      "sha256": "e0be5610a52591ceacfa061eab79b69cd8fa3404e4895f05a572690e13266e32"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/ExportXlsxTool.cs",
+      "git_blob_sha1": "6f9657c072a713ddafca0303fe78ebcb1b9d17a4",
+      "sha256": "c7d53ddbc7fb6c10173b059848b6d32ba5649a78c156aac7fa5e8197f7666066"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/FilePlanTools.cs",
+      "git_blob_sha1": "a0d355c23764790413e9d5d1aec3a4c88f89425d",
+      "sha256": "cd6e9bb49e6ebc27bea71ed6e24d4541c32d8ee581a65b7e8c77b62166cdc48c"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/InMemoryAggregationStore.cs",
+      "git_blob_sha1": "0b8c26b716fbd1ad427a8f75c35a57e1c597ba91",
+      "sha256": "720ea7472e0211a48bff1f24eae2a63e38593193923a33cd80bc5d720fbb68b5"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/ListFilesTool.cs",
+      "git_blob_sha1": "5d38c0d1fc02c69ea39cce0af050e52aa36e9c15",
+      "sha256": "acd9638e859701ce0194a6089fac6dff364bda339d2629411df6ed962af80e0f"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/OfficeAutomationTool.cs",
+      "git_blob_sha1": "a77c86189a6d7297e18ca12bec964e6a619535ff",
+      "sha256": "7ce9ffbdd2bad4ce7cfda55f82833af331026d1e7ba15dd3d546170b15c57f4d"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/OfficeCapabilities.cs",
+      "git_blob_sha1": "1ba099f65b40c6db0559eff0b7ec4f343f19bff1",
+      "sha256": "bd5ed7cbc0dd83c8191ae450d6fa1119239d602b2315dd44e872e5ddc3951348"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/OfficePackage.cs",
+      "git_blob_sha1": "af173fe91e79568f0fd7cb51e388c831c3f4bb31",
+      "sha256": "53bd327c31eb7e8a9d594a26e431328ed6e10859b73f9d02b33ef3406f70d54c"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/OfficeTextProofreader.cs",
+      "git_blob_sha1": "42a96fbb724175740ea3393b4224ac6b6067e4d7",
+      "sha256": "9b7be77368259b85455244c3ea7c464ce9051e7849f671cb658538a75f8daf50"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/OutputRecovery.cs",
+      "git_blob_sha1": "14f8fc02014a6fbfc5e706bf4c09c3d52cecf3cb",
+      "sha256": "487ea32711066a5610c118a973c662e9b38e3a212160a7b1730bd688d141d17e"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/OutputSanitizer.cs",
+      "git_blob_sha1": "231ce9d81bc01f9adf54c97e5eaa23c93c794e2c",
+      "sha256": "ac6e8169a8deaf25142ae6195b3c5ca0a5179e072bbe61aeefa595a9c703f8a4"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/PackageZip.cs",
+      "git_blob_sha1": "5d549355d40b5da4f378de131e9efba2743f760a",
+      "sha256": "f3a7613135e8fb05d4471db52468d95a4451613e511d074654a89f94b63384e6"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/Parsing.cs",
+      "git_blob_sha1": "4cff7b7fb0831cadf63df6f244f7a95e36e196df",
+      "sha256": "d962c7beb1ec1b99746ab59b784cbac3a40f5d19ed84a76401c77f88add0185d"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/PdfOcr.cs",
+      "git_blob_sha1": "502f11b0a9c337cc769fdec2de53a7cc01dec55c",
+      "sha256": "ec0643a3761c40103e99f88780467fd343a0c4fe78400c8eeb1a036c93a8abda"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/PdfText.cs",
+      "git_blob_sha1": "28908c257ab0bb2190ae61c79d5da6ab46122be4",
+      "sha256": "097e74c0cac7703fb778199ad5352666ed79fa449550c31d82f959d11896e511"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/PersistentAggregationStore.cs",
+      "git_blob_sha1": "02e37802be6559714879a1c9eb960e8b789163b7",
+      "sha256": "be8b72d70803547e653100d366aabe4a4cebb54aba46600b4cae548a465bdcee"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/PersistentFilePlanStore.cs",
+      "git_blob_sha1": "3c2c64fc12f8a8c79ce596947cd854ecb0f34fa9",
+      "sha256": "1a8100080fb4700d3c25dede9166b212559ae7bec47a9d3cfadd3f639e4f0d99"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/PresentationAutomation.cs",
+      "git_blob_sha1": "451a13ee96410164fd7e3b17836f7b56f4e2628c",
+      "sha256": "112e036babdcf44a2e274007321e5fea97a68e6f60d04ac8ce81223ba8e226d8"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/PreviewCsvTool.cs",
+      "git_blob_sha1": "df323c2a38ca009ec7718a575c6c7ef4030520ec",
+      "sha256": "2c64cd8c688a7346c750a38601c492440e51958a722fa4bad4cdc4cbcd607535"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/SafePreview.cs",
+      "git_blob_sha1": "6526d8c921e4995aa6c15e9277c2b31a8a4b8465",
+      "sha256": "e4d99c980caac25563cd0b5c6c637c8d6f93f3e537b97606088c252d022736ab"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/TableReading.cs",
+      "git_blob_sha1": "20ae566848268c6a7b2258947219cfd71271d0e3",
+      "sha256": "ac69d11d362cf26cb490a60ebab330ab4df4add1b37482f8393834127fa786cc"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/TaskMemoryTools.cs",
+      "git_blob_sha1": "9bc010a6e9eb7d503906ffcfea21e8cbacad41f4",
+      "sha256": "4672aed7bda8f2b0ca68e631107f1dfb5aafb6d08881588eb3e8a85544dfb8ca"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/TextEditTools.cs",
+      "git_blob_sha1": "6154af3e7089158426530b13eb38cd4f4fc96709",
+      "sha256": "ddcb6c01e4c4cdce0eb3752e9b5e762406b82dae5219840eb61485873208fca6"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/VerifiedFiles.cs",
+      "git_blob_sha1": "318f62e7d224001454c60c36bab4540b49e4aec2",
+      "sha256": "0676e79148be3751369568b715d79f35ac30efb11b29bf13d5369d9e4d0c2b68"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/WordAutomation.cs",
+      "git_blob_sha1": "f391b9ef411acc13b4bd272903dd9b6396c12d53",
+      "sha256": "b11b2ba425e304dc249b7b38bd47af1c6b28e524b3dfa944da8b2b2d5e7f7f05"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/WordDraftStore.cs",
+      "git_blob_sha1": "3e1e6ace751be758205d2c41d9698ffe2935578f",
+      "sha256": "29a2bdffdd1b04f760c2c749ab6a4a13b6bd70ed3aeea5602ce21018eaf86c33"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/WorkAssistant.Tools.csproj",
+      "git_blob_sha1": "3c2cc4e9a2b16320bdc712a40a6d1bc87d3f7360",
+      "sha256": "9474f035ed4f31e4e0e3759faccad2f3e2039563d0fac59901fc871134c481ab"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/WorkspaceDiscovery.cs",
+      "git_blob_sha1": "e985659b74bf682ffb4c37f90d76592254a07f9a",
+      "sha256": "140b96a9ce0ec8401bca4328f2e552ac7af64068abca123b8e4ce5add3da1080"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/WorkspacePolicy.cs",
+      "git_blob_sha1": "5f799bd3934b3094166a1f241b6a268c741dff67",
+      "sha256": "0d3f223014d3a6720aa07936baa48a26bf61e1e244881831db9a6dd510c097e4"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/XlsxReading.cs",
+      "git_blob_sha1": "f2b25033b093f304e7d73420e93e89491df50518",
+      "sha256": "c77cf6c40c67794d90e780f6501ed0906576ebe3f84852fb8bb72ff433ee6414"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/XlsxWriting.cs",
+      "git_blob_sha1": "92ea9638ca4d0ef1ab5a223090b31c277b75374a",
+      "sha256": "82496225dd3441192eb7b2f320cce58f1a9e805cac9c1b742e709aca76afc842"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/XpRegex.cs",
+      "git_blob_sha1": "b53399e9b1248e117520259e7a6e13c9cf52a0f7",
+      "sha256": "2914764ff76acdac497f044cdb5468ae5d2d8ff1e9b3b7918b63ed5c4179f734"
+    },
+    {
+      "path": "src/WorkAssistant.Tools/packages.lock.json",
+      "git_blob_sha1": "bd265f8c6395e7dc6b3e2a17f261f414cabd398c",
+      "sha256": "6421597ae5ce0b3bc40d369659824ec35ade615bde1298494f93e44692ad8a54"
+    }
+  ],
+  "tree_sha": "c7cea0e5fe084101c20b18b9a470763c0e44beba",
+  "verification": "来源文件 Git blob SHA 已与真实源提交的 git ls-tree -r 逐项核对。"
+}

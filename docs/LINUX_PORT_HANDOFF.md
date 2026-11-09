@@ -26,3 +26,9 @@ dotnet --info
 本仓库保留技术方案、源码、测试、样例、OCR 模型和第三方声明。默认配置的 API 密钥为空，使用真实模型时在应用内配置。Windows 打包脚本引用本机的验证候选、微软安装器和原生依赖，需要在 Windows 构建机按发布记录准备。OpenCode 网关源码、锁文件与协议保留在 `migration/`，上游检出位置和固定提交见 `migration/UPSTREAM.lock.json`。
 
 技术入口：[1.0.7 验证记录](RELEASE_1.0.7.md) · [正式版实施方案](PRODUCTION_IMPLEMENTATION_PLAN.md) · [内核架构](AGENT_ARCHITECTURE_RESEARCH_AND_IMPLEMENTATION.md) · [权限与上下文](CONTEXT_PERMISSIONS_1.0.5.md) · [文档工作流](DOCUMENT_WORKFLOW_1.0.4.md) · [第三方组件](THIRD_PARTY_NOTICES.md)。
+
+
+<!-- windows-uos-baselines -->
+## 国产 Linux 与双基线补充
+
+本文件保留原 Mac 开发交接背景。完整的新计划见 [统信迁移文档](linux-port/README.md)，产品基线见 [Windows/UOS 管理入口](../baselines/README.md)。macOS、Windows 均可承担全部 Linux 代码开发；Windows 旧版回归不作为独立 UOS 开发前置。调研时的本地下载缺口不代表远端仓库缺少文件，执行前以实际 checkout 为准。

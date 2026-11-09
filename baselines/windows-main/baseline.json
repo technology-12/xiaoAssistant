@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "record_date": "2026-11-09",
+  "source_repository": "git@github.com:technology-12/xiaoAssistant.git",
+  "source_reference": {
+    "commit_sha": "4ef75b18004ec7e902d46cb9d4d69270e5ad2655",
+    "tree_sha": "c7cea0e5fe084101c20b18b9a470763c0e44beba",
+    "verified_by": "git rev-parse HEAD HEAD^{tree}",
+    "note": "本次双基线来源为实际远端 main 提交；早先调研将提交 SHA 误标为 tree SHA，现已更正。"
+  },
+  "branch_note": "分支角色为管理约定；实际分支是否存在须通过远端确认。",
+  "baseline_id": "windows-1.0.7",
+  "product_version": "1.0.7",
+  "status": "existing_source",
+  "branch_role": "baseline/windows-1.0.7",
+  "framework": "net48",
+  "desktop": "WPF",
+  "build_entries": [
+    "Win7WorkAssistant.sln",
+    "Xiao.Native.sln",
+    "src/WorkAssistant.Desktop/WorkAssistant.Desktop.csproj"
+  ],
+  "verification_reference": "docs/RELEASE_1.0.7.md",
+  "release_qualification": "沿用既有发布记录；本次未运行测试，不补充 Win7/XP 实机支持声明。",
+  "source_lock": "baselines/windows-main/source-lock.json",
+  "code_changed_by_documentation_upload": false
+}

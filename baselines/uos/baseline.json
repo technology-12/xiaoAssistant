@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "record_date": "2026-11-09",
+  "source_repository": "git@github.com:technology-12/xiaoAssistant.git",
+  "source_reference": {
+    "commit_sha": "4ef75b18004ec7e902d46cb9d4d69270e5ad2655",
+    "tree_sha": "c7cea0e5fe084101c20b18b9a470763c0e44beba",
+    "verified_by": "git rev-parse HEAD HEAD^{tree}",
+    "note": "本次双基线来源为实际远端 main 提交；早先调研将提交 SHA 误标为 tree SHA，现已更正。"
+  },
+  "branch_note": "分支角色为管理约定；实际分支是否存在须通过远端确认。",
+  "baseline_id": "uos-b0",
+  "product_version": null,
+  "plan_version": "1.1",
+  "status": "planning",
+  "branch_role": "baseline/uos",
+  "framework_proposed": "net10.0",
+  "desktop_proposed": "Avalonia",
+  "implementation_started": false,
+  "release_ready": false,
+  "source_baseline": "windows-1.0.7",
+  "primary_target": {
+    "os": "UOS V25 桌面专业版",
+    "architecture": "amd64",
+    "status": "planned"
+  },
+  "expansion_targets": [
+    "UOS V20 amd64",
+    "UOS V20/V25 arm64",
+    "银河麒麟 V10/V11 amd64/arm64",
+    "deepin 25 amd64/arm64",
+    "openKylin amd64/arm64"
+  ],
+  "research_only": [
+    "LoongArch"
+  ],
+  "development_hosts": [
+    "macOS",
+    "Windows",
+    "Linux"
+  ],
+  "windows_environment_required": false,
+  "acceptance_environment": "实际声明支持的目标 OS×CPU×桌面会话",
+  "task_manifest": "docs/linux-port/tasks.json",
+  "migration_plan": "docs/linux-port/MIGRATION_PLAN.md",
+  "ai_plan": "docs/linux-port/AI_DEVELOPMENT_PLAN.md",
+  "original_file_overwrite": "仅在已定义安全契约验证满足时开放；不满足时明确拒绝，不静默降级。"
+}

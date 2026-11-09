@@ -1,0 +1,2403 @@
+{
+  "repository": "https://github.com/technology-12/xiaoAssistant",
+  "date": "2026-11-09",
+  "snapshot_kind": "verified partial repository snapshot; all application source files present; no git history",
+  "expected_files": 476,
+  "verified_files": 447,
+  "missing_files": [
+    {
+      "path": "tests/WorkAssistant.Ocr.Tests/Program.cs",
+      "git_blob_sha1": "984bf2584b918286052cacdbf30a69523e70679d",
+      "bytes": 11012
+    },
+    {
+      "path": "tests/WorkAssistant.Ocr.Tests/QuickProbe.cs",
+      "git_blob_sha1": "40d0e92f25318a43cbac9cc5adfe8ac7ccdf759f",
+      "bytes": 732
+    },
+    {
+      "path": "tests/WorkAssistant.Tests.Console/AgentFlowTests.cs",
+      "git_blob_sha1": "637a13879c1d5c4488a1c27c92426e5b083b3b0c",
+      "bytes": 14683
+    },
+    {
+      "path": "tests/WorkAssistant.Tests.Console/ConversationTests.cs",
+      "git_blob_sha1": "1869e811001b58e2745918d332cf4ac5e95afc21",
+      "bytes": 20623
+    },
+    {
+      "path": "tests/WorkAssistant.Tests.Console/CsvToolTests.cs",
+      "git_blob_sha1": "ab9641596ad166a511f6130438f34e83ab33c53f",
+      "bytes": 13650
+    },
+    {
+      "path": "tests/WorkAssistant.Tests.Console/DocumentWorkflowTests.cs",
+      "git_blob_sha1": "7e19d2b7431b28e50848c8c5ec00e77d4701e7f8",
+      "bytes": 21375
+    },
+    {
+      "path": "tests/WorkAssistant.Tests.Console/HttpModelClientTests.cs",
+      "git_blob_sha1": "970f3e53d794b33291c0c1c85796e7ed56c18111",
+      "bytes": 11267
+    },
+    {
+      "path": "tests/WorkAssistant.Tests.Console/LocalHttpTestListener.cs",
+      "git_blob_sha1": "8cac7f98642b4943b1302797a8c5ac95be28e492",
+      "bytes": 1007
+    },
+    {
+      "path": "tests/WorkAssistant.Tests.Console/OfficeFileTests.cs",
+      "git_blob_sha1": "c38a021b02bd3088047248b16735b3fabeed6fc3",
+      "bytes": 17125
+    },
+    {
+      "path": "tests/WorkAssistant.Tests.Console/PathPolicyTests.cs",
+      "git_blob_sha1": "8208474cd234611f9aea5c8d3428467228a33378",
+      "bytes": 5404
+    },
+    {
+      "path": "tests/WorkAssistant.Tests.Console/PermissionTests.cs",
+      "git_blob_sha1": "92ba89ca6026f8ae0230cc0a3a115218e0ae2581",
+      "bytes": 9456
+    },
+    {
+      "path": "tests/WorkAssistant.Tests.Console/Program.cs",
+      "git_blob_sha1": "4ecf667d06ba06292af4da1e5389f4d5126d9118",
+      "bytes": 4214
+    },
+    {
+      "path": "tests/WorkAssistant.Tests.Console/SampleWriter.cs",
+      "git_blob_sha1": "567e6c1dc0f2216fa0f3fb2e156afd47626cf502",
+      "bytes": 8718
+    },
+    {
+      "path": "tests/WorkAssistant.Tests.Console/StreamingTests.cs",
+      "git_blob_sha1": "2fc2f7b700e854c54734bc7745b982c9501026d3",
+      "bytes": 8444
+    },
+    {
+      "path": "tests/WorkAssistant.Tests.Console/TestEvidence.cs",
+      "git_blob_sha1": "0834cf9d882b92676f50ab15838865e6d6dc3849",
+      "bytes": 2017
+    },
+    {
+      "path": "tests/WorkAssistant.Tests.Console/TestSupport.cs",
+      "git_blob_sha1": "b3ba758718b52f8e4aa29055089ac1c3854e41c6",
+      "bytes": 5781
+    },
+    {
+      "path": "tests/WorkAssistant.Tests.Console/WorkAssistant.Tests.Console.csproj",
+      "git_blob_sha1": "bca0a1786d4d4f5ad47415e214d8ed37693d7634",
+      "bytes": 658
+    },
+    {
+      "path": "tests/WorkAssistant.Tests.Console/XpCompression.cs",
+      "git_blob_sha1": "6a49cd725fad2d030949457f250ae275fe85ee2b",
+      "bytes": 417
+    },
+    {
+      "path": "tests/fixtures/xp-pdf/base.pdf",
+      "git_blob_sha1": "deeef696b8a3f8b6f4e72ac9dbba642dd9d238c2",
+      "bytes": 599
+    },
+    {
+      "path": "tests/fixtures/xp-pdf/classic-content-update.pdf",
+      "git_blob_sha1": "f01d7a9e0b55e7b88c443ae41cd0cb770da7969c",
+      "bytes": 780
+    },
+    {
+      "path": "tests/fixtures/xp-pdf/expected.json",
+      "git_blob_sha1": "8b5a884040955d68721e78379a8d48c1c4e10431",
+      "bytes": 803
+    },
+    {
+      "path": "tests/fixtures/xp-pdf/freed-content.pdf",
+      "git_blob_sha1": "c695dd070c58a95c16680f07368e08e9eaf61eaf",
+      "bytes": 958
+    },
+    {
+      "path": "tests/fixtures/xp-pdf/freed-reference-invalid.pdf",
+      "git_blob_sha1": "2ca4892677ce996bdfd7963bdcbee51a95cc7146",
+      "bytes": 693
+    },
+    {
+      "path": "tests/fixtures/xp-pdf/generation-reuse.pdf",
+      "git_blob_sha1": "9e885676dbfe9ff8454e2098f51830b6ddcfaff3",
+      "bytes": 930
+    },
+    {
+      "path": "tests/fixtures/xp-pdf/metadata-update.pdf",
+      "git_blob_sha1": "b6bc4a49e73e891c8b0364abc795ccc6fd733111",
+      "bytes": 760
+    },
+    {
+      "path": "tests/fixtures/xp-pdf/object-stream-incremental.pdf",
+      "git_blob_sha1": "f834cd5760ce4a5052bc87449a72e29c133c9f14",
+      "bytes": 784
+    },
+    {
+      "path": "tests/fixtures/xp-pdf/object-stream.pdf",
+      "git_blob_sha1": "12731b67c08d564b6f6f5a94a027371c45976558",
+      "bytes": 592
+    },
+    {
+      "path": "tests/fixtures/xp-pdf/orphan-object.pdf",
+      "git_blob_sha1": "72761f1fd4cb6b3a7d4693da973c5dfd70221bb4",
+      "bytes": 841
+    },
+    {
+      "path": "tests/fixtures/xp-pdf/xref-stream-update.pdf",
+      "git_blob_sha1": "f7052f32ccd7ac64a1bf59e1efa77fb114a3a809",
+      "bytes": 834
+    }
+  ],
+  "hash_mismatches": [],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "git_blob_sha1": "4e5b0ffa4a5e1116d6f0b5fdb67f841491fad0e3",
+      "bytes": 69
+    },
+    {
+      "path": ".gitignore",
+      "git_blob_sha1": "11f76a21be609521d3524802e4ddbd9d2dbe9a9a",
+      "bytes": 232
+    },
+    {
+      "path": "Directory.Build.props",
+      "git_blob_sha1": "977ee9455a673d7edb8bfdac70b581a57e3e7855",
+      "bytes": 1016
+    },
+    {
+      "path": "README.md",
+      "git_blob_sha1": "1cf178e85005568e8edcc81680e68dbe31199f82",
+      "bytes": 13746
+    },
+    {
+      "path": "Win7WorkAssistant.sln",
+      "git_blob_sha1": "b645ac9fa468bfd55922634c1564df3c854deb90",
+      "bytes": 5008
+    },
+    {
+      "path": "Xiao.Native.sln",
+      "git_blob_sha1": "a7408a6a5faacac3f7a59235e70036c373a5145b",
+      "bytes": 4269
+    },
+    {
+      "path": "Xiao.OpenCode.sln",
+      "git_blob_sha1": "a7408a6a5faacac3f7a59235e70036c373a5145b",
+      "bytes": 4269
+    },
+    {
+      "path": "assets/ocr/sources.json",
+      "git_blob_sha1": "7267024daef4242af1c48a23858b48c4425ea2b8",
+      "bytes": 1348
+    },
+    {
+      "path": "assets/ocr/tessdata/LICENSE",
+      "git_blob_sha1": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "bytes": 11358
+    },
+    {
+      "path": "assets/ocr/tessdata/chi_sim.traineddata",
+      "git_blob_sha1": "388bac276d033d06e5ed5ba7a7ad14ae58f97dab",
+      "bytes": 2469156
+    },
+    {
+      "path": "assets/ocr/tessdata/chi_tra.traineddata",
+      "git_blob_sha1": "1955cd8b8d076b898616e9c2c1ace65b43105356",
+      "bytes": 2366642
+    },
+    {
+      "path": "assets/ocr/tessdata/eng.traineddata",
+      "git_blob_sha1": "bbef4675053b5b468cdb477053e28b1c698ba08e",
+      "bytes": 4113088
+    },
+    {
+      "path": "assets/ocr/tessdata/osd.traineddata",
+      "git_blob_sha1": "527457ca8f8fe1fda7c2f88bce3c0e4be12be9d0",
+      "bytes": 10562727
+    },
+    {
+      "path": "baselines/windows-xp/README.md",
+      "git_blob_sha1": "09987130912362fa3276d15aa9a781d25ec28eb8",
+      "bytes": 2691
+    },
+    {
+      "path": "baselines/windows-xp/baseline.json",
+      "git_blob_sha1": "5dd237533afee49c208fc78096b25ef7cc43317b",
+      "bytes": 6426
+    },
+    {
+      "path": "baselines/windows-xp/source-lock.json",
+      "git_blob_sha1": "e41bf858c8f66e655646b1f6433120483706aa62",
+      "bytes": 20188
+    },
+    {
+      "path": "config/app.defaults.json",
+      "git_blob_sha1": "3525ad3d0395b1b90941169841f9e2b9abfd3439",
+      "bytes": 343
+    },
+    {
+      "path": "config/kernel.policy.json",
+      "git_blob_sha1": "93c139e9c58c836eb5e94cf644e1225060b8fe14",
+      "bytes": 153
+    },
+    {
+      "path": "design-system/work-assistant/MASTER.md",
+      "git_blob_sha1": "03598a52ff5af193447a7a7fe561cfc73feadbe3",
+      "bytes": 3329
+    },
+    {
+      "path": "docs/AGENT_ARCHITECTURE_RESEARCH_AND_IMPLEMENTATION.md",
+      "git_blob_sha1": "2b033316afe4f2c354054e14f7f01c1f4f2278a7",
+      "bytes": 10437
+    },
+    {
+      "path": "docs/CONTEXT_PERMISSIONS_1.0.5.md",
+      "git_blob_sha1": "12ef14e04623e6155a25e1c4762d519b7100ed47",
+      "bytes": 4931
+    },
+    {
+      "path": "docs/DEFAULT_MODEL_CONFIGURATION.md",
+      "git_blob_sha1": "4831422970aa12658344f30cd28f6daa1809605a",
+      "bytes": 1828
+    },
+    {
+      "path": "docs/DEMO_IMPLEMENTATION_DESIGN.md",
+      "git_blob_sha1": "c4bfd6316d6c217ff4039b8cd488027e29097f11",
+      "bytes": 19480
+    },
+    {
+      "path": "docs/DOCUMENT_WORKFLOW_1.0.4.md",
+      "git_blob_sha1": "824de7ccfebee4c2e17d1ec1950400ba92fe9d20",
+      "bytes": 7656
+    },
+    {
+      "path": "docs/GITHUB_OFFICE_SKILLS_MIGRATION_2026-11-04.md",
+      "git_blob_sha1": "f54b5c72205669a3d05e1b0b2b0809ce10339749",
+      "bytes": 4955
+    },
+    {
+      "path": "docs/GUI_REDESIGN_SPEC.md",
+      "git_blob_sha1": "7e9a8d74e20ce7631b31d1369fafea2a449128db",
+      "bytes": 11157
+    },
+    {
+      "path": "docs/GUI_V3_VALIDATION.md",
+      "git_blob_sha1": "e3676148c731eed30df875ba00aeed56c17b7af3",
+      "bytes": 3025
+    },
+    {
+      "path": "docs/GUI_VISUAL_DIRECTION_V2.md",
+      "git_blob_sha1": "5388d0d12360996364238eb26b591e08f7a4c4ca",
+      "bytes": 4514
+    },
+    {
+      "path": "docs/HOST_INITIALIZATION_FIX_2026-11-01.md",
+      "git_blob_sha1": "b45328d5609df81ec709bc438be5501b70b5adec",
+      "bytes": 1843
+    },
+    {
+      "path": "docs/LINUX_PORT_HANDOFF.md",
+      "git_blob_sha1": "2f3638029cc1224427adde9c5984ac9028bd6cd7",
+      "bytes": 3831
+    },
+    {
+      "path": "docs/LOCAL_SUBAGENTS_2026-11-03.md",
+      "git_blob_sha1": "00e432f34ae833324d88fb179a3526b48bb0846f",
+      "bytes": 5757
+    },
+    {
+      "path": "docs/MODEL_AUTH_FIX_2026-11-01.md",
+      "git_blob_sha1": "69b31857c7871855a03e1ac0036f877a0819ac8d",
+      "bytes": 1260
+    },
+    {
+      "path": "docs/NATIVE_KERNEL_ENHANCEMENT_2026-11-03.md",
+      "git_blob_sha1": "8b22caee098f8c3dd150ec24c6d28b6741776dc1",
+      "bytes": 10276
+    },
+    {
+      "path": "docs/OCR_1.0.6.md",
+      "git_blob_sha1": "780f707cb6aeafd12d2d4a6e9887b687e5cb64f2",
+      "bytes": 5127
+    },
+    {
+      "path": "docs/OPENCODE_ADAPTATION_ITERATION2_2026-11-03.md",
+      "git_blob_sha1": "058ae48ed4a1e4332bbba0876ab778cf7163d398",
+      "bytes": 6408
+    },
+    {
+      "path": "docs/OPENCODE_ADAPTATION_ITERATION3_2026-11-04.md",
+      "git_blob_sha1": "7e105cb47252bb80fc49ccaba2345317b3bb7496",
+      "bytes": 7324
+    },
+    {
+      "path": "docs/OPENCODE_ADAPTATION_ITERATION4_2026-11-04.md",
+      "git_blob_sha1": "c5b01325513eb6e9a741546bd9bb2b41eee8fa13",
+      "bytes": 8820
+    },
+    {
+      "path": "docs/OPENCODE_ADAPTATION_ITERATION5_2026-11-04.md",
+      "git_blob_sha1": "c7e318073af55f6c35f96d34b927cc0c7dfd9bdc",
+      "bytes": 5909
+    },
+    {
+      "path": "docs/OPENCODE_ADAPTATION_ITERATION6_2026-11-04.md",
+      "git_blob_sha1": "5d2649c9698c02d4e8e56b53b27900c2d4cd7c24",
+      "bytes": 8573
+    },
+    {
+      "path": "docs/OPENCODE_ADAPTATION_ITERATION7_2026-11-04.md",
+      "git_blob_sha1": "d0dda8f3befe2004aa410fd0569a9ff71ad9d570",
+      "bytes": 9472
+    },
+    {
+      "path": "docs/OPENCODE_ADAPTATION_ITERATION_LOG.md",
+      "git_blob_sha1": "2c663108e3ec9a66fa083b3fe9f612a37681a175",
+      "bytes": 3946
+    },
+    {
+      "path": "docs/OPENCODE_FULL_PARITY_MATRIX_2026-11-04.md",
+      "git_blob_sha1": "6d4ae18f0eb0aed1ed623eab6a0525cb8fe51522",
+      "bytes": 6121
+    },
+    {
+      "path": "docs/OPENCODE_KERNEL_MIGRATION.md",
+      "git_blob_sha1": "c9213b61d7a37b3abe6bbc386b5ad084541c318a",
+      "bytes": 8971
+    },
+    {
+      "path": "docs/OPENCODE_MIGRATION_20_ROUND_PLAN_2026-11-04.md",
+      "git_blob_sha1": "863330d63f6cbb171e5758f6ecd17e3efb421912",
+      "bytes": 8913
+    },
+    {
+      "path": "docs/OPENCODE_NATIVE_COLLABORATION_2026-11-03.md",
+      "git_blob_sha1": "de5a5c675e5cf1c086b456dad0266bc498c44bbf",
+      "bytes": 6688
+    },
+    {
+      "path": "docs/PDF_READ_FAILURE_1.0.5.md",
+      "git_blob_sha1": "9a825ec5dac04a80381febd67ffba59d4e1a7b01",
+      "bytes": 4231
+    },
+    {
+      "path": "docs/PORTABLE_BASELINE_2026-11-04.md",
+      "git_blob_sha1": "096234eaf29027b47ecc737587d6a4025fa66ec3",
+      "bytes": 3664
+    },
+    {
+      "path": "docs/PRODUCTION_FIXES_2026-11-01.md",
+      "git_blob_sha1": "c5e9b002db42efd60aee8a39f69d0ee6b4d52121",
+      "bytes": 14417
+    },
+    {
+      "path": "docs/PRODUCTION_GAP_REVIEW_2026-11-01.md",
+      "git_blob_sha1": "2bed2bb32b8548e80117a501e3a2e3407eabb4fa",
+      "bytes": 21252
+    },
+    {
+      "path": "docs/PRODUCTION_IMPLEMENTATION_PLAN.md",
+      "git_blob_sha1": "ef48c48894ff7d97acff24e25fd4bbc8c7f1b29f",
+      "bytes": 28107
+    },
+    {
+      "path": "docs/PRODUCTION_PROGRESS.md",
+      "git_blob_sha1": "77cd9ab8335eb9abb3480bbb2475ea4980e60cda",
+      "bytes": 7474
+    },
+    {
+      "path": "docs/PROJECTS_AND_CONVERSATIONS.md",
+      "git_blob_sha1": "54d0835d18749e2da3bfe1be402e232c72758cf4",
+      "bytes": 3486
+    },
+    {
+      "path": "docs/RELEASE_1.0.7.md",
+      "git_blob_sha1": "3b6b5991691e66834786500ea6d852c6a1d92b2b",
+      "bytes": 6826
+    },
+    {
+      "path": "docs/SKILLS_AND_GUI_V4_2026-11-01.md",
+      "git_blob_sha1": "80dbdff73d3081c2e4e596fc1f4e0d167ba36d8c",
+      "bytes": 4141
+    },
+    {
+      "path": "docs/SOURCE_LINES.json",
+      "git_blob_sha1": "96d2b25eb1b9247fccb218a7791b09793e3611d7",
+      "bytes": 36218
+    },
+    {
+      "path": "docs/SOURCE_LINES.md",
+      "git_blob_sha1": "08be1d9ebed2618ffba745462ecb9bf70a9e825f",
+      "bytes": 1252
+    },
+    {
+      "path": "docs/THIRD_PARTY_NOTICES.md",
+      "git_blob_sha1": "a0b227b81d26046adb8eba5fa95b0f6228773e50",
+      "bytes": 3549
+    },
+    {
+      "path": "docs/TOOL_HANDOFF.md",
+      "git_blob_sha1": "831ee63e4f0f0728779d9d45f116d3ed96671497",
+      "bytes": 3197
+    },
+    {
+      "path": "docs/UPSTREAM_DOCUMENT_RELIABILITY_RESEARCH.md",
+      "git_blob_sha1": "f6cb74cc51882558869de197d3cc085a84561c5e",
+      "bytes": 10685
+    },
+    {
+      "path": "docs/USABILITY_FIXES_1.0.1.md",
+      "git_blob_sha1": "aa0d0018d63985a719aae407204efe515c427a97",
+      "bytes": 4577
+    },
+    {
+      "path": "docs/USABILITY_FIXES_1.0.2.md",
+      "git_blob_sha1": "e981e086e0b4ba8ce559a19a91b7992924bb6595",
+      "bytes": 4484
+    },
+    {
+      "path": "docs/WINDOWS_XP_PRODUCT_BASELINE.md",
+      "git_blob_sha1": "9d2302de2ea58761bb0d26fdb93c8eb82e7c45f4",
+      "bytes": 16640
+    },
+    {
+      "path": "docs/WORD_RELIABILITY_1.0.3.md",
+      "git_blob_sha1": "3b01e6fc5fed77f6f796c246250d1541326d86de",
+      "bytes": 4135
+    },
+    {
+      "path": "docs/XP_PORT_1.0.6.md",
+      "git_blob_sha1": "404fed44c7aae4374a02bf541aa7447d3ee9980d",
+      "bytes": 14866
+    },
+    {
+      "path": "docs/XP_PORT_1.0.6_DELIVERY_REPORT.md",
+      "git_blob_sha1": "f955a6bbdbcccf8acdfc0c75aacd73979ab7ea8e",
+      "bytes": 8442
+    },
+    {
+      "path": "docs/XP_PORT_1.0.6_REVIEW.md",
+      "git_blob_sha1": "0d0fae89c9cbf1f2a0b9c618c9bef1d3b43ddc98",
+      "bytes": 14851
+    },
+    {
+      "path": "docs/XP_PORT_1.0.6_REVIEW_R2.md",
+      "git_blob_sha1": "1bae8fff0b89e30a2673c5e0daed5b9159efbf0c",
+      "bytes": 12213
+    },
+    {
+      "path": "docs/XP_PORT_1.0.6_REVIEW_R3.md",
+      "git_blob_sha1": "117b481dec9a188bf1d481b8ca7a4544d398f2d9",
+      "bytes": 7748
+    },
+    {
+      "path": "docs/previews/studio-completed-compact.png",
+      "git_blob_sha1": "8017c8bc2a750ce2ca83e91713dc6cf545bfc2ca",
+      "bytes": 32812
+    },
+    {
+      "path": "docs/previews/studio-completed.png",
+      "git_blob_sha1": "97434b1cf557aadd01ac6375ea1aab8e2cf1bd6e",
+      "bytes": 47366
+    },
+    {
+      "path": "docs/previews/studio-drawer.png",
+      "git_blob_sha1": "5bb6a37a008b4d28b89ea7aef24a3fb52866f83c",
+      "bytes": 55098
+    },
+    {
+      "path": "docs/previews/studio-home-compact.png",
+      "git_blob_sha1": "b8ee56ec708a935a72f74497719a702422b829e6",
+      "bytes": 28386
+    },
+    {
+      "path": "docs/previews/studio-home.png",
+      "git_blob_sha1": "acadcc2fce117fc905cd758a93ab8851352da11f",
+      "bytes": 45119
+    },
+    {
+      "path": "docs/previews/studio-settings.png",
+      "git_blob_sha1": "96ae5d16b128a450f43d55263ad6b646376d43c8",
+      "bytes": 34291
+    },
+    {
+      "path": "docs/previews/v1-completed.png",
+      "git_blob_sha1": "0c82dde4be02a86b02956a6072e89014c5adf73d",
+      "bytes": 47515
+    },
+    {
+      "path": "docs/previews/v1-drawer.png",
+      "git_blob_sha1": "b443d24d373e3517f08551a86c01111f9bbc1abd",
+      "bytes": 55177
+    },
+    {
+      "path": "docs/previews/v1-home.png",
+      "git_blob_sha1": "0dcdafcbda9030bd1a7524283d20c873cd58459a",
+      "bytes": 53384
+    },
+    {
+      "path": "docs/screenshots/task-completed.png",
+      "git_blob_sha1": "a291236f991c8e125d83d3f80cf272507d2f1e71",
+      "bytes": 54942
+    },
+    {
+      "path": "docs/screenshots/ui-selftest.txt",
+      "git_blob_sha1": "b95403b933626562a11cffc89b3d24baafea5553",
+      "bytes": 836
+    },
+    {
+      "path": "docs/screenshots/welcome-unauthorized.png",
+      "git_blob_sha1": "5c19fed55f545bd3529390b01cd5e7457e19e6d9",
+      "bytes": 42794
+    },
+    {
+      "path": "docs/screenshots/window-1024x768.png",
+      "git_blob_sha1": "537882d4e0cf92172a1f4906fa9711485a57cfc4",
+      "bytes": 59524
+    },
+    {
+      "path": "docs/third-party-licenses/Apache-2.0.txt",
+      "git_blob_sha1": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "bytes": 11358
+    },
+    {
+      "path": "docs/third-party-licenses/CsvHelper-33.0.1/csvhelper.nuspec",
+      "git_blob_sha1": "7fd3546240539042445d3a321511426f7886083e",
+      "bytes": 3162
+    },
+    {
+      "path": "docs/third-party-licenses/HarfBuzzSharp-7.3.0.2/LICENSE.txt",
+      "git_blob_sha1": "8532c34b194d2413d8d4c87f2b94d697ce470581",
+      "bytes": 1110
+    },
+    {
+      "path": "docs/third-party-licenses/HarfBuzzSharp-7.3.0.2/THIRD-PARTY-NOTICES.txt",
+      "git_blob_sha1": "02f9d113ec2763c89c4c33af3e9c55d522fbef06",
+      "bytes": 137059
+    },
+    {
+      "path": "docs/third-party-licenses/HarfBuzzSharp-7.3.0.2/harfbuzzsharp.nuspec",
+      "git_blob_sha1": "cb0a7a1ce6c113be686b8da68ce5877b3f22522b",
+      "bytes": 4898
+    },
+    {
+      "path": "docs/third-party-licenses/HarfBuzzSharp.NativeAssets.Win32-7.3.0.2/LICENSE.txt",
+      "git_blob_sha1": "8532c34b194d2413d8d4c87f2b94d697ce470581",
+      "bytes": 1110
+    },
+    {
+      "path": "docs/third-party-licenses/HarfBuzzSharp.NativeAssets.Win32-7.3.0.2/THIRD-PARTY-NOTICES.txt",
+      "git_blob_sha1": "02f9d113ec2763c89c4c33af3e9c55d522fbef06",
+      "bytes": 137059
+    },
+    {
+      "path": "docs/third-party-licenses/HarfBuzzSharp.NativeAssets.Win32-7.3.0.2/harfbuzzsharp.nativeassets.win32.nuspec",
+      "git_blob_sha1": "2e9d134a22c1fe380e7422ae5f5a6e3830841e9d",
+      "bytes": 1545
+    },
+    {
+      "path": "docs/third-party-licenses/HarfBuzzSharp.NativeAssets.macOS-7.3.0.2/LICENSE.txt",
+      "git_blob_sha1": "8532c34b194d2413d8d4c87f2b94d697ce470581",
+      "bytes": 1110
+    },
+    {
+      "path": "docs/third-party-licenses/HarfBuzzSharp.NativeAssets.macOS-7.3.0.2/THIRD-PARTY-NOTICES.txt",
+      "git_blob_sha1": "02f9d113ec2763c89c4c33af3e9c55d522fbef06",
+      "bytes": 137059
+    },
+    {
+      "path": "docs/third-party-licenses/HarfBuzzSharp.NativeAssets.macOS-7.3.0.2/harfbuzzsharp.nativeassets.macos.nuspec",
+      "git_blob_sha1": "f208b67de6514b00500413550bd5012f62747d9b",
+      "bytes": 1646
+    },
+    {
+      "path": "docs/third-party-licenses/Microsoft.Bcl.AsyncInterfaces-8.0.0/LICENSE.TXT",
+      "git_blob_sha1": "984713a49622a96da110443c15477613bc12656b",
+      "bytes": 1116
+    },
+    {
+      "path": "docs/third-party-licenses/Microsoft.Bcl.AsyncInterfaces-8.0.0/THIRD-PARTY-NOTICES.TXT",
+      "git_blob_sha1": "4b40333f72ce4ff133010f8f81cb707d2a276ad2",
+      "bytes": 67639
+    },
+    {
+      "path": "docs/third-party-licenses/Microsoft.Bcl.AsyncInterfaces-8.0.0/microsoft.bcl.asyncinterfaces.nuspec",
+      "git_blob_sha1": "fafb2c6b4138bb01f1f1936858eaaece03653dbc",
+      "bytes": 1561
+    },
+    {
+      "path": "docs/third-party-licenses/Microsoft.Bcl.HashCode-1.1.1/LICENSE.TXT",
+      "git_blob_sha1": "984713a49622a96da110443c15477613bc12656b",
+      "bytes": 1116
+    },
+    {
+      "path": "docs/third-party-licenses/Microsoft.Bcl.HashCode-1.1.1/THIRD-PARTY-NOTICES.TXT",
+      "git_blob_sha1": "77a243efad2de13ad70a8d0882d02fbcf3f54f6b",
+      "bytes": 18511
+    },
+    {
+      "path": "docs/third-party-licenses/Microsoft.Bcl.HashCode-1.1.1/microsoft.bcl.hashcode.nuspec",
+      "git_blob_sha1": "b798a42e5202b5a81e8d3d54b7cc65320eb20031",
+      "bytes": 1617
+    },
+    {
+      "path": "docs/third-party-licenses/Microsoft.CSharp-4.7.0/LICENSE.TXT",
+      "git_blob_sha1": "984713a49622a96da110443c15477613bc12656b",
+      "bytes": 1116
+    },
+    {
+      "path": "docs/third-party-licenses/Microsoft.CSharp-4.7.0/THIRD-PARTY-NOTICES.TXT",
+      "git_blob_sha1": "77a243efad2de13ad70a8d0882d02fbcf3f54f6b",
+      "bytes": 18511
+    },
+    {
+      "path": "docs/third-party-licenses/Microsoft.CSharp-4.7.0/microsoft.csharp.nuspec",
+      "git_blob_sha1": "bc9e14944741b25102722509f7b8337c118b12f9",
+      "bytes": 3525
+    },
+    {
+      "path": "docs/third-party-licenses/Newtonsoft.Json-13.0.3/LICENSE.md",
+      "git_blob_sha1": "dfaadbe4938e4994f3975c73701c9f9c7735a60b",
+      "bytes": 1084
+    },
+    {
+      "path": "docs/third-party-licenses/Newtonsoft.Json-13.0.3/newtonsoft.json.nuspec",
+      "git_blob_sha1": "97d1d959397b9e6a9db9559448af703bf4faab50",
+      "bytes": 2373
+    },
+    {
+      "path": "docs/third-party-licenses/PdfPig-0.1.9/pdfpig.nuspec",
+      "git_blob_sha1": "edcd965435378420b0d57d52973019218430c5a8",
+      "bytes": 1897
+    },
+    {
+      "path": "docs/third-party-licenses/PdfPig.Rendering.Skia-0.1.9.1/pdfpig.rendering.skia.nuspec",
+      "git_blob_sha1": "eb4380804dcd6ac4f00809be1073a3e500e75616",
+      "bytes": 2772
+    },
+    {
+      "path": "docs/third-party-licenses/SQLite-reference.md",
+      "git_blob_sha1": "10595448d9f69bc4f25643a55285b559dad92ca3",
+      "bytes": 598
+    },
+    {
+      "path": "docs/third-party-licenses/SkiaSharp-2.88.9/LICENSE.txt",
+      "git_blob_sha1": "8532c34b194d2413d8d4c87f2b94d697ce470581",
+      "bytes": 1110
+    },
+    {
+      "path": "docs/third-party-licenses/SkiaSharp-2.88.9/THIRD-PARTY-NOTICES.txt",
+      "git_blob_sha1": "02f9d113ec2763c89c4c33af3e9c55d522fbef06",
+      "bytes": 137059
+    },
+    {
+      "path": "docs/third-party-licenses/SkiaSharp-2.88.9/skiasharp.nuspec",
+      "git_blob_sha1": "962be9e3f9576335d860d7fa9d2553ab5c1d75c7",
+      "bytes": 5121
+    },
+    {
+      "path": "docs/third-party-licenses/SkiaSharp.HarfBuzz-2.88.8/LICENSE.txt",
+      "git_blob_sha1": "8532c34b194d2413d8d4c87f2b94d697ce470581",
+      "bytes": 1110
+    },
+    {
+      "path": "docs/third-party-licenses/SkiaSharp.HarfBuzz-2.88.8/skiasharp.harfbuzz.nuspec",
+      "git_blob_sha1": "ea55d0ab48518a36d6e5a3858e25d17fe959452d",
+      "bytes": 2345
+    },
+    {
+      "path": "docs/third-party-licenses/SkiaSharp.NativeAssets.Win32-2.88.9/LICENSE.txt",
+      "git_blob_sha1": "8532c34b194d2413d8d4c87f2b94d697ce470581",
+      "bytes": 1110
+    },
+    {
+      "path": "docs/third-party-licenses/SkiaSharp.NativeAssets.Win32-2.88.9/THIRD-PARTY-NOTICES.txt",
+      "git_blob_sha1": "02f9d113ec2763c89c4c33af3e9c55d522fbef06",
+      "bytes": 137059
+    },
+    {
+      "path": "docs/third-party-licenses/SkiaSharp.NativeAssets.Win32-2.88.9/skiasharp.nativeassets.win32.nuspec",
+      "git_blob_sha1": "89be15b0aab06647d445cf4483f900869fbacf47",
+      "bytes": 1756
+    },
+    {
+      "path": "docs/third-party-licenses/SkiaSharp.NativeAssets.macOS-2.88.9/LICENSE.txt",
+      "git_blob_sha1": "8532c34b194d2413d8d4c87f2b94d697ce470581",
+      "bytes": 1110
+    },
+    {
+      "path": "docs/third-party-licenses/SkiaSharp.NativeAssets.macOS-2.88.9/THIRD-PARTY-NOTICES.txt",
+      "git_blob_sha1": "02f9d113ec2763c89c4c33af3e9c55d522fbef06",
+      "bytes": 137059
+    },
+    {
+      "path": "docs/third-party-licenses/SkiaSharp.NativeAssets.macOS-2.88.9/skiasharp.nativeassets.macos.nuspec",
+      "git_blob_sha1": "b8588255db9b570bb5e0bb83dc01d7c9e8e7fe6f",
+      "bytes": 1857
+    },
+    {
+      "path": "docs/third-party-licenses/Stub.System.Data.SQLite.Core.NetFramework-1.0.119/stub.system.data.sqlite.core.netframework.nuspec",
+      "git_blob_sha1": "0e97527526ea75bb727647e1aac5e57ac5a3364a",
+      "bytes": 1266
+    },
+    {
+      "path": "docs/third-party-licenses/System.Buffers-4.5.1/LICENSE.TXT",
+      "git_blob_sha1": "984713a49622a96da110443c15477613bc12656b",
+      "bytes": 1116
+    },
+    {
+      "path": "docs/third-party-licenses/System.Buffers-4.5.1/THIRD-PARTY-NOTICES.TXT",
+      "git_blob_sha1": "db542ca24f27f1127caa08421a317ddb521d9cb7",
+      "bytes": 15526
+    },
+    {
+      "path": "docs/third-party-licenses/System.Buffers-4.5.1/system.buffers.nuspec",
+      "git_blob_sha1": "fbcedc78c68636b84ceb310ab37fd5f25be4fabc",
+      "bytes": 2275
+    },
+    {
+      "path": "docs/third-party-licenses/System.Data.SQLite.Core-1.0.119/system.data.sqlite.core.nuspec",
+      "git_blob_sha1": "6ed4c2040ba9d831ba3109647c9d801efc7d2839",
+      "bytes": 2058
+    },
+    {
+      "path": "docs/third-party-licenses/System.Memory-4.5.5/LICENSE.TXT",
+      "git_blob_sha1": "984713a49622a96da110443c15477613bc12656b",
+      "bytes": 1116
+    },
+    {
+      "path": "docs/third-party-licenses/System.Memory-4.5.5/THIRD-PARTY-NOTICES.TXT",
+      "git_blob_sha1": "db542ca24f27f1127caa08421a317ddb521d9cb7",
+      "bytes": 15526
+    },
+    {
+      "path": "docs/third-party-licenses/System.Memory-4.5.5/system.memory.nuspec",
+      "git_blob_sha1": "2c1dc8363f1dab6f84a85efc8801c985a21bbb50",
+      "bytes": 5277
+    },
+    {
+      "path": "docs/third-party-licenses/System.Numerics.Vectors-4.5.0/LICENSE.TXT",
+      "git_blob_sha1": "984713a49622a96da110443c15477613bc12656b",
+      "bytes": 1116
+    },
+    {
+      "path": "docs/third-party-licenses/System.Numerics.Vectors-4.5.0/THIRD-PARTY-NOTICES.TXT",
+      "git_blob_sha1": "db542ca24f27f1127caa08421a317ddb521d9cb7",
+      "bytes": 15526
+    },
+    {
+      "path": "docs/third-party-licenses/System.Numerics.Vectors-4.5.0/system.numerics.vectors.nuspec",
+      "git_blob_sha1": "8c699377129047e6904881426a50739b7ea30ee3",
+      "bytes": 2503
+    },
+    {
+      "path": "docs/third-party-licenses/System.Runtime.CompilerServices.Unsafe-4.5.3/LICENSE.TXT",
+      "git_blob_sha1": "984713a49622a96da110443c15477613bc12656b",
+      "bytes": 1116
+    },
+    {
+      "path": "docs/third-party-licenses/System.Runtime.CompilerServices.Unsafe-4.5.3/THIRD-PARTY-NOTICES.TXT",
+      "git_blob_sha1": "db542ca24f27f1127caa08421a317ddb521d9cb7",
+      "bytes": 15526
+    },
+    {
+      "path": "docs/third-party-licenses/System.Runtime.CompilerServices.Unsafe-4.5.3/system.runtime.compilerservices.unsafe.nuspec",
+      "git_blob_sha1": "1f31974582b98a6c2d00e31aca4f85a410e218c7",
+      "bytes": 1902
+    },
+    {
+      "path": "docs/third-party-licenses/System.Threading.Tasks.Extensions-4.5.4/LICENSE.TXT",
+      "git_blob_sha1": "984713a49622a96da110443c15477613bc12656b",
+      "bytes": 1116
+    },
+    {
+      "path": "docs/third-party-licenses/System.Threading.Tasks.Extensions-4.5.4/THIRD-PARTY-NOTICES.TXT",
+      "git_blob_sha1": "db542ca24f27f1127caa08421a317ddb521d9cb7",
+      "bytes": 15526
+    },
+    {
+      "path": "docs/third-party-licenses/System.Threading.Tasks.Extensions-4.5.4/system.threading.tasks.extensions.nuspec",
+      "git_blob_sha1": "2eda760fe5be75631a4057772bf2aba50470381f",
+      "bytes": 2978
+    },
+    {
+      "path": "docs/third-party-licenses/Tesseract-5.2.0/tesseract.nuspec",
+      "git_blob_sha1": "28d0e2295f2759bb1ce685da54ef6010e9b7992d",
+      "bytes": 1425
+    },
+    {
+      "path": "docs/third-party-licenses/dotnet-MIT.txt",
+      "git_blob_sha1": "984713a49622a96da110443c15477613bc12656b",
+      "bytes": 1116
+    },
+    {
+      "path": "examples/project-configuration/AGENTS.md",
+      "git_blob_sha1": "9f172ae4d4252a14becb9c0fbe3709ea65e2171b",
+      "bytes": 148
+    },
+    {
+      "path": "examples/project-configuration/README.md",
+      "git_blob_sha1": "38e934c9895c86d634760a702e7a0ea1afb0dfde",
+      "bytes": 1254
+    },
+    {
+      "path": "examples/project-configuration/inputs/text-edit-demo.txt",
+      "git_blob_sha1": "d1c59bd568305df8015f701350ff7ef776fd0186",
+      "bytes": 114
+    },
+    {
+      "path": "installer/PORTABLE_README.txt",
+      "git_blob_sha1": "406a2f5886310584161dcb43568550464888a2f8",
+      "bytes": 4122
+    },
+    {
+      "path": "installer/PORTABLE_README_1.0.1.txt",
+      "git_blob_sha1": "a513c2f994433c249cf6207ee767b0187826174b",
+      "bytes": 3196
+    },
+    {
+      "path": "installer/PORTABLE_README_1.0.2.txt",
+      "git_blob_sha1": "5d1146b35670982c05724b73a75444d586d87336",
+      "bytes": 3059
+    },
+    {
+      "path": "installer/PORTABLE_README_1.0.3.txt",
+      "git_blob_sha1": "582269414a6da3b84bb6fc49a4bbe52371490618",
+      "bytes": 3665
+    },
+    {
+      "path": "installer/PORTABLE_README_1.0.4.txt",
+      "git_blob_sha1": "151b847cd7348b3f83e798379b8a899ca295cf4e",
+      "bytes": 3909
+    },
+    {
+      "path": "installer/PORTABLE_README_1.0.5.txt",
+      "git_blob_sha1": "6fdac490c1a68831538a598a2394d7d0251c6db3",
+      "bytes": 4712
+    },
+    {
+      "path": "installer/PORTABLE_README_1.0.6.txt",
+      "git_blob_sha1": "9756002b1bd8641eef01fd7455efb78901b57b17",
+      "bytes": 5552
+    },
+    {
+      "path": "installer/PORTABLE_README_1.0.7.txt",
+      "git_blob_sha1": "d532c47f53c1ad63bab0395a89a377c63128d910",
+      "bytes": 2359
+    },
+    {
+      "path": "installer/Start-Xiao-Ocr.cmd",
+      "git_blob_sha1": "e0a273901379355c4f248bb968676f9134162b63",
+      "bytes": 3804
+    },
+    {
+      "path": "installer/Start-Xiao-Portable.cmd",
+      "git_blob_sha1": "360378112cab9018378012cb87d1008aab20b610",
+      "bytes": 2665
+    },
+    {
+      "path": "installer/Start-Xiao.cmd",
+      "git_blob_sha1": "4a29e8bd2111ed52c0888ddae4fbde3e1fefd754",
+      "bytes": 3057
+    },
+    {
+      "path": "installer/WorkAssistant.iss",
+      "git_blob_sha1": "d20473a1cefa29a3e41bf50a0653e9277fb68658",
+      "bytes": 2918
+    },
+    {
+      "path": "installer/ocr-prerequisites.json",
+      "git_blob_sha1": "dffa0457f9d7d68aa487fcd9947fc0ec6d64b1d3",
+      "bytes": 591
+    },
+    {
+      "path": "installer/xp/PORTABLE_README_1.0.6_XP.txt",
+      "git_blob_sha1": "cda01b868c99be3772c6e05e3e8e619d9af63635",
+      "bytes": 3235
+    },
+    {
+      "path": "installer/xp/PORTABLE_README_1.0.7_XP.txt",
+      "git_blob_sha1": "39e8aa8f6007537887f056ab35c2626113129e5b",
+      "bytes": 2335
+    },
+    {
+      "path": "installer/xp/Start-Xiao-Xp.cmd",
+      "git_blob_sha1": "efb27c045baad256d3a4dcd64846977018fb9ed9",
+      "bytes": 3915
+    },
+    {
+      "path": "migration/.dockerignore",
+      "git_blob_sha1": "abf4d7353604d9937e59c32c0df2fd9d89e66c58",
+      "bytes": 67
+    },
+    {
+      "path": "migration/.gitignore",
+      "git_blob_sha1": "e7b2740858aadd64f87a9cc166bc1203b2ce85d9",
+      "bytes": 48
+    },
+    {
+      "path": "migration/README.md",
+      "git_blob_sha1": "3b6ffe69dd63f3e0c09171340fa9698a3cadec94",
+      "bytes": 4417
+    },
+    {
+      "path": "migration/SOURCE_SCALE.json",
+      "git_blob_sha1": "e2904ffc4649f8f554d262fa52b60c36ee4465ee",
+      "bytes": 166380
+    },
+    {
+      "path": "migration/SOURCE_SCALE.md",
+      "git_blob_sha1": "efb4cbf870e05e4a45d68d2d8346a7092d4916d7",
+      "bytes": 921
+    },
+    {
+      "path": "migration/UPSTREAM.lock.json",
+      "git_blob_sha1": "c4ca4de0523a1aeb78b1e81c0df76dcd29c53f50",
+      "bytes": 574
+    },
+    {
+      "path": "migration/deploy/Dockerfile",
+      "git_blob_sha1": "bbd0ee2878f757daf9bdf8d7268c3b256e3789ef",
+      "bytes": 384
+    },
+    {
+      "path": "migration/deploy/compose.yaml",
+      "git_blob_sha1": "dcf4098860712c3f8a4b44ead787bd2c3b06f39a",
+      "bytes": 405
+    },
+    {
+      "path": "migration/deploy/nginx.conf.example",
+      "git_blob_sha1": "8368009288303a9f5d7bad6ba4e4781b9bb1fd8d",
+      "bytes": 566
+    },
+    {
+      "path": "migration/gateway/LICENSES/OpenCode-MIT.txt",
+      "git_blob_sha1": "6439474beed8e0271df9862eff97ffd70ec2464c",
+      "bytes": 1065
+    },
+    {
+      "path": "migration/gateway/package-lock.json",
+      "git_blob_sha1": "057dee6b1f13888b91e5815a025762579e3ce4ad",
+      "bytes": 5739
+    },
+    {
+      "path": "migration/gateway/package.json",
+      "git_blob_sha1": "c6a486888a2026216f0da8335f072b05eb3e7add",
+      "bytes": 277
+    },
+    {
+      "path": "migration/gateway/src/bridge-mcp.mjs",
+      "git_blob_sha1": "26f359a524bc88a9183eb7c7df12d5c287b4f95e",
+      "bytes": 1968
+    },
+    {
+      "path": "migration/gateway/src/opencode-runtime.mjs",
+      "git_blob_sha1": "49dc4416485b4a2cde92790c16a933d6c53c20e1",
+      "bytes": 9570
+    },
+    {
+      "path": "migration/gateway/src/protocol.mjs",
+      "git_blob_sha1": "d746a6fd84f7b5a9ddf77d32f5bcbd00fda34201",
+      "bytes": 2799
+    },
+    {
+      "path": "migration/gateway/src/server.mjs",
+      "git_blob_sha1": "e3089358979b6b3b6947c40978287cafaa0ced26",
+      "bytes": 10381
+    },
+    {
+      "path": "migration/gateway/test/protocol.test.mjs",
+      "git_blob_sha1": "c2bfbe0057fd5f17875a0db03277372cc775b45c",
+      "bytes": 5318
+    },
+    {
+      "path": "migration/office-skills.sources.json",
+      "git_blob_sha1": "63d9cf6e459cb71f43f2e64830883e1fe2a90f23",
+      "bytes": 4112
+    },
+    {
+      "path": "migration/protocol/run.schema.json",
+      "git_blob_sha1": "9ec4988eec3db87cf7ee8cc26709347292e47cb0",
+      "bytes": 1359
+    },
+    {
+      "path": "migration/scripts/Count-MigrationSource.py",
+      "git_blob_sha1": "61972680c6413e533c45e448a57cf541cfdf602a",
+      "bytes": 3695
+    },
+    {
+      "path": "migration/scripts/Initialize-Desktop.ps1",
+      "git_blob_sha1": "866ed8b892e5d29bc3c81a2bcd7d60c6486194b4",
+      "bytes": 1793
+    },
+    {
+      "path": "migration/scripts/Start-Gateway.ps1",
+      "git_blob_sha1": "cebe39ff9eaf3c1e39ba0a468734a34579043618",
+      "bytes": 954
+    },
+    {
+      "path": "migration/scripts/Start-Xiao.ps1",
+      "git_blob_sha1": "99a96868e5d76f3c9f1a1876d092dc2ef7aa8802",
+      "bytes": 1963
+    },
+    {
+      "path": "samples/workspace/inputs/sales-a.csv",
+      "git_blob_sha1": "68fe9b3154c890915f95932f354d85ae0266942c",
+      "bytes": 57
+    },
+    {
+      "path": "samples/workspace/inputs/sales-b.csv",
+      "git_blob_sha1": "58b1c3ed0a1e09877f329e8a107f4ade86e32689",
+      "bytes": 55
+    },
+    {
+      "path": "samples/workspace/inputs/sales.xlsx",
+      "git_blob_sha1": "7d1764c8462eb77c28a8228cef98829944d99742",
+      "bytes": 2158
+    },
+    {
+      "path": "samples/workspace/inputs/产品说明.pdf",
+      "git_blob_sha1": "c2bc399832bfcaf06a4469939b8fcea8cccff1f1",
+      "bytes": 1871
+    },
+    {
+      "path": "scripts/Apply-DualCompileSources.py",
+      "git_blob_sha1": "ca2e9c9f1e2f4b82ccab5d7c15db5f2f138cbd94",
+      "bytes": 6216
+    },
+    {
+      "path": "scripts/Audit-WindowsXpBaseline.py",
+      "git_blob_sha1": "3f7758bbef5d46cebc5330318f5b87668c2cea60",
+      "bytes": 9626
+    },
+    {
+      "path": "scripts/Audit-XpPackage.py",
+      "git_blob_sha1": "74f490d53c6d9853e7c93ae26746968ab2c81a6f",
+      "bytes": 10001
+    },
+    {
+      "path": "scripts/Build-PortableBaseline.py",
+      "git_blob_sha1": "78e1bc694ce876318f1399936aab1d37eaec6410",
+      "bytes": 6620
+    },
+    {
+      "path": "scripts/Build-PortableRelease.py",
+      "git_blob_sha1": "68f2bad11bfa41ea2d7da0ef0202299577bcf85c",
+      "bytes": 6518
+    },
+    {
+      "path": "scripts/Build-PortableRelease_1_0_2.py",
+      "git_blob_sha1": "2d327330fcbeb94b03026982684696bf31025b4a",
+      "bytes": 7036
+    },
+    {
+      "path": "scripts/Build-PortableRelease_1_0_3.py",
+      "git_blob_sha1": "795eddef12fe60a822df1bcd44ccb64d7e668af1",
+      "bytes": 7048
+    },
+    {
+      "path": "scripts/Build-PortableRelease_1_0_4.py",
+      "git_blob_sha1": "bb708262253ff481a30f2e5b3c41dbe3792998c0",
+      "bytes": 7108
+    },
+    {
+      "path": "scripts/Build-PortableRelease_1_0_5.py",
+      "git_blob_sha1": "ab88f736ccb7fd2d0d668f29e78ccfea11c54d8e",
+      "bytes": 7038
+    },
+    {
+      "path": "scripts/Build-PortableRelease_1_0_6.py",
+      "git_blob_sha1": "f40780737df120239aa1f780d5c0b46367d89cb7",
+      "bytes": 267
+    },
+    {
+      "path": "scripts/Build-PortableRelease_1_0_6_Xp.py",
+      "git_blob_sha1": "8587abc50a547b22c7b8017bbfae0fe19e0c92b2",
+      "bytes": 296
+    },
+    {
+      "path": "scripts/Build-PortableRelease_1_0_7.py",
+      "git_blob_sha1": "6f9cd81f4dcced74feae58b022844f1356520958",
+      "bytes": 11284
+    },
+    {
+      "path": "scripts/Build-SignedRelease.ps1",
+      "git_blob_sha1": "2bc8285d695af0e225e6d65df69bfa076d60bf13",
+      "bytes": 5173
+    },
+    {
+      "path": "scripts/Collect-ThirdPartyNotices.py",
+      "git_blob_sha1": "7520309cd454b3b2eef6a38bd05186824bc3d761",
+      "bytes": 2789
+    },
+    {
+      "path": "scripts/Count-SourceLines.py",
+      "git_blob_sha1": "2e0371cd60f5f627b289ea3d6c6ae6b13dbc2f52",
+      "bytes": 2977
+    },
+    {
+      "path": "scripts/Generate-XpPdfRegressionFixtures.py",
+      "git_blob_sha1": "8dc748a15ac8bdd891acdad440cf7e059d7ec15f",
+      "bytes": 4703
+    },
+    {
+      "path": "scripts/Generate-XpPdfText.py",
+      "git_blob_sha1": "d17cbddeadac1c40848a968f759dbb8c5406be07",
+      "bytes": 322
+    },
+    {
+      "path": "scripts/Prepare-AppLocalVc.py",
+      "git_blob_sha1": "9dfe074cf7aac1cc04a1778a3d214ab3da7e1605",
+      "bytes": 4622
+    },
+    {
+      "path": "scripts/Prepare-OcrAssets.py",
+      "git_blob_sha1": "3749aaedc6f7aed05fdf781d82aeceb374dc1a90",
+      "bytes": 958
+    },
+    {
+      "path": "scripts/Run-AppLocalOcrVerification.py",
+      "git_blob_sha1": "638f3373145272387245b5d1d41c14e4af214cd9",
+      "bytes": 2163
+    },
+    {
+      "path": "scripts/Run-ReleaseVerification.py",
+      "git_blob_sha1": "592f9fa49ba17f4b06b5893e1536e9447e1c7da3",
+      "bytes": 2947
+    },
+    {
+      "path": "scripts/Update-ReleaseEvidence_1_0_7.py",
+      "git_blob_sha1": "27c10362d033c975b20481c32a2e1da7229b3ad2",
+      "bytes": 2726
+    },
+    {
+      "path": "scripts/Verify-PortableRelease_1_0_7.py",
+      "git_blob_sha1": "26ad452011cd961add7708498ad4cef1cb3f0857",
+      "bytes": 3425
+    },
+    {
+      "path": "scripts/Verify-XpReleaseGates.py",
+      "git_blob_sha1": "d3ee804090cbecc0b591aa11f3d0077da64881d6",
+      "bytes": 2544
+    },
+    {
+      "path": "skills/document-assistant/SKILL.md",
+      "git_blob_sha1": "db39bf753e993874bae6905c63806498df5d54e1",
+      "bytes": 1310
+    },
+    {
+      "path": "skills/document-assistant/skill.json",
+      "git_blob_sha1": "c3c62b18493a540f85e8cfed144fd6e86e77e442",
+      "bytes": 509
+    },
+    {
+      "path": "skills/file-organizer/SKILL.md",
+      "git_blob_sha1": "b52721b038864d964df64f44ed727f5cf2bd5063",
+      "bytes": 374
+    },
+    {
+      "path": "skills/file-organizer/skill.json",
+      "git_blob_sha1": "418671780a4b4aa1d3044bf34747aeecd5054412",
+      "bytes": 321
+    },
+    {
+      "path": "skills/github-docx/LICENSE.txt",
+      "git_blob_sha1": "bcac73b0f4f6d670ed5eb4a6306da237de30c01b",
+      "bytes": 1072
+    },
+    {
+      "path": "skills/github-docx/SKILL.md",
+      "git_blob_sha1": "646d4e39f6ef989ed589261d268f76f26710374b",
+      "bytes": 2807
+    },
+    {
+      "path": "skills/github-docx/references/authoring.md",
+      "git_blob_sha1": "2ce102015029fb45d504f05a4d1fab8063e318f7",
+      "bytes": 1681
+    },
+    {
+      "path": "skills/github-docx/references/edit-review.md",
+      "git_blob_sha1": "d7b25f9dc42d78efda8c7c46aecbbfc3e36fbbbf",
+      "bytes": 1587
+    },
+    {
+      "path": "skills/github-docx/skill.json",
+      "git_blob_sha1": "8324bd7260f18c954af6b4882792af84cd0c18e6",
+      "bytes": 482
+    },
+    {
+      "path": "skills/github-docx/source.json",
+      "git_blob_sha1": "d97b6ae1ef89beed3f32d1246b9cf9a1c592dd3b",
+      "bytes": 1068
+    },
+    {
+      "path": "skills/github-pptx-review/LICENSE.txt",
+      "git_blob_sha1": "aaebd4004b0b501f67c156f618161fc4018b4e35",
+      "bytes": 1073
+    },
+    {
+      "path": "skills/github-pptx-review/SKILL.md",
+      "git_blob_sha1": "95ec1a27aab1296ee302df49cc4c541765c72db3",
+      "bytes": 2481
+    },
+    {
+      "path": "skills/github-pptx-review/references/audit.md",
+      "git_blob_sha1": "14aa4831214f45aba6936c090e42b9c15f523025",
+      "bytes": 1748
+    },
+    {
+      "path": "skills/github-pptx-review/skill.json",
+      "git_blob_sha1": "2cfbfb878ed06be379cb305a9e784be062af999c",
+      "bytes": 438
+    },
+    {
+      "path": "skills/github-pptx-review/source.json",
+      "git_blob_sha1": "04b1d784b466b617a1d60685d90fb46a692bf04a",
+      "bytes": 1106
+    },
+    {
+      "path": "skills/github-pptx/LICENSE.txt",
+      "git_blob_sha1": "bcac73b0f4f6d670ed5eb4a6306da237de30c01b",
+      "bytes": 1072
+    },
+    {
+      "path": "skills/github-pptx/SKILL.md",
+      "git_blob_sha1": "4dc76bfb7c54d2a258a1b27b752d1ec28aeee36d",
+      "bytes": 2518
+    },
+    {
+      "path": "skills/github-pptx/references/quality.md",
+      "git_blob_sha1": "837091eb02bc31704a689bee856a681161dc293c",
+      "bytes": 1116
+    },
+    {
+      "path": "skills/github-pptx/references/workflow.md",
+      "git_blob_sha1": "830aece9ca8041440e143a467ae94c85b24efdf5",
+      "bytes": 1589
+    },
+    {
+      "path": "skills/github-pptx/skill.json",
+      "git_blob_sha1": "f7ff28cd7d98a5eecfa6d7147ef866365a750f7a",
+      "bytes": 458
+    },
+    {
+      "path": "skills/github-pptx/source.json",
+      "git_blob_sha1": "705aff23bf445bd5c15ac185c54c06fd7e0b1751",
+      "bytes": 1084
+    },
+    {
+      "path": "skills/lesson-planner/SKILL.md",
+      "git_blob_sha1": "153dc9ee9102fac88bd5e3a712cdc159c5ff1ef8",
+      "bytes": 1287
+    },
+    {
+      "path": "skills/lesson-planner/skill.json",
+      "git_blob_sha1": "4f98cb9837a00f12af263bbca625d084de2cbf84",
+      "bytes": 386
+    },
+    {
+      "path": "skills/news-editor/SKILL.md",
+      "git_blob_sha1": "194725e44de09a6597cc667d6798e568ebd76953",
+      "bytes": 1270
+    },
+    {
+      "path": "skills/news-editor/skill.json",
+      "git_blob_sha1": "7393eed07018df75f8d3637d0711301e0bd3acf3",
+      "bytes": 386
+    },
+    {
+      "path": "skills/pdf-extract/SKILL.md",
+      "git_blob_sha1": "3aa723659d06d916752b423cffd255d7f2f2966a",
+      "bytes": 1240
+    },
+    {
+      "path": "skills/pdf-extract/skill.json",
+      "git_blob_sha1": "53690a0aabe9c952da980461de6dd71900d2d62f",
+      "bytes": 323
+    },
+    {
+      "path": "skills/presentation-author/SKILL.md",
+      "git_blob_sha1": "28a9c2fcaf89396af6cd9a17b20740ac4faafb8e",
+      "bytes": 1240
+    },
+    {
+      "path": "skills/presentation-author/skill.json",
+      "git_blob_sha1": "5af157bc671a211639fe3038e9597c8e801b3657",
+      "bytes": 379
+    },
+    {
+      "path": "skills/skill-creator/SKILL.md",
+      "git_blob_sha1": "81d81a2271a320c54451c85acfc7abc109258aa6",
+      "bytes": 1020
+    },
+    {
+      "path": "skills/skill-creator/skill.json",
+      "git_blob_sha1": "76fb06f507139d090545d8b7fc2d309bc51fdc15",
+      "bytes": 222
+    },
+    {
+      "path": "skills/spreadsheet-assistant/SKILL.md",
+      "git_blob_sha1": "d59b2effc2f5b1b70f4031df91bced6c97cf3c4d",
+      "bytes": 437
+    },
+    {
+      "path": "skills/spreadsheet-assistant/skill.json",
+      "git_blob_sha1": "854c9d5141380bc078d210e5bef5f6e5ff09fbca",
+      "bytes": 396
+    },
+    {
+      "path": "src-xp/Directory.Build.props",
+      "git_blob_sha1": "eb9b7437e519841f911d5d9e26f6cd25e1fc0222",
+      "bytes": 1680
+    },
+    {
+      "path": "src-xp/WorkAssistant.Compatibility.Xp/Async/AsyncInfrastructure.cs",
+      "git_blob_sha1": "0141ebd3305616e923ec518b238b655df18a6db7",
+      "bytes": 13905
+    },
+    {
+      "path": "src-xp/WorkAssistant.Compatibility.Xp/Async/XpLogicalContext.cs",
+      "git_blob_sha1": "3d27492db5e28ab278f73213d41bc2404a57d453",
+      "bytes": 2506
+    },
+    {
+      "path": "src-xp/WorkAssistant.Compatibility.Xp/IO/Compression/ZipArchiveShim.cs",
+      "git_blob_sha1": "a65f1d253548e192c4b304b7e2a1aca6c06cdc0e",
+      "bytes": 21962
+    },
+    {
+      "path": "src-xp/WorkAssistant.Compatibility.Xp/IO/XpPipeExtensions.cs",
+      "git_blob_sha1": "4f11d514b6ce3d7ce27b8d652010ceb014209937",
+      "bytes": 2861
+    },
+    {
+      "path": "src-xp/WorkAssistant.Compatibility.Xp/IO/XpStreamExtensions.cs",
+      "git_blob_sha1": "e6e0ed8599573e1fa3590d13ef40f470a7afbbc3",
+      "bytes": 5376
+    },
+    {
+      "path": "src-xp/WorkAssistant.Compatibility.Xp/Net/HttpClientShim.cs",
+      "git_blob_sha1": "5481832d045cb57052df9122cd9fcae6c462f616",
+      "bytes": 17709
+    },
+    {
+      "path": "src-xp/WorkAssistant.Compatibility.Xp/Net/HttpListenerExtensions.cs",
+      "git_blob_sha1": "3afc2cd1d52ab03c03c572107f9263f6b0f03947",
+      "bytes": 392
+    },
+    {
+      "path": "src-xp/WorkAssistant.Compatibility.Xp/Threading/VolatileShim.cs",
+      "git_blob_sha1": "5a42179fcdcda8f2360a32dadf70215bbe992854",
+      "bytes": 3047
+    },
+    {
+      "path": "src-xp/WorkAssistant.Compatibility.Xp/Threading/XpRegex.cs",
+      "git_blob_sha1": "485fa1f1e4739c0af60cb1a159ffa54b9d4eaeb7",
+      "bytes": 671
+    },
+    {
+      "path": "src-xp/WorkAssistant.Compatibility.Xp/Threading/XpTask.cs",
+      "git_blob_sha1": "67d79d61880a3aad2f86a98bb538d1722746b99d",
+      "bytes": 11021
+    },
+    {
+      "path": "src-xp/WorkAssistant.Compatibility.Xp/WorkAssistant.Compatibility.Xp.csproj",
+      "git_blob_sha1": "99963e1a0794c511e0aa70386cc4a86686cd1524",
+      "bytes": 401
+    },
+    {
+      "path": "src-xp/WorkAssistant.Core.Xp/WorkAssistant.Core.Xp.csproj",
+      "git_blob_sha1": "0ff66a9f2ac3461d15a27df5394a4fc8fe58a77e",
+      "bytes": 846
+    },
+    {
+      "path": "src-xp/WorkAssistant.Desktop.Xp/WorkAssistant.Desktop.Xp.csproj",
+      "git_blob_sha1": "bea2903b01df41b67b62b804d1a40388ab2a0c0d",
+      "bytes": 3241
+    },
+    {
+      "path": "src-xp/WorkAssistant.Desktop.Xp/app.manifest",
+      "git_blob_sha1": "7331cea25467593071a2de54eac0a2f3a0fca30f",
+      "bytes": 564
+    },
+    {
+      "path": "src-xp/WorkAssistant.Desktop/MainWindow.Xp.xaml",
+      "git_blob_sha1": "971e8e566a91439a106597796cd1f76db371ce31",
+      "bytes": 47829
+    },
+    {
+      "path": "src-xp/WorkAssistant.Host.Xp/WorkAssistant.Host.Xp.csproj",
+      "git_blob_sha1": "88d2923288debe2889739142f87d171bd07f7f9f",
+      "bytes": 968
+    },
+    {
+      "path": "src-xp/WorkAssistant.Host/IsolatedTool.Xp.cs",
+      "git_blob_sha1": "b3e8de6b8053818e57bb99ec17d86cd9deb21ac4",
+      "bytes": 6206
+    },
+    {
+      "path": "src-xp/WorkAssistant.Infrastructure.Xp/WorkAssistant.Infrastructure.Xp.csproj",
+      "git_blob_sha1": "ab6a9b8699df4103cfc9e5d5e6a498838252ae5f",
+      "bytes": 2096
+    },
+    {
+      "path": "src-xp/WorkAssistant.Infrastructure/EnvironmentReport.Xp.cs",
+      "git_blob_sha1": "8a95a7a9798e5f7fd4724f01b6c0bfd670581c51",
+      "bytes": 2348
+    },
+    {
+      "path": "src-xp/WorkAssistant.Infrastructure/LimitedReadStream.Xp.cs",
+      "git_blob_sha1": "379a0e837764860a15b51d68fdb0726a72de3863",
+      "bytes": 1613
+    },
+    {
+      "path": "src-xp/WorkAssistant.Infrastructure/ProjectConfigurationFiles.Xp.cs",
+      "git_blob_sha1": "1d55be59be9c842a8b00cece6ed83c8269f21e5b",
+      "bytes": 4617
+    },
+    {
+      "path": "src-xp/WorkAssistant.Infrastructure/TaskHostClient.Xp.cs",
+      "git_blob_sha1": "9937c41403a3dff37d4fd13ef5d40e0fcbc7b4a0",
+      "bytes": 7525
+    },
+    {
+      "path": "src-xp/WorkAssistant.Infrastructure/TrustedUpdates.Xp.cs",
+      "git_blob_sha1": "5390f772e29c9637c51bcd607f989821d98ac578",
+      "bytes": 9820
+    },
+    {
+      "path": "src-xp/WorkAssistant.Launcher.Xp/WorkAssistant.Launcher.Xp.csproj",
+      "git_blob_sha1": "e48589bec99c69700abc2ae39dafb172fa06d2bd",
+      "bytes": 689
+    },
+    {
+      "path": "src-xp/WorkAssistant.Launcher/Program.Xp.cs",
+      "git_blob_sha1": "73f2669b84e31155aa0d327c7f422d33762e6f7c",
+      "bytes": 2003
+    },
+    {
+      "path": "src-xp/WorkAssistant.OpenCode.Xp/WorkAssistant.OpenCode.Xp.csproj",
+      "git_blob_sha1": "761caba064a7056522a47e39563cfea96bce2c4c",
+      "bytes": 1008
+    },
+    {
+      "path": "src-xp/WorkAssistant.OpenCode/OpenCodeConnection.Xp.cs",
+      "git_blob_sha1": "aeaeddc6462a9a15a1fa3b4b00b286c389ce5028",
+      "bytes": 3449
+    },
+    {
+      "path": "src-xp/WorkAssistant.Tests.Console.Xp/WorkAssistant.Tests.Console.Xp.csproj",
+      "git_blob_sha1": "d9e7bdb1cb52041c1d0a21edae7b41f9ae27ee36",
+      "bytes": 1544
+    },
+    {
+      "path": "src-xp/WorkAssistant.Tests.Console/Program.Xp.cs",
+      "git_blob_sha1": "24f08cdda0f1567ba07eb8bfb622ae758e7e4927",
+      "bytes": 4458
+    },
+    {
+      "path": "src-xp/WorkAssistant.Tests.Console/XpCompatTests.Xp.cs",
+      "git_blob_sha1": "7ad7ee32556624aae5b96ac56ccfa582e88f3254",
+      "bytes": 27879
+    },
+    {
+      "path": "src-xp/WorkAssistant.Tests.Console/XpCompression.Xp.cs",
+      "git_blob_sha1": "fdb75a25404c055af8c9f1a0482abf35b63a86f7",
+      "bytes": 384
+    },
+    {
+      "path": "src-xp/WorkAssistant.Tests.Console/XpEditRecoveryTests.Xp.cs",
+      "git_blob_sha1": "f27dbdfde32f9438217aaabf21ac5754f8b558c8",
+      "bytes": 7170
+    },
+    {
+      "path": "src-xp/WorkAssistant.Tools.Xp/WorkAssistant.Tools.Xp.csproj",
+      "git_blob_sha1": "62a0fe16d950ac0a205cd049f88aaaf8f5c291cc",
+      "bytes": 1801
+    },
+    {
+      "path": "src-xp/WorkAssistant.Tools/AtomicTextTransaction.Xp.cs",
+      "git_blob_sha1": "f8fbde78fc1208a3df4cc502b3984743476b0a2c",
+      "bytes": 9546
+    },
+    {
+      "path": "src-xp/WorkAssistant.Tools/CsvReading.Xp.cs",
+      "git_blob_sha1": "cd1f5f37b980a599dbb2f6f967d757b1af24bb13",
+      "bytes": 8695
+    },
+    {
+      "path": "src-xp/WorkAssistant.Tools/OfficeCapabilities.Xp.cs",
+      "git_blob_sha1": "9a2471087bf3185ecbf0c2bf7d48b41c90b61aab",
+      "bytes": 356
+    },
+    {
+      "path": "src-xp/WorkAssistant.Tools/PdfObjectIndex.Xp.cs",
+      "git_blob_sha1": "7005975bf132454fa9e153b3ee1007c65284d495",
+      "bytes": 19165
+    },
+    {
+      "path": "src-xp/WorkAssistant.Tools/PdfText.Xp.cs",
+      "git_blob_sha1": "6b1b4ae20bf92a75c128e6f8b6aa291d9c33cb02",
+      "bytes": 34901
+    },
+    {
+      "path": "src-xp/WorkAssistant.Tools/VerifiedFiles.Xp.cs",
+      "git_blob_sha1": "907d27c3d17f5a8a7f7005561e4b7b1dc9ea22c2",
+      "bytes": 14980
+    },
+    {
+      "path": "src-xp/Xiao.Xp.sln",
+      "git_blob_sha1": "a270b2be443c49f05680f6d4e011d4bcef6f00b7",
+      "bytes": 7633
+    },
+    {
+      "path": "src/WorkAssistant.Core/AgentController.cs",
+      "git_blob_sha1": "c08a6793f78e77ed52901a3baf448326dcf779fa",
+      "bytes": 52301
+    },
+    {
+      "path": "src/WorkAssistant.Core/AgentExecutionPolicy.cs",
+      "git_blob_sha1": "50e66b2ebbb591cddd398303c613c58e569bb779",
+      "bytes": 1330
+    },
+    {
+      "path": "src/WorkAssistant.Core/AgentLoopGuard.cs",
+      "git_blob_sha1": "f98d9f4e15a997fedafb3d7ed38229c9f81479c2",
+      "bytes": 3353
+    },
+    {
+      "path": "src/WorkAssistant.Core/AgentRole.cs",
+      "git_blob_sha1": "6e819cad6f1a99530338b0d52f03098ec0ffb8d9",
+      "bytes": 3044
+    },
+    {
+      "path": "src/WorkAssistant.Core/AgentToolRegistry.cs",
+      "git_blob_sha1": "2765c421f13f4c3dbc9754bbaaeed609be519220",
+      "bytes": 2465
+    },
+    {
+      "path": "src/WorkAssistant.Core/ConversationContextManager.cs",
+      "git_blob_sha1": "32402700bb0180fc27e4f80a7f9a48dc3a3aa50c",
+      "bytes": 5945
+    },
+    {
+      "path": "src/WorkAssistant.Core/DurableFiles.cs",
+      "git_blob_sha1": "e1837c8c0a17238333cb0aad8a509b566accfff1",
+      "bytes": 1396
+    },
+    {
+      "path": "src/WorkAssistant.Core/ErrorCodes.cs",
+      "git_blob_sha1": "cec42ac221ef361e266512c15b51c71a7f2a62b9",
+      "bytes": 3340
+    },
+    {
+      "path": "src/WorkAssistant.Core/FakeModelClient.cs",
+      "git_blob_sha1": "5d489b436cb0385ad5d6d4b420c226a9bfebb0c7",
+      "bytes": 23228
+    },
+    {
+      "path": "src/WorkAssistant.Core/Interfaces.cs",
+      "git_blob_sha1": "cacb7c361608189ad76a4d97195da4d32c08d1a0",
+      "bytes": 6394
+    },
+    {
+      "path": "src/WorkAssistant.Core/ModelContextBudget.cs",
+      "git_blob_sha1": "cfd1c32732f74731e2aba136b677ff84cbf814e6",
+      "bytes": 3999
+    },
+    {
+      "path": "src/WorkAssistant.Core/ModelOutputTruncatedException.cs",
+      "git_blob_sha1": "d436804082625d1bbe72b320aa5ef164f804f2a7",
+      "bytes": 935
+    },
+    {
+      "path": "src/WorkAssistant.Core/ModelProtocol.cs",
+      "git_blob_sha1": "f7281b702900cc64321056dc717b78d69d695bb3",
+      "bytes": 7480
+    },
+    {
+      "path": "src/WorkAssistant.Core/ModelRequestJson.cs",
+      "git_blob_sha1": "b7168148d31eeb9d2aedebc52a8cd08e30dc7650",
+      "bytes": 2689
+    },
+    {
+      "path": "src/WorkAssistant.Core/ModelRetryInfo.cs",
+      "git_blob_sha1": "feef23c3528d316b53179532fd91f1a3f32ee801",
+      "bytes": 476
+    },
+    {
+      "path": "src/WorkAssistant.Core/ProjectRecord.cs",
+      "git_blob_sha1": "051f45d4047a264dc1b8ef87df8f3890c92b1dcf",
+      "bytes": 570
+    },
+    {
+      "path": "src/WorkAssistant.Core/SkillDefinition.cs",
+      "git_blob_sha1": "8877c672c7be50344cc062c11d5d43ab035d1362",
+      "bytes": 2764
+    },
+    {
+      "path": "src/WorkAssistant.Core/SubAgents.cs",
+      "git_blob_sha1": "47a42115a4b6b17f2cdbe8ec95c71ccc771a6def",
+      "bytes": 7076
+    },
+    {
+      "path": "src/WorkAssistant.Core/SystemPrompts.cs",
+      "git_blob_sha1": "2447abdc1e63e9189cf8aa7311207d158ef93599",
+      "bytes": 10222
+    },
+    {
+      "path": "src/WorkAssistant.Core/TaskInterruption.cs",
+      "git_blob_sha1": "44aad488933d3635fca1797a696a0d259c524325",
+      "bytes": 2012
+    },
+    {
+      "path": "src/WorkAssistant.Core/TaskPermissionMode.cs",
+      "git_blob_sha1": "17daff69480bb6de0d55e9da3ef9829386ad1c57",
+      "bytes": 3275
+    },
+    {
+      "path": "src/WorkAssistant.Core/TaskPlanning.cs",
+      "git_blob_sha1": "24eb1037495c2df1dc1329769287f4f837f0ff6f",
+      "bytes": 652
+    },
+    {
+      "path": "src/WorkAssistant.Core/TaskRecords.cs",
+      "git_blob_sha1": "da7499b721bd2b66dd4843b8a307f8321a93af14",
+      "bytes": 9846
+    },
+    {
+      "path": "src/WorkAssistant.Core/TextEditApproval.cs",
+      "git_blob_sha1": "1f4574dac6943620f9459dc0857b7fbcc168fdcb",
+      "bytes": 4139
+    },
+    {
+      "path": "src/WorkAssistant.Core/TextEditProposal.cs",
+      "git_blob_sha1": "34720d01fae40e29f5238c651841b3e5d0899794",
+      "bytes": 8536
+    },
+    {
+      "path": "src/WorkAssistant.Core/ToolContracts.cs",
+      "git_blob_sha1": "df47b48bc6f7b4dd2d584ebda583138bc405092a",
+      "bytes": 7204
+    },
+    {
+      "path": "src/WorkAssistant.Core/ToolDispatcher.cs",
+      "git_blob_sha1": "468226e0343055eaa964ffbf6f7ef49d743047ee",
+      "bytes": 5569
+    },
+    {
+      "path": "src/WorkAssistant.Core/ToolResultJson.cs",
+      "git_blob_sha1": "dcd72f37e96a27ac7e0d18bc04aaecb102eba292",
+      "bytes": 2491
+    },
+    {
+      "path": "src/WorkAssistant.Core/UserQuestions.cs",
+      "git_blob_sha1": "e2b8e46147d9064fa9c8229f69a77ac8d112503c",
+      "bytes": 416
+    },
+    {
+      "path": "src/WorkAssistant.Core/WorkAssistant.Core.csproj",
+      "git_blob_sha1": "528e6a2b45133ea88c3e777a2c728afd4fafe358",
+      "bytes": 233
+    },
+    {
+      "path": "src/WorkAssistant.Core/XpRuntime.cs",
+      "git_blob_sha1": "3620dc3ff8ab328476a33820dde0cc6d545dfaf5",
+      "bytes": 2906
+    },
+    {
+      "path": "src/WorkAssistant.Core/packages.lock.json",
+      "git_blob_sha1": "0d35c01fd6d3700e25a7ff3454dccc92fa546398",
+      "bytes": 940
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/App.xaml",
+      "git_blob_sha1": "6574f3864b83b70c41a9e8114dbcc420b6eba5bc",
+      "bytes": 748
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/App.xaml.cs",
+      "git_blob_sha1": "f7a441df2f5a04998337203297b77c110eb59be9",
+      "bytes": 19282
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/ApprovalWindow.xaml",
+      "git_blob_sha1": "cf4edbada056feea0fa587abc94429e0ef9bf941",
+      "bytes": 3110
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/ApprovalWindow.xaml.cs",
+      "git_blob_sha1": "9d2bbfbcf3d77f23c1b197bd90419dd5d49e13f3",
+      "bytes": 1871
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Assets/AppIcon.ico",
+      "git_blob_sha1": "5ebedfc7262b445fe95668b71e70562394c0520b",
+      "bytes": 26252
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Assets/AppIcon.png",
+      "git_blob_sha1": "961261d0baa67feef5e6844f10dd571a96e3a0d7",
+      "bytes": 11362
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Assets/AppIcon.svg",
+      "git_blob_sha1": "102aa8238e0b64900467da3d0cc9195f3a333450",
+      "bytes": 504
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Converters.cs",
+      "git_blob_sha1": "cf2b9baddda70b8be3c5cd178ce7bb4cdbcc03c6",
+      "bytes": 4349
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/DiagnosticsWindow.xaml",
+      "git_blob_sha1": "17de5d2b386ffa81b7dd0e675752617d784d1022",
+      "bytes": 913
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/DiagnosticsWindow.xaml.cs",
+      "git_blob_sha1": "2d4db37c26814f884849e852bcda3e7bbb714a47",
+      "bytes": 1501
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MainViewModel.Permissions.cs",
+      "git_blob_sha1": "8a6f27b6e9d8b0cac528aefa15e05e3c8af806d6",
+      "bytes": 2366
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MainViewModel.Projects.cs",
+      "git_blob_sha1": "d1051c48cf67fdc62cfb41eef8fd744260c54810",
+      "bytes": 9991
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MainViewModel.Runtime.cs",
+      "git_blob_sha1": "0b2794b8ad342558f550f94c766c37e823f10545",
+      "bytes": 1131
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MainViewModel.cs",
+      "git_blob_sha1": "810cfd5e04d83ded067d65b4595b119e2b63b6d8",
+      "bytes": 63204
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MainWindow.Projects.cs",
+      "git_blob_sha1": "41199bcd4aaa18c5144c03ca3c3e26c66f4658be",
+      "bytes": 5763
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MainWindow.xaml",
+      "git_blob_sha1": "c3f8b31d87f72366c87f8e6fe6924a7bc018f3db",
+      "bytes": 47650
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MainWindow.xaml.cs",
+      "git_blob_sha1": "28b4618db2b7993e474cc497a43e0df9f3ffcc7a",
+      "bytes": 18382
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MaintenanceWindow.cs",
+      "git_blob_sha1": "ed035664cdb85940b9b8f97ba5e49b762678be4e",
+      "bytes": 10675
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Mvvm.cs",
+      "git_blob_sha1": "8de074a08906a906779a9945feaa827c0969549d",
+      "bytes": 1604
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Presentation/ConversationItem.cs",
+      "git_blob_sha1": "f5e1009cc232323593ac71a46c4906a0ddfaf573",
+      "bytes": 11107
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Presentation/ProjectItemVm.cs",
+      "git_blob_sha1": "520b14a5c319a78f9ea043c18aca8118e4ae54a4",
+      "bytes": 915
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Presentation/QuestionCardVm.cs",
+      "git_blob_sha1": "be434ff8edc05e7ebf624c14c8702ce5a825921e",
+      "bytes": 2405
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/ProductionWindows.cs",
+      "git_blob_sha1": "2ef954f3a864e32c3ab1cf1bf81189e391700cb4",
+      "bytes": 10147
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/ProjectEditorWindow.cs",
+      "git_blob_sha1": "ae4456c8193dbf0720cfbcfec50379b7fba3c7c7",
+      "bytes": 5019
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/SettingsWindow.xaml",
+      "git_blob_sha1": "434f5194ce3c22bb432ccf7cf066f2609194bd60",
+      "bytes": 11179
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/SettingsWindow.xaml.cs",
+      "git_blob_sha1": "dc689d3a5edce839632bbe5c5f44f7e77616c009",
+      "bytes": 20250
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/SkillLibraryWindow.cs",
+      "git_blob_sha1": "e66542051e4f51a12f753430d85fcedc1a780753",
+      "bytes": 8729
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Themes/Controls.xaml",
+      "git_blob_sha1": "4e97ebe1f7821ab8a2abc2d16dceb42dfa435f90",
+      "bytes": 20584
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Themes/Icons.xaml",
+      "git_blob_sha1": "767bf95f031d8ffe11ba96f2977631b352947ac4",
+      "bytes": 2015
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Themes/Studio.xaml",
+      "git_blob_sha1": "c46f0062ec22a0160a4180d4a5cfbf1f3a1c0c9c",
+      "bytes": 7281
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Themes/Tokens.xaml",
+      "git_blob_sha1": "3d307b0d848e179d487f7d0d583695309dcb1724",
+      "bytes": 3401
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/UserInputProvider.cs",
+      "git_blob_sha1": "556d6abb3e0581f4527500f0a0eebafa9b6b0f12",
+      "bytes": 516
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/WorkAssistant.Desktop.csproj",
+      "git_blob_sha1": "59dbb8cf8f394d723c665520c3c5413dfcf92af0",
+      "bytes": 2173
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/app.manifest",
+      "git_blob_sha1": "5d52b04ab19ea1b760b554915eda87eaee0e4dc2",
+      "bytes": 937
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/packages.lock.json",
+      "git_blob_sha1": "cba6b02c5025a56573852a6011d7ec55f5b49785",
+      "bytes": 8845
+    },
+    {
+      "path": "src/WorkAssistant.Host/ArtifactHandoff.cs",
+      "git_blob_sha1": "2b0b4d98efd39feb3541a28df53aa89b270dfa94",
+      "bytes": 10042
+    },
+    {
+      "path": "src/WorkAssistant.Host/DelegateTasksTool.cs",
+      "git_blob_sha1": "57f8ffd278d43b22a0170f52df21d2710a125921",
+      "bytes": 18729
+    },
+    {
+      "path": "src/WorkAssistant.Host/FileReferenceTool.cs",
+      "git_blob_sha1": "c2e4a2d5493c55418444f193c8d4e199f739853d",
+      "bytes": 6293
+    },
+    {
+      "path": "src/WorkAssistant.Host/ImportTaskArtifactsTool.cs",
+      "git_blob_sha1": "40994e3a9959614d2602fcebd7d0d6056cf65558",
+      "bytes": 2597
+    },
+    {
+      "path": "src/WorkAssistant.Host/IsolatedTool.cs",
+      "git_blob_sha1": "0174858507e9d91f3789b419ccefb6d02779c7da",
+      "bytes": 6298
+    },
+    {
+      "path": "src/WorkAssistant.Host/Program.cs",
+      "git_blob_sha1": "3090fb425230121917facbc8b42ad5f2b95da34d",
+      "bytes": 25646
+    },
+    {
+      "path": "src/WorkAssistant.Host/ProjectCommandsTool.cs",
+      "git_blob_sha1": "eae3d94670b122296ab527d2d0fde149582a5ac1",
+      "bytes": 1968
+    },
+    {
+      "path": "src/WorkAssistant.Host/SkillReferenceTool.cs",
+      "git_blob_sha1": "cabd2a1a6d062acf73a5585c9eb80b22a4b825b8",
+      "bytes": 4095
+    },
+    {
+      "path": "src/WorkAssistant.Host/WorkAssistant.Host.csproj",
+      "git_blob_sha1": "8d50ab62d610a67ebc97dee673b00d05acaa2606",
+      "bytes": 459
+    },
+    {
+      "path": "src/WorkAssistant.Host/WorkspaceToolPermissions.cs",
+      "git_blob_sha1": "9c9c761186031ef76aed898843c5c8a26fa49b95",
+      "bytes": 4046
+    },
+    {
+      "path": "src/WorkAssistant.Host/packages.lock.json",
+      "git_blob_sha1": "806091d18047087a3ce3512a1cf0711d3d892d43",
+      "bytes": 8640
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/AnthropicMessageCodec.cs",
+      "git_blob_sha1": "4b5bba170fc9f62435f42d67e532b083d3d0bda7",
+      "bytes": 16822
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/AnthropicModelClient.cs",
+      "git_blob_sha1": "06734a0afe45ef1960e1fa702b6ff4c959f9e327",
+      "bytes": 7386
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ApplicationDataPaths.cs",
+      "git_blob_sha1": "12bec6284dc0939a523c146bb88892031d43297f",
+      "bytes": 1501
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/DefaultOfficeSkillRouter.cs",
+      "git_blob_sha1": "e6ec241c03fda387f00e4213a8d9d13e10e7df68",
+      "bytes": 1500
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/EnvironmentReport.cs",
+      "git_blob_sha1": "76712e1bc8bfd5c65e75e6e8adcaa61e61512ea2",
+      "bytes": 2194
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/HostFailureInfo.cs",
+      "git_blob_sha1": "b38c05fcaa893a433b35b65d98f0e0985bdb51c7",
+      "bytes": 2238
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/HostProtocol.cs",
+      "git_blob_sha1": "955620230751740cc111e6a0a3bb478b5a5b2973",
+      "bytes": 3628
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/HttpModelClient.cs",
+      "git_blob_sha1": "11f6eb7f6c02acb2fbef80225887ced16a85d99c",
+      "bytes": 29432
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/LimitedReadStream.cs",
+      "git_blob_sha1": "842ced5ca8de1cca5687fe9da2101c99beef6077",
+      "bytes": 1602
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/LocalConversationArchive.cs",
+      "git_blob_sha1": "e671586d40018880e15802be8a3747933012f000",
+      "bytes": 3252
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/LocalTaskStore.cs",
+      "git_blob_sha1": "5ca9e94bbf888bb032f13ccb9ab82017f7cab105",
+      "bytes": 26796
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/MarkdownConfiguration.cs",
+      "git_blob_sha1": "14ea12f72777b83f301c6d4b57849abd940ca98e",
+      "bytes": 8022
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ModelCapabilities.cs",
+      "git_blob_sha1": "6ee30409acce83b3536dc3c133c56ce5dbd4f0cd",
+      "bytes": 1455
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ModelCapabilityCache.cs",
+      "git_blob_sha1": "a2affdeecae4b1323a2af5ddc12fb262b566642b",
+      "bytes": 1096
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ModelClientFactory.cs",
+      "git_blob_sha1": "83dcf676d6d12346f292a6fd5fd384bc00954a35",
+      "bytes": 2640
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ModelConnectionProbe.cs",
+      "git_blob_sha1": "f4ac2735cedde805203ce48a6d859d8d05e2d933",
+      "bytes": 3949
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ModelResponseLimits.cs",
+      "git_blob_sha1": "8b99f32001d9e9d1eb25ad05a7cb7f81e9733cd6",
+      "bytes": 820
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ModelRetryPolicy.cs",
+      "git_blob_sha1": "f56028717b0b200238204a46e5acaa7f999acfe4",
+      "bytes": 2124
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ModelServiceError.cs",
+      "git_blob_sha1": "e0e9c6095d44568f4dfc3d9b299f2e93027ae1d8",
+      "bytes": 1668
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/NativeRuntimeBootstrap.cs",
+      "git_blob_sha1": "be37de6a765e30e21e3207ed31f9c8f91108ee43",
+      "bytes": 3335
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ProcessJob.cs",
+      "git_blob_sha1": "211b4fb2a9ad7586c6f936262584879fe05879ad",
+      "bytes": 2317
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ProjectConfigurationFiles.cs",
+      "git_blob_sha1": "af77e998af796a1de8673bf328598cec5eacc02a",
+      "bytes": 4770
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/SerializedApprovalChannel.cs",
+      "git_blob_sha1": "a4acade3e93be5be13e3a334b37fd988facf7e4d",
+      "bytes": 1904
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/SettingsStore.cs",
+      "git_blob_sha1": "a3b85039db3e7755a4e5832f26dea2d3b928096d",
+      "bytes": 21069
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/SkillCatalog.cs",
+      "git_blob_sha1": "cf457d7340652b1428cf479f4f218e2197bb5ca7",
+      "bytes": 5341
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/SqliteStateStore.cs",
+      "git_blob_sha1": "21b43b31e7ca5cbd1179b36f27722d970ba3d05f",
+      "bytes": 11552
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/TaskHostClient.cs",
+      "git_blob_sha1": "293d0e31902764244d09d93ba7049ad4ad22cc0f",
+      "bytes": 7599
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/TrustedUpdates.cs",
+      "git_blob_sha1": "8cb97c3bd3faccc37e7420486e069dd8ad57b636",
+      "bytes": 9593
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/WorkAssistant.Infrastructure.csproj",
+      "git_blob_sha1": "26c51ca4b61da69e784f67ca733331f134e8cb2e",
+      "bytes": 1006
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/WorkspaceAgentConfiguration.cs",
+      "git_blob_sha1": "899a8c88287e26e9dae6a5080763b9966f9065eb",
+      "bytes": 10906
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/WorkspaceModelCatalog.cs",
+      "git_blob_sha1": "f3433c3b72f2016c7f95fdb01129e5349f714964",
+      "bytes": 3735
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/packages.lock.json",
+      "git_blob_sha1": "5c835c347887c5628bc135188769423a736d5b03",
+      "bytes": 1676
+    },
+    {
+      "path": "src/WorkAssistant.Launcher/Program.cs",
+      "git_blob_sha1": "879861f42d3e12cce544df0e40a2ba73bca2b37e",
+      "bytes": 1885
+    },
+    {
+      "path": "src/WorkAssistant.Launcher/WorkAssistant.Launcher.csproj",
+      "git_blob_sha1": "fe98aae3925eee396f23b1f7a221d7d460f745c4",
+      "bytes": 439
+    },
+    {
+      "path": "src/WorkAssistant.OpenCode/OpenCodeConnection.cs",
+      "git_blob_sha1": "c2ed07d56517cef930f9370970f197017547ead1",
+      "bytes": 3537
+    },
+    {
+      "path": "src/WorkAssistant.OpenCode/OpenCodeGatewayClient.cs",
+      "git_blob_sha1": "e1757fa4ae365f3a51af49ea905ff8f033f41aa7",
+      "bytes": 2546
+    },
+    {
+      "path": "src/WorkAssistant.OpenCode/OpenCodeTaskRunner.cs",
+      "git_blob_sha1": "b5c9e9bd1d25e008d74ecd85599476014acdc478",
+      "bytes": 11823
+    },
+    {
+      "path": "src/WorkAssistant.OpenCode/WorkAssistant.OpenCode.csproj",
+      "git_blob_sha1": "b11fec1f68cffca29e2881a24fc4501576ecb127",
+      "bytes": 430
+    },
+    {
+      "path": "src/WorkAssistant.OpenCode/packages.lock.json",
+      "git_blob_sha1": "e9cb6572c745d29f688494a8e1f90e208b1b4fca",
+      "bytes": 1864
+    },
+    {
+      "path": "src/WorkAssistant.Tools/AgentToolBase.cs",
+      "git_blob_sha1": "21ecf5bb44c55f9382bcb93ae64053c2a7311340",
+      "bytes": 2578
+    },
+    {
+      "path": "src/WorkAssistant.Tools/AggregateCsvTool.cs",
+      "git_blob_sha1": "705488b7218b3c90c248a4d91c4397bd00cfaab6",
+      "bytes": 6866
+    },
+    {
+      "path": "src/WorkAssistant.Tools/AggregateTableTool.cs",
+      "git_blob_sha1": "62aa13548f6c5a51f6f98fda09508ea107701be9",
+      "bytes": 11742
+    },
+    {
+      "path": "src/WorkAssistant.Tools/ArtifactDelivery.cs",
+      "git_blob_sha1": "f16aecbd062fb1363abdc5989ad83e09aa9bd0bf",
+      "bytes": 3878
+    },
+    {
+      "path": "src/WorkAssistant.Tools/AskUserTool.cs",
+      "git_blob_sha1": "e3f3a8916d89b9fea001e0aab2c7872f0f202864",
+      "bytes": 2859
+    },
+    {
+      "path": "src/WorkAssistant.Tools/Assets/PresentationBase.pptx",
+      "git_blob_sha1": "43e46f08aa1d8542a3bd1159c3a6b52f47dc43f8",
+      "bytes": 31023
+    },
+    {
+      "path": "src/WorkAssistant.Tools/Assets/python-pptx-LICENSE.txt",
+      "git_blob_sha1": "67ebe716ec4b2d64d6146b5e7cecd77ac7af9b79",
+      "bytes": 1104
+    },
+    {
+      "path": "src/WorkAssistant.Tools/AtomicTextTransaction.cs",
+      "git_blob_sha1": "06a8a6adfc7c106d94eff7826fe99ebc5ec15fea",
+      "bytes": 8142
+    },
+    {
+      "path": "src/WorkAssistant.Tools/CommitTextEditTool.cs",
+      "git_blob_sha1": "78eb5c47d8bb2ba875e55950027d3c6dbda3815b",
+      "bytes": 9088
+    },
+    {
+      "path": "src/WorkAssistant.Tools/CsvReading.cs",
+      "git_blob_sha1": "ccb5d54d56974d544f3a5e9e41a145fe5ef57a6e",
+      "bytes": 6825
+    },
+    {
+      "path": "src/WorkAssistant.Tools/DocumentLimits.cs",
+      "git_blob_sha1": "cde15a8f3e8911787ef9f1746da6bc9c02ab99a4",
+      "bytes": 2920
+    },
+    {
+      "path": "src/WorkAssistant.Tools/DocumentTextTools.cs",
+      "git_blob_sha1": "91fbc126604d31abd36e1dee28e276bc40756476",
+      "bytes": 11636
+    },
+    {
+      "path": "src/WorkAssistant.Tools/DocumentWorkspaceTool.cs",
+      "git_blob_sha1": "b0466d33372f62304b77ceb534b4de9d223b4f68",
+      "bytes": 33336
+    },
+    {
+      "path": "src/WorkAssistant.Tools/DocxWriting.cs",
+      "git_blob_sha1": "a352df55949e7470983e30dd246fd88aadb04487",
+      "bytes": 14659
+    },
+    {
+      "path": "src/WorkAssistant.Tools/DraftSkillTool.cs",
+      "git_blob_sha1": "cdc6f7f7a22b71e29dddc3a3ac75e06e796bcec1",
+      "bytes": 2453
+    },
+    {
+      "path": "src/WorkAssistant.Tools/ExportSummaryTool.cs",
+      "git_blob_sha1": "34f6a5bbab7dc8c53991b5c7d4068cb25ba2c50c",
+      "bytes": 10645
+    },
+    {
+      "path": "src/WorkAssistant.Tools/ExportValidators.cs",
+      "git_blob_sha1": "e774659c6000f8573991dd21bc9425e4fcf4a1e4",
+      "bytes": 1302
+    },
+    {
+      "path": "src/WorkAssistant.Tools/ExportXlsxTool.cs",
+      "git_blob_sha1": "6f9657c072a713ddafca0303fe78ebcb1b9d17a4",
+      "bytes": 22762
+    },
+    {
+      "path": "src/WorkAssistant.Tools/FilePlanTools.cs",
+      "git_blob_sha1": "a0d355c23764790413e9d5d1aec3a4c88f89425d",
+      "bytes": 16176
+    },
+    {
+      "path": "src/WorkAssistant.Tools/InMemoryAggregationStore.cs",
+      "git_blob_sha1": "0b8c26b716fbd1ad427a8f75c35a57e1c597ba91",
+      "bytes": 862
+    },
+    {
+      "path": "src/WorkAssistant.Tools/ListFilesTool.cs",
+      "git_blob_sha1": "5d38c0d1fc02c69ea39cce0af050e52aa36e9c15",
+      "bytes": 4131
+    },
+    {
+      "path": "src/WorkAssistant.Tools/OfficeAutomationTool.cs",
+      "git_blob_sha1": "a77c86189a6d7297e18ca12bec964e6a619535ff",
+      "bytes": 18515
+    },
+    {
+      "path": "src/WorkAssistant.Tools/OfficeCapabilities.cs",
+      "git_blob_sha1": "1ba099f65b40c6db0559eff0b7ec4f343f19bff1",
+      "bytes": 338
+    },
+    {
+      "path": "src/WorkAssistant.Tools/OfficePackage.cs",
+      "git_blob_sha1": "af173fe91e79568f0fd7cb51e388c831c3f4bb31",
+      "bytes": 5827
+    },
+    {
+      "path": "src/WorkAssistant.Tools/OfficeTextProofreader.cs",
+      "git_blob_sha1": "42a96fbb724175740ea3393b4224ac6b6067e4d7",
+      "bytes": 1926
+    },
+    {
+      "path": "src/WorkAssistant.Tools/OutputRecovery.cs",
+      "git_blob_sha1": "14f8fc02014a6fbfc5e706bf4c09c3d52cecf3cb",
+      "bytes": 3745
+    },
+    {
+      "path": "src/WorkAssistant.Tools/OutputSanitizer.cs",
+      "git_blob_sha1": "231ce9d81bc01f9adf54c97e5eaa23c93c794e2c",
+      "bytes": 1850
+    },
+    {
+      "path": "src/WorkAssistant.Tools/PackageZip.cs",
+      "git_blob_sha1": "5d549355d40b5da4f378de131e9efba2743f760a",
+      "bytes": 6786
+    },
+    {
+      "path": "src/WorkAssistant.Tools/Parsing.cs",
+      "git_blob_sha1": "4cff7b7fb0831cadf63df6f244f7a95e36e196df",
+      "bytes": 10694
+    },
+    {
+      "path": "src/WorkAssistant.Tools/PdfOcr.cs",
+      "git_blob_sha1": "502f11b0a9c337cc769fdec2de53a7cc01dec55c",
+      "bytes": 17586
+    },
+    {
+      "path": "src/WorkAssistant.Tools/PdfText.cs",
+      "git_blob_sha1": "28908c257ab0bb2190ae61c79d5da6ab46122be4",
+      "bytes": 5043
+    },
+    {
+      "path": "src/WorkAssistant.Tools/PersistentAggregationStore.cs",
+      "git_blob_sha1": "02e37802be6559714879a1c9eb960e8b789163b7",
+      "bytes": 1227
+    },
+    {
+      "path": "src/WorkAssistant.Tools/PersistentFilePlanStore.cs",
+      "git_blob_sha1": "3c2c64fc12f8a8c79ce596947cd854ecb0f34fa9",
+      "bytes": 1708
+    },
+    {
+      "path": "src/WorkAssistant.Tools/PresentationAutomation.cs",
+      "git_blob_sha1": "451a13ee96410164fd7e3b17836f7b56f4e2628c",
+      "bytes": 13441
+    },
+    {
+      "path": "src/WorkAssistant.Tools/PreviewCsvTool.cs",
+      "git_blob_sha1": "df323c2a38ca009ec7718a575c6c7ef4030520ec",
+      "bytes": 2224
+    },
+    {
+      "path": "src/WorkAssistant.Tools/SafePreview.cs",
+      "git_blob_sha1": "6526d8c921e4995aa6c15e9277c2b31a8a4b8465",
+      "bytes": 4892
+    },
+    {
+      "path": "src/WorkAssistant.Tools/TableReading.cs",
+      "git_blob_sha1": "20ae566848268c6a7b2258947219cfd71271d0e3",
+      "bytes": 9886
+    },
+    {
+      "path": "src/WorkAssistant.Tools/TaskMemoryTools.cs",
+      "git_blob_sha1": "9bc010a6e9eb7d503906ffcfea21e8cbacad41f4",
+      "bytes": 7603
+    },
+    {
+      "path": "src/WorkAssistant.Tools/TextEditTools.cs",
+      "git_blob_sha1": "6154af3e7089158426530b13eb38cd4f4fc96709",
+      "bytes": 7368
+    },
+    {
+      "path": "src/WorkAssistant.Tools/VerifiedFiles.cs",
+      "git_blob_sha1": "318f62e7d224001454c60c36bab4540b49e4aec2",
+      "bytes": 9962
+    },
+    {
+      "path": "src/WorkAssistant.Tools/WordAutomation.cs",
+      "git_blob_sha1": "f391b9ef411acc13b4bd272903dd9b6396c12d53",
+      "bytes": 9811
+    },
+    {
+      "path": "src/WorkAssistant.Tools/WordDraftStore.cs",
+      "git_blob_sha1": "3e1e6ace751be758205d2c41d9698ffe2935578f",
+      "bytes": 3766
+    },
+    {
+      "path": "src/WorkAssistant.Tools/WorkAssistant.Tools.csproj",
+      "git_blob_sha1": "3c2cc4e9a2b16320bdc712a40a6d1bc87d3f7360",
+      "bytes": 1092
+    },
+    {
+      "path": "src/WorkAssistant.Tools/WorkspaceDiscovery.cs",
+      "git_blob_sha1": "e985659b74bf682ffb4c37f90d76592254a07f9a",
+      "bytes": 6241
+    },
+    {
+      "path": "src/WorkAssistant.Tools/WorkspacePolicy.cs",
+      "git_blob_sha1": "5f799bd3934b3094166a1f241b6a268c741dff67",
+      "bytes": 13570
+    },
+    {
+      "path": "src/WorkAssistant.Tools/XlsxReading.cs",
+      "git_blob_sha1": "f2b25033b093f304e7d73420e93e89491df50518",
+      "bytes": 17186
+    },
+    {
+      "path": "src/WorkAssistant.Tools/XlsxWriting.cs",
+      "git_blob_sha1": "92ea9638ca4d0ef1ab5a223090b31c277b75374a",
+      "bytes": 9575
+    },
+    {
+      "path": "src/WorkAssistant.Tools/XpRegex.cs",
+      "git_blob_sha1": "b53399e9b1248e117520259e7a6e13c9cf52a0f7",
+      "bytes": 796
+    },
+    {
+      "path": "src/WorkAssistant.Tools/packages.lock.json",
+      "git_blob_sha1": "bd265f8c6395e7dc6b3e2a17f261f414cabd398c",
+      "bytes": 6678
+    },
+    {
+      "path": "tests/WorkAssistant.Ocr.Tests/NativeProbe.csproj",
+      "git_blob_sha1": "8d519cdb828b2f62e6807470fc18daf982ad9d86",
+      "bytes": 1109
+    }
+  ],
+  "archive_transport_error": "curl exit 18: transfer closed with 121193 bytes remaining; unauthenticated GitHub API rate limit exhausted",
+  "tests_executed": false,
+  "record_kind": "historical_local_research_snapshot",
+  "interpretation": "本文件记录调研过程中本地下载的 447 个文件及 29 个未下载测试文件，不表示远端仓库缺失这些文件，不作为远端源码删除或重建依据。",
+  "source_commit_sha": "4ef75b18004ec7e902d46cb9d4d69270e5ad2655",
+  "source_tree_sha": "c7cea0e5fe084101c20b18b9a470763c0e44beba",
+  "reference_correction": {
+    "originally_labelled_tree_sha": "4ef75b18004ec7e902d46cb9d4d69270e5ad2655",
+    "verified_object_type": "commit",
+    "corrected_during": "SSH Git checkout for dual-baseline documentation upload"
+  }
+}

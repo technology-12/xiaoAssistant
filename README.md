@@ -1,5 +1,13 @@
 # 晓助手 1.0.7 源码与技术方案
 
+<!-- windows-uos-baselines -->
+## Windows 与统信 UOS 基线
+
+- [双基线管理入口](baselines/README.md)：Windows 1.0.7 源码基线与 UOS B0 规划基线分开管理。
+- [统信迁移文档](docs/linux-port/README.md)：迁移方案、开发环境评估、21 个 AI 任务与验收条件。
+- macOS、Windows 均可开发统信版；目标系统验证在 UOS/Linux 进行。UOS 当前尚无已验收发布物。
+
+
 当前基线包含 Windows 主线和 XP 试用候选源码。版本修复和验证范围见 [1.0.7 交付报告](docs/RELEASE_1.0.7.md)。
 
 从 Mac 开发 Linux 桌面版本，请先读 [Linux 移植交接](docs/LINUX_PORT_HANDOFF.md)。真实模型凭据在应用内配置，仓库的默认 API 密钥为空。
