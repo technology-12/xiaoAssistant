@@ -1,0 +1,24 @@
+UI SELFTEST PASS
+[PASS] 授权后 IsAuthorized=true
+[PASS] 初始无会话（欢迎页）
+[PASS] 授权后输入可用
+[PASS] 空闲时 IsBusy=false
+[PASS] 任务结束后 IsRunning=false
+[PASS] 有会话内容
+[PASS] 对话条目数=3（用户/步骤组/助手），实际 3
+[PASS] 首条为用户消息
+[PASS] 第二条为执行步骤组
+[PASS] 步骤组折叠标题：已完成 7 个步骤
+[PASS] 完成后步骤组默认折叠
+[PASS] 步骤数 >= 4，实际 7
+[PASS] 所有步骤已结束
+[PASS] 末条为助手消息
+[PASS] 助手消息挂 2 个成果卡
+[PASS] 成果文件存在
+[PASS] 完成后状态行清空
+[PASS] 侧栏历史出现条目
+[PASS] 历史回看态生效
+[PASS] 回看时输入锁定
+[PASS] 锁定原因说明历史任务
+[PASS] 回看重建 3 个条目，实际 3
+[PASS] 新建任务清空会话回到欢迎页

@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType><AssemblyName>Xiao.Launcher</AssemblyName><RootNamespace>WorkAssistant.Launcher</RootNamespace>
+    <ApplicationIcon>../WorkAssistant.Desktop/Assets/AppIcon.ico</ApplicationIcon>
+    <AssemblyTitle>晓助手</AssemblyTitle><Product>晓助手</Product>
+  </PropertyGroup>
+  <ItemGroup><Reference Include="System.Windows.Forms" /></ItemGroup>
+</Project>

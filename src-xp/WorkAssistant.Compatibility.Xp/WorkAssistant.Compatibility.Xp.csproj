@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>WorkAssistant.Compatibility.Xp</RootNamespace>
+    <AssemblyName>WorkAssistant.Compatibility.Xp</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Dispatcher 扩展需要 WindowsBase（.NET 4 Full 自带；仅该程序集，不引入整套 WPF 目标） -->
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+</Project>

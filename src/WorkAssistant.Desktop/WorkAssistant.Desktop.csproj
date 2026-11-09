@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <AssemblyTitle>晓助手</AssemblyTitle>
+    <Product>晓助手</Product>
+    <RootNamespace>WorkAssistant.Desktop</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets\AppIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WorkAssistant.Host\WorkAssistant.Host.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="..\WorkAssistant.Core\WorkAssistant.Core.csproj" />
+    <ProjectReference Include="..\WorkAssistant.OpenCode\WorkAssistant.OpenCode.csproj" />
+    <ProjectReference Include="..\WorkAssistant.Infrastructure\WorkAssistant.Infrastructure.csproj" />
+    <ProjectReference Include="..\WorkAssistant.Tools\WorkAssistant.Tools.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\config\app.defaults.json" Link="app.defaults.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="..\..\config\kernel.policy.json" Link="kernel.policy.json" CopyToOutputDirectory="PreserveNewest" />
+    <Resource Include="Assets\AppIcon.png" />
+    <Resource Include="Assets\AppIcon.ico" />
+    <Content Include="Assets\AppIcon.ico" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="..\..\skills\**\*" Link="skills\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <Target Name="CopyTaskHost" AfterTargets="Build">
+    <MSBuild Projects="..\WorkAssistant.Host\WorkAssistant.Host.csproj" Targets="GetTargetPath" BuildInParallel="false">
+      <Output TaskParameter="TargetOutputs" ItemName="HostExecutable" />
+    </MSBuild>
+    <ItemGroup>
+      <HostFiles Include="@(HostExecutable)" />
+      <HostFiles Include="@(HostExecutable->'%(FullPath).config')" Condition="Exists('%(FullPath).config')" />
+    </ItemGroup>
+    <Copy SourceFiles="@(HostFiles)" DestinationFolder="$(OutDir)" SkipUnchangedFiles="true" />
+  </Target>
+</Project>

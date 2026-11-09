@@ -1,0 +1,13 @@
+<Window x:Class="WorkAssistant.Desktop.DiagnosticsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="执行详情" Width="640" Height="480" WindowStartupLocation="CenterOwner"
+        Background="{StaticResource BrushSurfaceMain}" FontFamily="{StaticResource FontUi}">
+    <DockPanel Margin="16,12">
+        <TextBlock DockPanel.Dock="Top" Style="{StaticResource TextSecondary}" Margin="0,0,0,8"
+                   Text="当前任务的完整事件日志（UTC 落盘，展示为本地时间；不含凭据与原始文件内容）" TextWrapping="Wrap" />
+        <ListBox x:Name="EventsList" BorderThickness="0" Background="Transparent"
+                 FontFamily="{StaticResource FontMono}" FontSize="12"
+                 ScrollViewer.HorizontalScrollBarVisibility="Auto" />
+    </DockPanel>
+</Window>

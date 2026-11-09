@@ -1,0 +1,14 @@
+{
+  "Id": "file-organizer",
+  "Name": "文件归档",
+  "Description": "生成文件归档计划，在用户确认后移动或改名。",
+  "Version": "1.1",
+  "AllowedTools": [
+    "list_files",
+    "plan_file_organization",
+    "apply_file_plan",
+    "ask_user",
+    "read_document_text",
+    "search_input_text"
+  ]
+}

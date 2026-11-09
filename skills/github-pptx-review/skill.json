@@ -1,0 +1,15 @@
+{
+  "Id": "github-pptx-review",
+  "Name": "PPT 审阅与优化（GitHub 迁移）",
+  "Description": "从 MIT PowerPoint 质量技能适配：按页核对标题、信息密度、事实与编辑范围，输出问题或修改副本。",
+  "Version": "1.1",
+  "AllowedTools": [
+    "list_files",
+    "read_document_text",
+    "inspect_office",
+    "write_presentation",
+    "edit_presentation",
+    "ask_user",
+    "document_workspace"
+  ]
+}

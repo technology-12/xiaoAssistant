@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>WorkAssistant.Tools</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WorkAssistant.Core\WorkAssistant.Core.csproj" />
+    <EmbeddedResource Include="Assets\PresentationBase.pptx" />
+    <Content Include="..\..\assets\ocr\**\*" Link="ocr\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="CsvHelper" Version="33.0.1" />
+    <PackageReference Include="PdfPig" Version="0.1.9" />
+    <PackageReference Include="PdfPig.Rendering.Skia" Version="0.1.9.1" />
+    <PackageReference Include="SkiaSharp" Version="2.88.9" />
+    <PackageReference Include="Tesseract" Version="5.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- XLSX/DOCX ZIP 包读写（纯托管，net48 自带，无 native 依赖） -->
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+  </ItemGroup>
+</Project>

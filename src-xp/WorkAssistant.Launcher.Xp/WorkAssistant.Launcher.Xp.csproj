@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- XP 线启动器：根目录 晓助手.exe；Program 使用 XP 变体（.NET 4 Full 提示）。 -->
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>Xiao.Launcher</AssemblyName>
+    <RootNamespace>WorkAssistant.Launcher</RootNamespace>
+    <ApplicationIcon>..\..\src\WorkAssistant.Desktop\Assets\AppIcon.ico</ApplicationIcon>
+    <AssemblyTitle>晓助手</AssemblyTitle>
+    <Product>晓助手</Product>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\WorkAssistant.Launcher\Program.Xp.cs" Link="Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>WinExe</OutputType><RootNamespace>WorkAssistant.Host</RootNamespace></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WorkAssistant.Core\WorkAssistant.Core.csproj" />
+    <ProjectReference Include="..\WorkAssistant.Infrastructure\WorkAssistant.Infrastructure.csproj" />
+    <ProjectReference Include="..\WorkAssistant.Tools\WorkAssistant.Tools.csproj" />
+  </ItemGroup>
+</Project>

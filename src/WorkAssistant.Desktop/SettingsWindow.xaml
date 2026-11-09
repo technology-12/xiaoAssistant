@@ -1,0 +1,92 @@
+<Window x:Class="WorkAssistant.Desktop.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="模型与偏好设置" Width="560" Height="740" MinWidth="480" MinHeight="560"
+        WindowStartupLocation="CenterOwner" ShowInTaskbar="False"
+        Background="{StaticResource BrushSurfaceMain}" FontFamily="{StaticResource FontUi}" UseLayoutRounding="True">
+    <Grid>
+        <Grid.RowDefinitions><RowDefinition Height="*" /><RowDefinition Height="Auto" /></Grid.RowDefinitions>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+            <StackPanel Margin="32,28,32,20">
+                <TextBlock Text="模型与偏好" FontSize="22" FontWeight="Medium" Foreground="{StaticResource BrushTextPrimary}" />
+                <TextBlock Text="任务和文件处理在本机完成，仅将必要上下文发送至你指定的模型服务。" Style="{StaticResource StudioCaption}" Margin="0,10,0,16" />
+                <Expander x:Name="RemoteKernelExpander" Header="历史远程内核配置（高级）" Style="{StaticResource StepsExpander}" Margin="0,0,0,24">
+                <StackPanel x:Name="RemoteKernelPanel">
+                <CheckBox x:Name="RemoteKernelCheck" Content="使用 OpenCode 远程内核" Margin="0,14,0,12" MinHeight="32" FontSize="13" />
+                <TextBlock Text="关闭后回退到原有本机内核。两种内核共用项目、对话和受控办公工具。" Style="{StaticResource StudioCaption}" Margin="0,0,0,16" />
+                <Label Content="内核服务地址" Target="{Binding ElementName=KernelUrlBox}" Padding="0" />
+                <TextBox x:Name="KernelUrlBox" Style="{StaticResource InputBox}" Margin="0,8,0,12" AutomationProperties.Name="OpenCode 内核服务地址" />
+                <Label Content="内核访问令牌" Target="{Binding ElementName=KernelTokenBox}" Padding="0" />
+                <PasswordBox x:Name="KernelTokenBox" Style="{StaticResource InputPassword}" Margin="0,8,0,8" AutomationProperties.Name="OpenCode 内核访问令牌" />
+                <TextBlock Text="远程地址使用 HTTPS；本机回环支持 HTTP。模型密钥与必要上下文会交给你指定的内核服务，本地文件操作仍逐项受控。访问令牌保存在当前 Windows 用户的加密配置中。" Style="{StaticResource StudioCaption}" Margin="0,0,0,12" />
+                <Button Content="检查内核连接" Style="{StaticResource StudioButton}" Click="OnTestKernel" HorizontalAlignment="Left" Margin="0,0,0,24" MinHeight="40" />
+                </StackPanel></Expander>
+                <TextBlock Text="模型连接" FontSize="26" FontWeight="Medium" Foreground="{StaticResource BrushTextPrimary}" />
+                <TextBlock Text="可以保存多个模型配置（公网或指定 IP 网关），一键切换。" Style="{StaticResource StudioCaption}" Margin="0,8,0,22" />
+                <Border Background="{StaticResource BrushAccentSoft}" CornerRadius="10" Padding="14,12" Margin="0,0,0,24">
+                    <TextBlock Text="支持互联网 API 或指定 IP 网关。按服务商选择协议，并测试工具调用能力。" Style="{StaticResource StudioCaption}" Foreground="{StaticResource BrushTextPrimary}" />
+                </Border>
+
+                <!-- Profile 管理 -->
+                <Grid Margin="0,0,0,8">
+                    <Grid.ColumnDefinitions><ColumnDefinition Width="*" /><ColumnDefinition Width="Auto" /><ColumnDefinition Width="Auto" /></Grid.ColumnDefinitions>
+                    <ComboBox x:Name="ProfileBox" SelectionChanged="OnProfileSelected" VerticalContentAlignment="Center" MinHeight="34"
+                              AutomationProperties.Name="模型配置 Profile" />
+                    <Button Grid.Column="1" x:Name="AddProfileButton" Style="{StaticResource StudioButton}" Content="新增" Margin="8,0,0,0" MinWidth="64" Click="OnAddProfile" />
+                    <Button Grid.Column="2" x:Name="DeleteProfileButton" Style="{StaticResource StudioButton}" Content="删除" Margin="8,0,0,0" MinWidth="64" Click="OnDeleteProfile" />
+                </Grid>
+                <TextBlock Text="切换配置后需要保存；正在运行的任务继续使用原配置。" Style="{StaticResource StudioCaption}" Margin="1,4,0,18" />
+
+                <Label Target="{Binding ElementName=ProtocolBox}" Content="接口协议" Padding="0" FontSize="13" />
+                <ComboBox x:Name="ProtocolBox" MinHeight="40" Margin="0,8,0,18" AutomationProperties.Name="模型接口协议">
+                    <ComboBoxItem Content="OpenAI / DeepSeek · Chat Completions" Tag="openai-chat" />
+                    <ComboBoxItem Content="Anthropic · Messages" Tag="anthropic-messages" />
+                </ComboBox>
+                <Label Target="{Binding ElementName=BaseUrlBox}" Content="接口地址" Padding="0" FontSize="13" Foreground="{StaticResource BrushTextPrimary}" />
+                <TextBox x:Name="BaseUrlBox" Style="{StaticResource InputBox}" Text="https://gateway.example.com/v1" Margin="0,8,0,0" AutomationProperties.Name="模型接口地址" />
+                <TextBlock x:Name="BaseUrlHintText" Text="填写服务商提供的基础地址，通常以 /v1 结尾。" Style="{StaticResource StudioCaption}" Margin="1,6,0,20" />
+                <Label Target="{Binding ElementName=ModelBox}" Content="模型名称" Padding="0" FontSize="13" Foreground="{StaticResource BrushTextPrimary}" />
+                <TextBox x:Name="ModelBox" Style="{StaticResource InputBox}" Margin="0,8,0,0" AutomationProperties.Name="模型名称" />
+                <TextBlock Text="填写服务端提供的模型 ID。" Style="{StaticResource StudioCaption}" Margin="1,6,0,20" />
+                <Label Target="{Binding ElementName=ApiKeyBox}" Content="API Key" Padding="0" FontSize="13" Foreground="{StaticResource BrushTextPrimary}" />
+                <PasswordBox x:Name="ApiKeyBox" Style="{StaticResource InputPassword}" Margin="0,8,0,0" AutomationProperties.Name="模型访问密钥" />
+                <TextBlock Text="软件提供默认模型配置，可在上方切换；你保存的密钥使用 Windows 当前用户加密保护。分发包中的共享默认密钥仍可被提取。" Style="{StaticResource StudioCaption}" Margin="1,6,0,22" />
+                <Expander Header="高级设置与运行模式" Style="{StaticResource StepsExpander}">
+                    <StackPanel Margin="0,12,0,0">
+                        <Label Content="上下文窗口 · tokens" Target="{Binding ElementName=ContextTokensBox}" Padding="0" FontSize="13" />
+                        <TextBox x:Name="ContextTokensBox" Style="{StaticResource InputBox}" Margin="0,8,0,14" AutomationProperties.Name="模型上下文窗口 tokens" LostFocus="OnValidateLimits" />
+                        <Label Content="最大输出 · tokens" Target="{Binding ElementName=OutputTokensBox}" Padding="0" FontSize="13" />
+                        <TextBox x:Name="OutputTokensBox" Style="{StaticResource InputBox}" Margin="0,8,0,6" AutomationProperties.Name="模型最大输出 tokens" LostFocus="OnValidateLimits" />
+                        <TextBlock Text="按服务商提供的数值填写。0 表示使用工作区模型目录或默认预算；输出额度须小于上下文窗口。" Style="{StaticResource StudioCaption}" />
+                        <TextBlock x:Name="ContextErrorText" Foreground="{StaticResource BrushError}" TextWrapping="Wrap" FontSize="13" Margin="0,8,0,0" Visibility="Collapsed" />
+                        <StackPanel x:Name="AnthropicVersionPanel" Margin="0,16,0,0" Visibility="Collapsed">
+                            <Label Content="Messages API 版本" Target="{Binding ElementName=AnthropicVersionBox}" Padding="0" FontSize="13" />
+                            <TextBox x:Name="AnthropicVersionBox" Style="{StaticResource InputBox}" Margin="0,8,0,0" AutomationProperties.Name="Anthropic API 版本" />
+                        </StackPanel>
+                        <Border Height="1" Background="{StaticResource BrushBorderSubtle}" Margin="0,20,0,20" />
+                        <CheckBox x:Name="EnableSubAgentsCheck" Content="启用本地并发子 Agent" FontSize="13" Margin="0,0,0,12" />
+                        <Label Content="子 Agent 使用的模型配置" Target="{Binding ElementName=SubAgentProfileBox}" Padding="0" FontSize="13" />
+                        <ComboBox x:Name="SubAgentProfileBox" MinHeight="36" Margin="0,8,0,8" AutomationProperties.Name="子 Agent 模型配置" />
+                        <TextBlock Text="最多 2 个子任务同时运行，仅向所选模型 API 发送推理所需内容；调度、记录、文件处理均在本机。子任务继承主任务读写权限，在各自独立目录生成成果，由主流程汇总。" Style="{StaticResource StudioCaption}" Margin="0,0,0,20" />
+                        <Grid><Grid.ColumnDefinitions><ColumnDefinition Width="*" /><ColumnDefinition Width="100" /></Grid.ColumnDefinitions>
+                            <Label Content="请求超时（秒）" Target="{Binding ElementName=TimeoutBox}" VerticalAlignment="Center" FontSize="13" Padding="0" />
+                            <TextBox Grid.Column="1" x:Name="TimeoutBox" Style="{StaticResource InputBox}" Text="90" />
+                        </Grid>
+                        <CheckBox x:Name="ProxyCheck" Content="使用系统代理访问模型服务" IsChecked="True" Margin="0,18,0,14" FontSize="13" />
+                        <CheckBox x:Name="DemoModeCheck" Checked="OnDemoModeChanged" Unchecked="OnDemoModeChanged" FontSize="13"><TextBlock Text="演示模式 · 不访问网络" TextWrapping="Wrap" /></CheckBox>
+                        <TextBlock x:Name="ModeLockHint" Text="任务运行中不能切换模式" Style="{StaticResource StudioCaption}" Visibility="Collapsed" Margin="0,6,0,0" />
+                    </StackPanel>
+                </Expander>
+                <TextBlock x:Name="TestResultText" TextWrapping="Wrap" Margin="0,18,0,0" FontSize="13" LineHeight="22" Visibility="Collapsed" />
+                <TextBlock x:Name="SaveResultText" Style="{StaticResource StudioCaption}" Margin="0,8,0,0" />
+            </StackPanel>
+        </ScrollViewer>
+        <Border Grid.Row="1" BorderBrush="{StaticResource BrushBorderSubtle}" BorderThickness="0,1,0,0" Background="{StaticResource BrushSurfaceElevated}" Padding="24,16">
+            <Grid><Grid.ColumnDefinitions><ColumnDefinition Width="*" /><ColumnDefinition Width="Auto" /><ColumnDefinition Width="Auto" /></Grid.ColumnDefinitions>
+                <Button x:Name="TestButton" Style="{StaticResource StudioButton}" Content="测试连接" Click="OnTestConnection" HorizontalAlignment="Left" />
+                <Button Grid.Column="1" Style="{StaticResource StudioButton}" Content="取消" IsCancel="True" Margin="0,0,8,0" Padding="18,9" />
+                <Button Grid.Column="2" Style="{StaticResource StudioPrimary}" Content="保存设置" Click="OnSave" Padding="20,9" />
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

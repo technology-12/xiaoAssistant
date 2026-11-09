@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- XP 线 Infrastructure：链接主线源码；ProjectConfigurationFiles/TaskHostClient/
+       EnvironmentReport/LimitedReadStream 使用 XP 变体（Vista+ API 与 net40 Stream 差异）。 -->
+  <PropertyGroup>
+    <RootNamespace>WorkAssistant.Infrastructure</RootNamespace>
+    <AssemblyName>WorkAssistant.Infrastructure</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\src\WorkAssistant.Infrastructure\*.cs"
+             Exclude="..\..\src\WorkAssistant.Infrastructure\ProjectConfigurationFiles.cs;..\..\src\WorkAssistant.Infrastructure\TaskHostClient.cs;..\..\src\WorkAssistant.Infrastructure\EnvironmentReport.cs;..\..\src\WorkAssistant.Infrastructure\LimitedReadStream.cs;..\..\src\WorkAssistant.Infrastructure\TrustedUpdates.cs"
+             Link="%(RecursiveDir)%(Filename)%(Extension)" />
+    <Compile Include="..\WorkAssistant.Infrastructure\ProjectConfigurationFiles.Xp.cs" Link="ProjectConfigurationFiles.Xp.cs" />
+    <Compile Include="..\WorkAssistant.Infrastructure\TaskHostClient.Xp.cs" Link="TaskHostClient.Xp.cs" />
+    <Compile Include="..\WorkAssistant.Infrastructure\EnvironmentReport.Xp.cs" Link="EnvironmentReport.Xp.cs" />
+    <Compile Include="..\WorkAssistant.Infrastructure\LimitedReadStream.Xp.cs" Link="LimitedReadStream.Xp.cs" />
+    <Compile Include="..\WorkAssistant.Infrastructure\TrustedUpdates.Xp.cs" Link="TrustedUpdates.Xp.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+      <_Parameter1>WorkAssistant.Tests.Console</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WorkAssistant.Core.Xp\WorkAssistant.Core.Xp.csproj" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <!-- System.Data.SQLite 1.0.119 提供 net40 托管程序集（x86/x64 Interop 由包内 build 目标落盘） -->
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.119" />
+    <Reference Include="System.Security" />
+  </ItemGroup>
+</Project>

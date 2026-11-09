@@ -1,0 +1,25 @@
+{
+  "id": "github-docx",
+  "repository": "https://github.com/darce07/docx-mit-claude-skill",
+  "commit": "cd1100a20fa83d2b77fa0405c9298f228e5df214",
+  "license": "MIT",
+  "mode": "adapted-workflow",
+  "upstream_skill_url": "https://github.com/darce07/docx-mit-claude-skill/blob/cd1100a20fa83d2b77fa0405c9298f228e5df214/SKILL.md",
+  "upstream_files": {
+    "SKILL.md": "e9ba168c21b2ea479a267bf9cab293cc349d551cec72657c52a09b74cafc6584",
+    "LICENSE": "0bfc640e27afeb66fa10fcf9e64e9230133126907de0879b1f6a94d654b7dc49",
+    "scripts/spellcheck.py": "08d4f492aeb633847b2d1a0cf81a98edcc2fc1b2caf16f044fb6d4d3ba79aef3"
+  },
+  "native_tools": [
+    "inspect_office",
+    "write_word",
+    "edit_word"
+  ],
+  "adaptations": [
+    "Chinese instructions and native C# tool mapping",
+    "Frozen, bounded markdown references via read_skill(resource)",
+    "Own-task artifact readback and heuristic proofread findings",
+    "No upstream scripts, Python runtimes, COM automation, remote services or media assets bundled",
+    "Unavailable capabilities explicitly excluded"
+  ]
+}

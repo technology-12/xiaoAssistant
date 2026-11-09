@@ -1,0 +1,47 @@
+[
+  {
+    "file": "classic-content-update.pdf",
+    "text": "LATEST",
+    "error": null
+  },
+  {
+    "file": "generation-reuse.pdf",
+    "text": "REUSED",
+    "error": null
+  },
+  {
+    "file": "metadata-update.pdf",
+    "text": "OLD",
+    "error": null
+  },
+  {
+    "file": "freed-content.pdf",
+    "text": "AFTER_FREE",
+    "error": null
+  },
+  {
+    "file": "freed-reference-invalid.pdf",
+    "text": null,
+    "error": "UNSUPPORTED_FORMAT"
+  },
+  {
+    "file": "orphan-object.pdf",
+    "text": "OLD",
+    "error": null
+  },
+  {
+    "file": "xref-stream-update.pdf",
+    "text": "OLD",
+    "error": null
+  },
+  {
+    "file": "object-stream.pdf",
+    "text": "COMPRESSED",
+    "error": null
+  },
+  {
+    "file": "object-stream-incremental.pdf",
+    "text": "COMPRESSED_LATEST",
+    "error": null
+  }
+]

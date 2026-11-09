@@ -1,0 +1,13 @@
+{
+  "Id": "pdf-extract",
+  "Name": "PDF 文字提取",
+  "Description": "读取 PDF 文字，扫描页自动本地 OCR，保留页码、识别提示与处理范围。",
+  "Version": "1.2",
+  "AllowedTools": [
+    "list_files",
+    "extract_pdf_text",
+    "ask_user",
+    "read_document_text",
+    "search_input_text"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "Id": "spreadsheet-assistant",
+  "Name": "表格整理",
+  "Description": "预览表格，按用户指定的字段、筛选和映射进行计算与导出。",
+  "Version": "1.1",
+  "AllowedTools": [
+    "list_files",
+    "preview_csv",
+    "preview_table",
+    "aggregate_csv",
+    "aggregate_table",
+    "export_xlsx",
+    "ask_user",
+    "read_document_text",
+    "search_input_text"
+  ]
+}

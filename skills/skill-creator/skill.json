@@ -1,0 +1,10 @@
+{
+  "Id": "skill-creator",
+  "Name": "技能创建器",
+  "Description": "把重复的办公方法整理成可审阅、可安装的技能。",
+  "Version": "1.0",
+  "AllowedTools": [
+    "ask_user",
+    "draft_skill"
+  ]
+}

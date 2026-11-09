@@ -1,0 +1,21 @@
+<Project>
+  <!-- 公共属性：net48 目标、锁定语言版本、统一公司信息 -->
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+    <Company>Win7WorkAssistant</Company>
+    <Version>1.0.7</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.7.0</FileVersion>
+    <Deterministic>true</Deterministic>
+    <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
+    <MSBuildTreatWarningsAsMessages Condition="'$(CI)' == ''">true</MSBuildTreatWarningsAsMessages>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- 无 VS/targeting pack 环境下提供 net48 引用程序集（仅构建期） -->
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="All" />
+  </ItemGroup>
+</Project>

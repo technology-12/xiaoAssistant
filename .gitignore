@@ -1,0 +1,23 @@
+bin/
+obj/
+*.user
+.vs/
+release/
+.claude/
+
+# Build outputs and machine-local state
+artifacts/
+node_modules/
+__pycache__/
+.DS_Store
+settings.json
+credentials.dat
+用户数据/
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.sqlite3
+*.db
+*.log

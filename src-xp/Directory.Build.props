@@ -1,0 +1,29 @@
+<Project>
+  <!-- XP 线公共属性（基线 XP-01）：.NET Framework 4 Full、显式 x86/x64、禁用 AnyCPU、
+       PE 子系统版本 5.01/5.02、net40 真实引用程序集构建。 -->
+  <PropertyGroup>
+    <TargetFramework>net40</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <Company>Win7WorkAssistant</Company>
+    <Version>1.0.7</Version>
+    <AssemblyVersion>1.0.7.0</AssemblyVersion>
+    <FileVersion>1.0.7.0</FileVersion>
+    <Product>晓助手</Product>
+    <Deterministic>true</Deterministic>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>$(MSBuildThisFileDirectory)..\artifacts\xp-candidate\$(Configuration)\$(Platform)\</OutputPath>
+    <!-- 显式平台：x86 → 32 位（XP SP3），x64 → 64 位（XP x64 SP2）。 -->
+    <PlatformTarget Condition="'$(Platform)' == 'x86'">x86</PlatformTarget>
+    <PlatformTarget Condition="'$(Platform)' == 'x64'">x64</PlatformTarget>
+    <SubsystemVersion Condition="'$(Platform)' == 'x86'">5.01</SubsystemVersion>
+    <SubsystemVersion Condition="'$(Platform)' == 'x64'">5.02</SubsystemVersion>
+    <GenerateBindingRedirectsOutputType>false</GenerateBindingRedirectsOutputType>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <MSBuildTreatWarningsAsMessages Condition="'$(CI)' == ''">true</MSBuildTreatWarningsAsMessages>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- 构建期 net40 引用程序集（不用开发机 4.8 程序集充当 4.0 引用集） -->
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="All" />
+  </ItemGroup>
+</Project>

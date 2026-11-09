@@ -1,0 +1,7 @@
+.local
+upstream
+verification
+**/node_modules
+**/.git
+**/bin
+**/obj

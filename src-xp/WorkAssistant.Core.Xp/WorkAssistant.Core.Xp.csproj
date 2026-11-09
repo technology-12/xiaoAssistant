@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- XP 线 Core：链接主线全部源码（除 net48 透传辅助 XpRuntime.cs，由兼容层提供实现） -->
+  <PropertyGroup>
+    <RootNamespace>WorkAssistant.Core</RootNamespace>
+    <AssemblyName>WorkAssistant.Core</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\src\WorkAssistant.Core\*.cs" Exclude="..\..\src\WorkAssistant.Core\XpRuntime.cs" Link="%(RecursiveDir)%(Filename)%(Extension)" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WorkAssistant.Compatibility.Xp\WorkAssistant.Compatibility.Xp.csproj" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <!-- net40 官方 ValueTuple 资产（共享源码使用元组语法） -->
+    <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+  </ItemGroup>
+</Project>

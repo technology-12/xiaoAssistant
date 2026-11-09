@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- XP 线 Tools：链接主线源码；VerifiedFiles/AtomicTextTransaction/CsvReading/PdfText
+       使用 XP 变体（Vista+ 文件 API、CsvHelper/PdfPig 无 net40 资产）。 -->
+  <PropertyGroup>
+    <RootNamespace>WorkAssistant.Tools</RootNamespace>
+    <AssemblyName>WorkAssistant.Tools</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\src\WorkAssistant.Tools\*.cs"
+             Exclude="..\..\src\WorkAssistant.Tools\VerifiedFiles.cs;..\..\src\WorkAssistant.Tools\AtomicTextTransaction.cs;..\..\src\WorkAssistant.Tools\CsvReading.cs;..\..\src\WorkAssistant.Tools\PdfText.cs;..\..\src\WorkAssistant.Tools\PdfOcr.cs;..\..\src\WorkAssistant.Tools\XpRegex.cs;..\..\src\WorkAssistant.Tools\OfficeCapabilities.cs"
+             Link="%(RecursiveDir)%(Filename)%(Extension)" />
+    <Compile Include="..\WorkAssistant.Tools\VerifiedFiles.Xp.cs" Link="VerifiedFiles.Xp.cs" />
+    <Compile Include="..\WorkAssistant.Tools\AtomicTextTransaction.Xp.cs" Link="AtomicTextTransaction.Xp.cs" />
+    <Compile Include="..\WorkAssistant.Tools\CsvReading.Xp.cs" Link="CsvReading.Xp.cs" />
+    <Compile Include="..\WorkAssistant.Tools\PdfText.Xp.cs" Link="PdfText.Xp.cs" />
+    <Compile Include="..\WorkAssistant.Tools\PdfObjectIndex.Xp.cs" Link="PdfObjectIndex.Xp.cs" />
+    <Compile Include="..\WorkAssistant.Tools\OfficeCapabilities.Xp.cs" Link="OfficeCapabilities.Xp.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\src\WorkAssistant.Tools\Assets\PresentationBase.pptx" Link="Assets\PresentationBase.pptx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WorkAssistant.Core.Xp\WorkAssistant.Core.Xp.csproj" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+</Project>

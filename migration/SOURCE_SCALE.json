@@ -1,0 +1,5540 @@
+{
+  "method": "Physical lines including blanks/comments; generated code, dependencies, locks and docs excluded",
+  "upstream_commit": "09ff3b9bb925903b36aa35fec25394133a42cf6d",
+  "groups": {
+    "owned_production": {
+      "files": 95,
+      "physical": 14033,
+      "nonblank": 13173
+    },
+    "owned_verification": {
+      "files": 3,
+      "physical": 180,
+      "nonblank": 177
+    },
+    "owned_build": {
+      "files": 4,
+      "physical": 116,
+      "nonblank": 114
+    },
+    "upstream_other": {
+      "files": 527,
+      "physical": 73357,
+      "nonblank": 66456
+    },
+    "upstream_tests": {
+      "files": 53,
+      "physical": 14322,
+      "nonblank": 12814
+    },
+    "upstream_runtime": {
+      "files": 235,
+      "physical": 49615,
+      "nonblank": 45443
+    }
+  },
+  "files": [
+    {
+      "path": "src/WorkAssistant.Core/AgentController.cs",
+      "category": "owned_production",
+      "physical": 568,
+      "nonblank": 523
+    },
+    {
+      "path": "src/WorkAssistant.Core/AgentExecutionPolicy.cs",
+      "category": "owned_production",
+      "physical": 31,
+      "nonblank": 27
+    },
+    {
+      "path": "src/WorkAssistant.Core/AgentLoopGuard.cs",
+      "category": "owned_production",
+      "physical": 66,
+      "nonblank": 62
+    },
+    {
+      "path": "src/WorkAssistant.Core/AgentToolRegistry.cs",
+      "category": "owned_production",
+      "physical": 43,
+      "nonblank": 40
+    },
+    {
+      "path": "src/WorkAssistant.Core/DurableFiles.cs",
+      "category": "owned_production",
+      "physical": 30,
+      "nonblank": 29
+    },
+    {
+      "path": "src/WorkAssistant.Core/ErrorCodes.cs",
+      "category": "owned_production",
+      "physical": 59,
+      "nonblank": 53
+    },
+    {
+      "path": "src/WorkAssistant.Core/FakeModelClient.cs",
+      "category": "owned_production",
+      "physical": 447,
+      "nonblank": 421
+    },
+    {
+      "path": "src/WorkAssistant.Core/Interfaces.cs",
+      "category": "owned_production",
+      "physical": 147,
+      "nonblank": 130
+    },
+    {
+      "path": "src/WorkAssistant.Core/ModelProtocol.cs",
+      "category": "owned_production",
+      "physical": 136,
+      "nonblank": 122
+    },
+    {
+      "path": "src/WorkAssistant.Core/ModelRequestJson.cs",
+      "category": "owned_production",
+      "physical": 71,
+      "nonblank": 67
+    },
+    {
+      "path": "src/WorkAssistant.Core/ProjectRecord.cs",
+      "category": "owned_production",
+      "physical": 15,
+      "nonblank": 14
+    },
+    {
+      "path": "src/WorkAssistant.Core/SkillDefinition.cs",
+      "category": "owned_production",
+      "physical": 35,
+      "nonblank": 34
+    },
+    {
+      "path": "src/WorkAssistant.Core/SystemPrompts.cs",
+      "category": "owned_production",
+      "physical": 96,
+      "nonblank": 90
+    },
+    {
+      "path": "src/WorkAssistant.Core/TaskRecords.cs",
+      "category": "owned_production",
+      "physical": 210,
+      "nonblank": 195
+    },
+    {
+      "path": "src/WorkAssistant.Core/ToolContracts.cs",
+      "category": "owned_production",
+      "physical": 152,
+      "nonblank": 137
+    },
+    {
+      "path": "src/WorkAssistant.Core/ToolDispatcher.cs",
+      "category": "owned_production",
+      "physical": 111,
+      "nonblank": 99
+    },
+    {
+      "path": "src/WorkAssistant.Core/ToolResultJson.cs",
+      "category": "owned_production",
+      "physical": 73,
+      "nonblank": 69
+    },
+    {
+      "path": "src/WorkAssistant.Core/UserQuestions.cs",
+      "category": "owned_production",
+      "physical": 15,
+      "nonblank": 15
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/App.xaml",
+      "category": "owned_production",
+      "physical": 15,
+      "nonblank": 15
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/App.xaml.cs",
+      "category": "owned_production",
+      "physical": 322,
+      "nonblank": 298
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/ApprovalWindow.xaml",
+      "category": "owned_production",
+      "physical": 46,
+      "nonblank": 46
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/ApprovalWindow.xaml.cs",
+      "category": "owned_production",
+      "physical": 61,
+      "nonblank": 55
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Converters.cs",
+      "category": "owned_production",
+      "physical": 86,
+      "nonblank": 79
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/DiagnosticsWindow.xaml",
+      "category": "owned_production",
+      "physical": 13,
+      "nonblank": 13
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/DiagnosticsWindow.xaml.cs",
+      "category": "owned_production",
+      "physical": 37,
+      "nonblank": 36
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MaintenanceWindow.cs",
+      "category": "owned_production",
+      "physical": 125,
+      "nonblank": 124
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MainViewModel.cs",
+      "category": "owned_production",
+      "physical": 1161,
+      "nonblank": 1075
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MainViewModel.Projects.cs",
+      "category": "owned_production",
+      "physical": 169,
+      "nonblank": 167
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MainViewModel.Runtime.cs",
+      "category": "owned_production",
+      "physical": 27,
+      "nonblank": 26
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MainWindow.Projects.cs",
+      "category": "owned_production",
+      "physical": 95,
+      "nonblank": 94
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MainWindow.xaml",
+      "category": "owned_production",
+      "physical": 416,
+      "nonblank": 409
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MainWindow.xaml.cs",
+      "category": "owned_production",
+      "physical": 248,
+      "nonblank": 234
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Mvvm.cs",
+      "category": "owned_production",
+      "physical": 48,
+      "nonblank": 40
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Presentation/ConversationItem.cs",
+      "category": "owned_production",
+      "physical": 262,
+      "nonblank": 236
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Presentation/ProjectItemVm.cs",
+      "category": "owned_production",
+      "physical": 19,
+      "nonblank": 18
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/ProductionWindows.cs",
+      "category": "owned_production",
+      "physical": 139,
+      "nonblank": 136
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/ProjectEditorWindow.cs",
+      "category": "owned_production",
+      "physical": 65,
+      "nonblank": 64
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/SettingsWindow.xaml",
+      "category": "owned_production",
+      "physical": 68,
+      "nonblank": 66
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/SettingsWindow.xaml.cs",
+      "category": "owned_production",
+      "physical": 332,
+      "nonblank": 309
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/SkillLibraryWindow.cs",
+      "category": "owned_production",
+      "physical": 76,
+      "nonblank": 75
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Themes/Controls.xaml",
+      "category": "owned_production",
+      "physical": 356,
+      "nonblank": 343
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Themes/Icons.xaml",
+      "category": "owned_production",
+      "physical": 22,
+      "nonblank": 22
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Themes/Studio.xaml",
+      "category": "owned_production",
+      "physical": 99,
+      "nonblank": 99
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Themes/Tokens.xaml",
+      "category": "owned_production",
+      "physical": 57,
+      "nonblank": 51
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/UserInputProvider.cs",
+      "category": "owned_production",
+      "physical": 48,
+      "nonblank": 47
+    },
+    {
+      "path": "src/WorkAssistant.Host/FileReferenceTool.cs",
+      "category": "owned_production",
+      "physical": 86,
+      "nonblank": 85
+    },
+    {
+      "path": "src/WorkAssistant.Host/IsolatedTool.cs",
+      "category": "owned_production",
+      "physical": 83,
+      "nonblank": 82
+    },
+    {
+      "path": "src/WorkAssistant.Host/Program.cs",
+      "category": "owned_production",
+      "physical": 253,
+      "nonblank": 251
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/EnvironmentReport.cs",
+      "category": "owned_production",
+      "physical": 33,
+      "nonblank": 32
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/HostFailureInfo.cs",
+      "category": "owned_production",
+      "physical": 39,
+      "nonblank": 38
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/HostProtocol.cs",
+      "category": "owned_production",
+      "physical": 79,
+      "nonblank": 76
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/HttpModelClient.cs",
+      "category": "owned_production",
+      "physical": 575,
+      "nonblank": 529
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/LimitedReadStream.cs",
+      "category": "owned_production",
+      "physical": 23,
+      "nonblank": 22
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/LocalTaskStore.cs",
+      "category": "owned_production",
+      "physical": 463,
+      "nonblank": 429
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ProcessJob.cs",
+      "category": "owned_production",
+      "physical": 34,
+      "nonblank": 33
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/SettingsStore.cs",
+      "category": "owned_production",
+      "physical": 407,
+      "nonblank": 372
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/SkillCatalog.cs",
+      "category": "owned_production",
+      "physical": 68,
+      "nonblank": 67
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/SqliteStateStore.cs",
+      "category": "owned_production",
+      "physical": 189,
+      "nonblank": 188
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/TaskHostClient.cs",
+      "category": "owned_production",
+      "physical": 101,
+      "nonblank": 99
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/TrustedUpdates.cs",
+      "category": "owned_production",
+      "physical": 138,
+      "nonblank": 137
+    },
+    {
+      "path": "src/WorkAssistant.OpenCode/OpenCodeConnection.cs",
+      "category": "owned_production",
+      "physical": 56,
+      "nonblank": 55
+    },
+    {
+      "path": "src/WorkAssistant.OpenCode/OpenCodeGatewayClient.cs",
+      "category": "owned_production",
+      "physical": 45,
+      "nonblank": 44
+    },
+    {
+      "path": "src/WorkAssistant.OpenCode/OpenCodeTaskRunner.cs",
+      "category": "owned_production",
+      "physical": 142,
+      "nonblank": 140
+    },
+    {
+      "path": "src/WorkAssistant.Tools/AgentToolBase.cs",
+      "category": "owned_production",
+      "physical": 71,
+      "nonblank": 66
+    },
+    {
+      "path": "src/WorkAssistant.Tools/AggregateCsvTool.cs",
+      "category": "owned_production",
+      "physical": 164,
+      "nonblank": 147
+    },
+    {
+      "path": "src/WorkAssistant.Tools/AggregateTableTool.cs",
+      "category": "owned_production",
+      "physical": 252,
+      "nonblank": 230
+    },
+    {
+      "path": "src/WorkAssistant.Tools/AskUserTool.cs",
+      "category": "owned_production",
+      "physical": 33,
+      "nonblank": 33
+    },
+    {
+      "path": "src/WorkAssistant.Tools/CsvReading.cs",
+      "category": "owned_production",
+      "physical": 164,
+      "nonblank": 150
+    },
+    {
+      "path": "src/WorkAssistant.Tools/DocumentLimits.cs",
+      "category": "owned_production",
+      "physical": 43,
+      "nonblank": 42
+    },
+    {
+      "path": "src/WorkAssistant.Tools/DocxWriting.cs",
+      "category": "owned_production",
+      "physical": 300,
+      "nonblank": 273
+    },
+    {
+      "path": "src/WorkAssistant.Tools/DraftSkillTool.cs",
+      "category": "owned_production",
+      "physical": 34,
+      "nonblank": 33
+    },
+    {
+      "path": "src/WorkAssistant.Tools/ExportSummaryTool.cs",
+      "category": "owned_production",
+      "physical": 240,
+      "nonblank": 217
+    },
+    {
+      "path": "src/WorkAssistant.Tools/ExportValidators.cs",
+      "category": "owned_production",
+      "physical": 25,
+      "nonblank": 24
+    },
+    {
+      "path": "src/WorkAssistant.Tools/ExportXlsxTool.cs",
+      "category": "owned_production",
+      "physical": 439,
+      "nonblank": 386
+    },
+    {
+      "path": "src/WorkAssistant.Tools/FilePlanTools.cs",
+      "category": "owned_production",
+      "physical": 301,
+      "nonblank": 275
+    },
+    {
+      "path": "src/WorkAssistant.Tools/InMemoryAggregationStore.cs",
+      "category": "owned_production",
+      "physical": 28,
+      "nonblank": 25
+    },
+    {
+      "path": "src/WorkAssistant.Tools/ListFilesTool.cs",
+      "category": "owned_production",
+      "physical": 93,
+      "nonblank": 83
+    },
+    {
+      "path": "src/WorkAssistant.Tools/OutputRecovery.cs",
+      "category": "owned_production",
+      "physical": 60,
+      "nonblank": 59
+    },
+    {
+      "path": "src/WorkAssistant.Tools/OutputSanitizer.cs",
+      "category": "owned_production",
+      "physical": 55,
+      "nonblank": 52
+    },
+    {
+      "path": "src/WorkAssistant.Tools/PackageZip.cs",
+      "category": "owned_production",
+      "physical": 137,
+      "nonblank": 130
+    },
+    {
+      "path": "src/WorkAssistant.Tools/Parsing.cs",
+      "category": "owned_production",
+      "physical": 255,
+      "nonblank": 241
+    },
+    {
+      "path": "src/WorkAssistant.Tools/PdfText.cs",
+      "category": "owned_production",
+      "physical": 79,
+      "nonblank": 74
+    },
+    {
+      "path": "src/WorkAssistant.Tools/PersistentAggregationStore.cs",
+      "category": "owned_production",
+      "physical": 28,
+      "nonblank": 27
+    },
+    {
+      "path": "src/WorkAssistant.Tools/PersistentFilePlanStore.cs",
+      "category": "owned_production",
+      "physical": 28,
+      "nonblank": 27
+    },
+    {
+      "path": "src/WorkAssistant.Tools/PreviewCsvTool.cs",
+      "category": "owned_production",
+      "physical": 57,
+      "nonblank": 49
+    },
+    {
+      "path": "src/WorkAssistant.Tools/SafePreview.cs",
+      "category": "owned_production",
+      "physical": 56,
+      "nonblank": 55
+    },
+    {
+      "path": "src/WorkAssistant.Tools/TableReading.cs",
+      "category": "owned_production",
+      "physical": 195,
+      "nonblank": 185
+    },
+    {
+      "path": "src/WorkAssistant.Tools/VerifiedFiles.cs",
+      "category": "owned_production",
+      "physical": 138,
+      "nonblank": 137
+    },
+    {
+      "path": "src/WorkAssistant.Tools/WorkspacePolicy.cs",
+      "category": "owned_production",
+      "physical": 269,
+      "nonblank": 250
+    },
+    {
+      "path": "src/WorkAssistant.Tools/XlsxReading.cs",
+      "category": "owned_production",
+      "physical": 353,
+      "nonblank": 336
+    },
+    {
+      "path": "src/WorkAssistant.Tools/XlsxWriting.cs",
+      "category": "owned_production",
+      "physical": 205,
+      "nonblank": 188
+    },
+    {
+      "path": "migration/gateway/src/bridge-mcp.mjs",
+      "category": "owned_production",
+      "physical": 33,
+      "nonblank": 33
+    },
+    {
+      "path": "migration/gateway/src/opencode-runtime.mjs",
+      "category": "owned_production",
+      "physical": 157,
+      "nonblank": 155
+    },
+    {
+      "path": "migration/gateway/src/protocol.mjs",
+      "category": "owned_production",
+      "physical": 54,
+      "nonblank": 53
+    },
+    {
+      "path": "migration/gateway/src/server.mjs",
+      "category": "owned_production",
+      "physical": 156,
+      "nonblank": 155
+    },
+    {
+      "path": "migration/gateway/test/protocol.test.mjs",
+      "category": "owned_verification",
+      "physical": 67,
+      "nonblank": 66
+    },
+    {
+      "path": "migration/scripts/Count-MigrationSource.py",
+      "category": "owned_build",
+      "physical": 46,
+      "nonblank": 44
+    },
+    {
+      "path": "migration/scripts/Initialize-Desktop.ps1",
+      "category": "owned_build",
+      "physical": 26,
+      "nonblank": 26
+    },
+    {
+      "path": "migration/scripts/Start-Gateway.ps1",
+      "category": "owned_build",
+      "physical": 19,
+      "nonblank": 19
+    },
+    {
+      "path": "migration/scripts/Start-Xiao.ps1",
+      "category": "owned_build",
+      "physical": 25,
+      "nonblank": 25
+    },
+    {
+      "path": "migration/verification/Client.cs",
+      "category": "owned_verification",
+      "physical": 39,
+      "nonblank": 38
+    },
+    {
+      "path": "migration/verification/integration.mjs",
+      "category": "owned_verification",
+      "physical": 74,
+      "nonblank": 73
+    },
+    {
+      "path": "migration/upstream/opencode/.opencode/tool/github-pr-search.ts",
+      "category": "upstream_other",
+      "physical": 57,
+      "nonblank": 48
+    },
+    {
+      "path": "migration/upstream/opencode/.opencode/tool/github-triage.ts",
+      "category": "upstream_other",
+      "physical": 90,
+      "nonblank": 79
+    },
+    {
+      "path": "migration/upstream/opencode/github/index.ts",
+      "category": "upstream_other",
+      "physical": 1052,
+      "nonblank": 919
+    },
+    {
+      "path": "migration/upstream/opencode/infra/app.ts",
+      "category": "upstream_other",
+      "physical": 55,
+      "nonblank": 51
+    },
+    {
+      "path": "migration/upstream/opencode/infra/console.ts",
+      "category": "upstream_other",
+      "physical": 193,
+      "nonblank": 177
+    },
+    {
+      "path": "migration/upstream/opencode/infra/enterprise.ts",
+      "category": "upstream_other",
+      "physical": 17,
+      "nonblank": 15
+    },
+    {
+      "path": "migration/upstream/opencode/infra/secret.ts",
+      "category": "upstream_other",
+      "physical": 4,
+      "nonblank": 4
+    },
+    {
+      "path": "migration/upstream/opencode/infra/stage.ts",
+      "category": "upstream_other",
+      "physical": 19,
+      "nonblank": 16
+    },
+    {
+      "path": "migration/upstream/opencode/nix/bundle.ts",
+      "category": "upstream_other",
+      "physical": 40,
+      "nonblank": 34
+    },
+    {
+      "path": "migration/upstream/opencode/nix/scripts/bun-build.ts",
+      "category": "upstream_other",
+      "physical": 120,
+      "nonblank": 101
+    },
+    {
+      "path": "migration/upstream/opencode/nix/scripts/canonicalize-node-modules.ts",
+      "category": "upstream_other",
+      "physical": 113,
+      "nonblank": 102
+    },
+    {
+      "path": "migration/upstream/opencode/nix/scripts/normalize-bun-binaries.ts",
+      "category": "upstream_other",
+      "physical": 138,
+      "nonblank": 126
+    },
+    {
+      "path": "migration/upstream/opencode/nix/scripts/patch-wasm.ts",
+      "category": "upstream_other",
+      "physical": 43,
+      "nonblank": 33
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/happydom.ts",
+      "category": "upstream_other",
+      "physical": 75,
+      "nonblank": 73
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/public/oc-theme-preload.js",
+      "category": "upstream_other",
+      "physical": 28,
+      "nonblank": 24
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/addons/serialize.test.ts",
+      "category": "upstream_tests",
+      "physical": 319,
+      "nonblank": 231
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/addons/serialize.ts",
+      "category": "upstream_other",
+      "physical": 591,
+      "nonblank": 508
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/app.tsx",
+      "category": "upstream_other",
+      "physical": 127,
+      "nonblank": 120
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/components/dialog-connect-provider.tsx",
+      "category": "upstream_other",
+      "physical": 383,
+      "nonblank": 360
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/components/dialog-edit-project.tsx",
+      "category": "upstream_other",
+      "physical": 176,
+      "nonblank": 159
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/components/dialog-fork.tsx",
+      "category": "upstream_other",
+      "physical": 99,
+      "nonblank": 84
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/components/dialog-manage-models.tsx",
+      "category": "upstream_other",
+      "physical": 57,
+      "nonblank": 56
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/components/dialog-select-directory.tsx",
+      "category": "upstream_other",
+      "physical": 114,
+      "nonblank": 99
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/components/dialog-select-file.tsx",
+      "category": "upstream_other",
+      "physical": 52,
+      "nonblank": 51
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/components/dialog-select-mcp.tsx",
+      "category": "upstream_other",
+      "physical": 91,
+      "nonblank": 86
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/components/dialog-select-model-unpaid.tsx",
+      "category": "upstream_other",
+      "physical": 110,
+      "nonblank": 106
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/components/dialog-select-model.tsx",
+      "category": "upstream_other",
+      "physical": 115,
+      "nonblank": 108
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/components/dialog-select-provider.tsx",
+      "category": "upstream_other",
+      "physical": 54,
+      "nonblank": 52
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/components/dialog-select-server.tsx",
+      "category": "upstream_other",
+      "physical": 246,
+      "nonblank": 228
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/components/file-tree.tsx",
+      "category": "upstream_other",
+      "physical": 112,
+      "nonblank": 106
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/components/link.tsx",
+      "category": "upstream_other",
+      "physical": 17,
+      "nonblank": 14
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/components/prompt-input.tsx",
+      "category": "upstream_other",
+      "physical": 1798,
+      "nonblank": 1639
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/components/session/index.ts",
+      "category": "upstream_other",
+      "physical": 5,
+      "nonblank": 5
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/components/session/session-context-tab.tsx",
+      "category": "upstream_other",
+      "physical": 425,
+      "nonblank": 381
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/components/session/session-header.tsx",
+      "category": "upstream_other",
+      "physical": 267,
+      "nonblank": 261
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/components/session/session-new-view.tsx",
+      "category": "upstream_other",
+      "physical": 89,
+      "nonblank": 81
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/components/session/session-sortable-tab.tsx",
+      "category": "upstream_other",
+      "physical": 49,
+      "nonblank": 47
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/components/session/session-sortable-terminal-tab.tsx",
+      "category": "upstream_other",
+      "physical": 27,
+      "nonblank": 26
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/components/session-context-usage.tsx",
+      "category": "upstream_other",
+      "physical": 103,
+      "nonblank": 93
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/components/session-lsp-indicator.tsx",
+      "category": "upstream_other",
+      "physical": 38,
+      "nonblank": 34
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/components/session-mcp-indicator.tsx",
+      "category": "upstream_other",
+      "physical": 34,
+      "nonblank": 31
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/components/terminal.tsx",
+      "category": "upstream_other",
+      "physical": 296,
+      "nonblank": 265
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/context/command.tsx",
+      "category": "upstream_other",
+      "physical": 273,
+      "nonblank": 236
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/context/file.tsx",
+      "category": "upstream_other",
+      "physical": 393,
+      "nonblank": 330
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/context/global-sdk.tsx",
+      "category": "upstream_other",
+      "physical": 106,
+      "nonblank": 91
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/context/global-sync.tsx",
+      "category": "upstream_other",
+      "physical": 587,
+      "nonblank": 564
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/context/layout-scroll.test.ts",
+      "category": "upstream_tests",
+      "physical": 73,
+      "nonblank": 62
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/context/layout-scroll.ts",
+      "category": "upstream_other",
+      "physical": 118,
+      "nonblank": 95
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/context/layout.tsx",
+      "category": "upstream_other",
+      "physical": 520,
+      "nonblank": 466
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/context/local.tsx",
+      "category": "upstream_other",
+      "physical": 563,
+      "nonblank": 520
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/context/notification.tsx",
+      "category": "upstream_other",
+      "physical": 159,
+      "nonblank": 144
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/context/permission.tsx",
+      "category": "upstream_other",
+      "physical": 167,
+      "nonblank": 143
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/context/platform.tsx",
+      "category": "upstream_other",
+      "physical": 53,
+      "nonblank": 38
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/context/prompt.tsx",
+      "category": "upstream_other",
+      "physical": 244,
+      "nonblank": 214
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/context/sdk.tsx",
+      "category": "upstream_other",
+      "physical": 31,
+      "nonblank": 27
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/context/server.tsx",
+      "category": "upstream_other",
+      "physical": 203,
+      "nonblank": 177
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/context/sync.tsx",
+      "category": "upstream_other",
+      "physical": 256,
+      "nonblank": 230
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/context/terminal.tsx",
+      "category": "upstream_other",
+      "physical": 202,
+      "nonblank": 184
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/entry.tsx",
+      "category": "upstream_other",
+      "physical": 64,
+      "nonblank": 57
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/hooks/use-providers.ts",
+      "category": "upstream_other",
+      "physical": 31,
+      "nonblank": 29
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/index.css",
+      "category": "upstream_other",
+      "physical": 7,
+      "nonblank": 6
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/index.ts",
+      "category": "upstream_other",
+      "physical": 2,
+      "nonblank": 2
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/pages/directory-layout.tsx",
+      "category": "upstream_other",
+      "physical": 57,
+      "nonblank": 51
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/pages/error.tsx",
+      "category": "upstream_other",
+      "physical": 259,
+      "nonblank": 231
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/pages/home.tsx",
+      "category": "upstream_other",
+      "physical": 122,
+      "nonblank": 117
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/pages/layout.tsx",
+      "category": "upstream_other",
+      "physical": 1312,
+      "nonblank": 1213
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/pages/session.tsx",
+      "category": "upstream_other",
+      "physical": 1701,
+      "nonblank": 1556
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/utils/dom.ts",
+      "category": "upstream_other",
+      "physical": 51,
+      "nonblank": 49
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/utils/id.ts",
+      "category": "upstream_other",
+      "physical": 99,
+      "nonblank": 78
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/utils/index.ts",
+      "category": "upstream_other",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/utils/perf.ts",
+      "category": "upstream_other",
+      "physical": 135,
+      "nonblank": 109
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/utils/persist.ts",
+      "category": "upstream_other",
+      "physical": 244,
+      "nonblank": 199
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/utils/prompt.ts",
+      "category": "upstream_other",
+      "physical": 202,
+      "nonblank": 176
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/utils/same.ts",
+      "category": "upstream_other",
+      "physical": 6,
+      "nonblank": 6
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/utils/solid-dnd.tsx",
+      "category": "upstream_other",
+      "physical": 55,
+      "nonblank": 52
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/src/utils/speech.ts",
+      "category": "upstream_other",
+      "physical": 302,
+      "nonblank": 270
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/vite.config.ts",
+      "category": "upstream_other",
+      "physical": 15,
+      "nonblank": 14
+    },
+    {
+      "path": "migration/upstream/opencode/packages/app/vite.js",
+      "category": "upstream_other",
+      "physical": 26,
+      "nonblank": 25
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/script/generate-sitemap.ts",
+      "category": "upstream_other",
+      "physical": 103,
+      "nonblank": 81
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/app.css",
+      "category": "upstream_other",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/app.tsx",
+      "category": "upstream_other",
+      "physical": 27,
+      "nonblank": 26
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/component/dropdown.css",
+      "category": "upstream_other",
+      "physical": 80,
+      "nonblank": 69
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/component/dropdown.tsx",
+      "category": "upstream_other",
+      "physical": 79,
+      "nonblank": 69
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/component/email-signup.tsx",
+      "category": "upstream_other",
+      "physical": 48,
+      "nonblank": 46
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/component/faq.tsx",
+      "category": "upstream_other",
+      "physical": 33,
+      "nonblank": 32
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/component/footer.tsx",
+      "category": "upstream_other",
+      "physical": 35,
+      "nonblank": 33
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/component/header-context-menu.css",
+      "category": "upstream_other",
+      "physical": 63,
+      "nonblank": 56
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/component/header.tsx",
+      "category": "upstream_other",
+      "physical": 279,
+      "nonblank": 264
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/component/icon.tsx",
+      "category": "upstream_other",
+      "physical": 257,
+      "nonblank": 238
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/component/legal.tsx",
+      "category": "upstream_other",
+      "physical": 20,
+      "nonblank": 19
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/component/modal.css",
+      "category": "upstream_other",
+      "physical": 66,
+      "nonblank": 57
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/component/modal.tsx",
+      "category": "upstream_other",
+      "physical": 24,
+      "nonblank": 22
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/config.ts",
+      "category": "upstream_other",
+      "physical": 29,
+      "nonblank": 26
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/context/auth.session.ts",
+      "category": "upstream_other",
+      "physical": 0,
+      "nonblank": 0
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/context/auth.ts",
+      "category": "upstream_other",
+      "physical": 116,
+      "nonblank": 110
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/context/auth.withActor.ts",
+      "category": "upstream_other",
+      "physical": 7,
+      "nonblank": 6
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/entry-client.tsx",
+      "category": "upstream_other",
+      "physical": 4,
+      "nonblank": 3
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/entry-server.tsx",
+      "category": "upstream_other",
+      "physical": 30,
+      "nonblank": 28
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/lib/github.ts",
+      "category": "upstream_other",
+      "physical": 37,
+      "nonblank": 36
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/middleware.ts",
+      "category": "upstream_other",
+      "physical": 5,
+      "nonblank": 4
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/[...404].css",
+      "category": "upstream_other",
+      "physical": 130,
+      "nonblank": 110
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/[...404].tsx",
+      "category": "upstream_other",
+      "physical": 38,
+      "nonblank": 36
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/api/enterprise.ts",
+      "category": "upstream_other",
+      "physical": 47,
+      "nonblank": 40
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/auth/[...callback].ts",
+      "category": "upstream_other",
+      "physical": 41,
+      "nonblank": 39
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/auth/authorize.ts",
+      "category": "upstream_other",
+      "physical": 10,
+      "nonblank": 9
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/auth/index.ts",
+      "category": "upstream_other",
+      "physical": 12,
+      "nonblank": 11
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/auth/logout.ts",
+      "category": "upstream_other",
+      "physical": 17,
+      "nonblank": 16
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/auth/status.ts",
+      "category": "upstream_other",
+      "physical": 7,
+      "nonblank": 6
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/bench/[id].tsx",
+      "category": "upstream_other",
+      "physical": 365,
+      "nonblank": 344
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/bench/index.tsx",
+      "category": "upstream_other",
+      "physical": 86,
+      "nonblank": 80
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/bench/submission.ts",
+      "category": "upstream_other",
+      "physical": 29,
+      "nonblank": 24
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/black/common.tsx",
+      "category": "upstream_other",
+      "physical": 43,
+      "nonblank": 40
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/black/index.tsx",
+      "category": "upstream_other",
+      "physical": 80,
+      "nonblank": 78
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/black/subscribe/[plan].tsx",
+      "category": "upstream_other",
+      "physical": 450,
+      "nonblank": 413
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/black/workspace.css",
+      "category": "upstream_other",
+      "physical": 214,
+      "nonblank": 188
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/black/workspace.tsx",
+      "category": "upstream_other",
+      "physical": 229,
+      "nonblank": 222
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/black.css",
+      "category": "upstream_other",
+      "physical": 742,
+      "nonblank": 641
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/black.tsx",
+      "category": "upstream_other",
+      "physical": 166,
+      "nonblank": 164
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/brand/index.css",
+      "category": "upstream_other",
+      "physical": 555,
+      "nonblank": 470
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/brand/index.tsx",
+      "category": "upstream_other",
+      "physical": 252,
+      "nonblank": 246
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/debug/index.ts",
+      "category": "upstream_other",
+      "physical": 13,
+      "nonblank": 12
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/desktop-feedback.ts",
+      "category": "upstream_other",
+      "physical": 5,
+      "nonblank": 4
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/discord.ts",
+      "category": "upstream_other",
+      "physical": 5,
+      "nonblank": 4
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/docs/[...path].ts",
+      "category": "upstream_other",
+      "physical": 20,
+      "nonblank": 18
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/docs/index.ts",
+      "category": "upstream_other",
+      "physical": 20,
+      "nonblank": 18
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/download/[platform].ts",
+      "category": "upstream_other",
+      "physical": 38,
+      "nonblank": 31
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/download/index.css",
+      "category": "upstream_other",
+      "physical": 751,
+      "nonblank": 631
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/download/index.tsx",
+      "category": "upstream_other",
+      "physical": 481,
+      "nonblank": 459
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/download/types.ts",
+      "category": "upstream_other",
+      "physical": 4,
+      "nonblank": 4
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/enterprise/index.css",
+      "category": "upstream_other",
+      "physical": 578,
+      "nonblank": 486
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/enterprise/index.tsx",
+      "category": "upstream_other",
+      "physical": 251,
+      "nonblank": 236
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/index.css",
+      "category": "upstream_other",
+      "physical": 1251,
+      "nonblank": 1055
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/index.tsx",
+      "category": "upstream_other",
+      "physical": 839,
+      "nonblank": 821
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/legal/privacy-policy/index.css",
+      "category": "upstream_other",
+      "physical": 343,
+      "nonblank": 286
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/legal/privacy-policy/index.tsx",
+      "category": "upstream_other",
+      "physical": 1512,
+      "nonblank": 1341
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/legal/terms-of-service/index.css",
+      "category": "upstream_other",
+      "physical": 254,
+      "nonblank": 214
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/legal/terms-of-service/index.tsx",
+      "category": "upstream_other",
+      "physical": 512,
+      "nonblank": 458
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/openapi.json.ts",
+      "category": "upstream_other",
+      "physical": 7,
+      "nonblank": 7
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/s/[id].ts",
+      "category": "upstream_other",
+      "physical": 20,
+      "nonblank": 18
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/stripe/webhook.ts",
+      "category": "upstream_other",
+      "physical": 523,
+      "nonblank": 489
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/t/[...path].tsx",
+      "category": "upstream_other",
+      "physical": 20,
+      "nonblank": 18
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/temp.tsx",
+      "category": "upstream_other",
+      "physical": 172,
+      "nonblank": 162
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/user-menu.css",
+      "category": "upstream_other",
+      "physical": 18,
+      "nonblank": 16
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/user-menu.tsx",
+      "category": "upstream_other",
+      "physical": 32,
+      "nonblank": 30
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/billing/billing-section.module.css",
+      "category": "upstream_other",
+      "physical": 185,
+      "nonblank": 159
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/billing/billing-section.tsx",
+      "category": "upstream_other",
+      "physical": 240,
+      "nonblank": 225
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/billing/black-section.module.css",
+      "category": "upstream_other",
+      "physical": 8,
+      "nonblank": 8
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/billing/black-section.tsx",
+      "category": "upstream_other",
+      "physical": 58,
+      "nonblank": 54
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/billing/index.tsx",
+      "category": "upstream_other",
+      "physical": 32,
+      "nonblank": 30
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/billing/monthly-limit-section.module.css",
+      "category": "upstream_other",
+      "physical": 96,
+      "nonblank": 83
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/billing/monthly-limit-section.tsx",
+      "category": "upstream_other",
+      "physical": 133,
+      "nonblank": 125
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/billing/payment-section.module.css",
+      "category": "upstream_other",
+      "physical": 93,
+      "nonblank": 77
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/billing/payment-section.tsx",
+      "category": "upstream_other",
+      "physical": 122,
+      "nonblank": 117
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/billing/reload-section.module.css",
+      "category": "upstream_other",
+      "physical": 261,
+      "nonblank": 222
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/billing/reload-section.tsx",
+      "category": "upstream_other",
+      "physical": 213,
+      "nonblank": 200
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/graph-section.module.css",
+      "category": "upstream_other",
+      "physical": 145,
+      "nonblank": 127
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/graph-section.tsx",
+      "category": "upstream_other",
+      "physical": 441,
+      "nonblank": 404
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/index.tsx",
+      "category": "upstream_other",
+      "physical": 81,
+      "nonblank": 77
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/keys/index.tsx",
+      "category": "upstream_other",
+      "physical": 11,
+      "nonblank": 10
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/keys/key-section.module.css",
+      "category": "upstream_other",
+      "physical": 197,
+      "nonblank": 166
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/keys/key-section.tsx",
+      "category": "upstream_other",
+      "physical": 176,
+      "nonblank": 167
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/members/index.tsx",
+      "category": "upstream_other",
+      "physical": 11,
+      "nonblank": 10
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/members/member-section.module.css",
+      "category": "upstream_other",
+      "physical": 249,
+      "nonblank": 210
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/members/member-section.tsx",
+      "category": "upstream_other",
+      "physical": 343,
+      "nonblank": 322
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/members/role-dropdown.css",
+      "category": "upstream_other",
+      "physical": 72,
+      "nonblank": 63
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/members/role-dropdown.tsx",
+      "category": "upstream_other",
+      "physical": 43,
+      "nonblank": 38
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/model-section.module.css",
+      "category": "upstream_other",
+      "physical": 173,
+      "nonblank": 145
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/model-section.tsx",
+      "category": "upstream_other",
+      "physical": 174,
+      "nonblank": 168
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/new-user-section.module.css",
+      "category": "upstream_other",
+      "physical": 143,
+      "nonblank": 125
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/new-user-section.tsx",
+      "category": "upstream_other",
+      "physical": 104,
+      "nonblank": 98
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/provider-section.module.css",
+      "category": "upstream_other",
+      "physical": 138,
+      "nonblank": 116
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/provider-section.tsx",
+      "category": "upstream_other",
+      "physical": 188,
+      "nonblank": 174
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/settings/index.tsx",
+      "category": "upstream_other",
+      "physical": 11,
+      "nonblank": 10
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/settings/settings-section.module.css",
+      "category": "upstream_other",
+      "physical": 94,
+      "nonblank": 79
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/settings/settings-section.tsx",
+      "category": "upstream_other",
+      "physical": 122,
+      "nonblank": 114
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/usage-section.module.css",
+      "category": "upstream_other",
+      "physical": 186,
+      "nonblank": 160
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id]/usage-section.tsx",
+      "category": "upstream_other",
+      "physical": 195,
+      "nonblank": 182
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id].css",
+      "category": "upstream_other",
+      "physical": 308,
+      "nonblank": 260
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/[id].tsx",
+      "category": "upstream_other",
+      "physical": 62,
+      "nonblank": 59
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace/common.tsx",
+      "category": "upstream_other",
+      "physical": 106,
+      "nonblank": 99
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace-picker.css",
+      "category": "upstream_other",
+      "physical": 74,
+      "nonblank": 65
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace-picker.tsx",
+      "category": "upstream_other",
+      "physical": 122,
+      "nonblank": 112
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace.css",
+      "category": "upstream_other",
+      "physical": 107,
+      "nonblank": 91
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/workspace.tsx",
+      "category": "upstream_other",
+      "physical": 38,
+      "nonblank": 36
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/zen/index.css",
+      "category": "upstream_other",
+      "physical": 866,
+      "nonblank": 725
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/zen/index.tsx",
+      "category": "upstream_other",
+      "physical": 343,
+      "nonblank": 330
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/zen/util/dataDumper.ts",
+      "category": "upstream_other",
+      "physical": 44,
+      "nonblank": 38
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/zen/util/error.ts",
+      "category": "upstream_other",
+      "physical": 13,
+      "nonblank": 13
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/zen/util/handler.ts",
+      "category": "upstream_other",
+      "physical": 762,
+      "nonblank": 694
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/zen/util/logger.ts",
+      "category": "upstream_other",
+      "physical": 12,
+      "nonblank": 11
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/zen/util/provider/anthropic.ts",
+      "category": "upstream_other",
+      "physical": 646,
+      "nonblank": 583
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/zen/util/provider/google.ts",
+      "category": "upstream_other",
+      "physical": 74,
+      "nonblank": 68
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/zen/util/provider/openai-compatible.ts",
+      "category": "upstream_other",
+      "physical": 545,
+      "nonblank": 484
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/zen/util/provider/openai.ts",
+      "category": "upstream_other",
+      "physical": 629,
+      "nonblank": 563
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/zen/util/provider/provider.ts",
+      "category": "upstream_other",
+      "physical": 209,
+      "nonblank": 189
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/zen/util/rateLimiter.ts",
+      "category": "upstream_other",
+      "physical": 41,
+      "nonblank": 37
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/zen/util/stickyProviderTracker.ts",
+      "category": "upstream_other",
+      "physical": 16,
+      "nonblank": 14
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/zen/util/trialLimiter.ts",
+      "category": "upstream_other",
+      "physical": 49,
+      "nonblank": 44
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/zen/v1/chat/completions.ts",
+      "category": "upstream_other",
+      "physical": 11,
+      "nonblank": 10
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/zen/v1/messages.ts",
+      "category": "upstream_other",
+      "physical": 11,
+      "nonblank": 10
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/zen/v1/models/[model].ts",
+      "category": "upstream_other",
+      "physical": 13,
+      "nonblank": 12
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/zen/v1/models.ts",
+      "category": "upstream_other",
+      "physical": 60,
+      "nonblank": 54
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/routes/zen/v1/responses.ts",
+      "category": "upstream_other",
+      "physical": 11,
+      "nonblank": 10
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/style/base.css",
+      "category": "upstream_other",
+      "physical": 21,
+      "nonblank": 19
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/style/component/button.css",
+      "category": "upstream_other",
+      "physical": 102,
+      "nonblank": 86
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/style/index.css",
+      "category": "upstream_other",
+      "physical": 8,
+      "nonblank": 6
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/style/reset.css",
+      "category": "upstream_other",
+      "physical": 76,
+      "nonblank": 67
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/style/token/color.css",
+      "category": "upstream_other",
+      "physical": 91,
+      "nonblank": 73
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/style/token/font.css",
+      "category": "upstream_other",
+      "physical": 21,
+      "nonblank": 20
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/src/style/token/space.css",
+      "category": "upstream_other",
+      "physical": 46,
+      "nonblank": 45
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/app/vite.config.ts",
+      "category": "upstream_other",
+      "physical": 25,
+      "nonblank": 24
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/drizzle.config.ts",
+      "category": "upstream_other",
+      "physical": 20,
+      "nonblank": 19
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0000_fluffy_raza.sql",
+      "category": "upstream_other",
+      "physical": 89,
+      "nonblank": 89
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0001_serious_whistler.sql",
+      "category": "upstream_other",
+      "physical": 2,
+      "nonblank": 2
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0002_violet_loners.sql",
+      "category": "upstream_other",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0003_dusty_clint_barton.sql",
+      "category": "upstream_other",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0004_first_mockingbird.sql",
+      "category": "upstream_other",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0005_jazzy_skrulls.sql",
+      "category": "upstream_other",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0006_parallel_gauntlet.sql",
+      "category": "upstream_other",
+      "physical": 2,
+      "nonblank": 2
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0007_familiar_nightshade.sql",
+      "category": "upstream_other",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0008_eminent_ultimatum.sql",
+      "category": "upstream_other",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0009_redundant_piledriver.sql",
+      "category": "upstream_other",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0010_needy_sue_storm.sql",
+      "category": "upstream_other",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0011_freezing_phil_sheldon.sql",
+      "category": "upstream_other",
+      "physical": 3,
+      "nonblank": 3
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0012_bright_photon.sql",
+      "category": "upstream_other",
+      "physical": 3,
+      "nonblank": 3
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0013_absurd_hobgoblin.sql",
+      "category": "upstream_other",
+      "physical": 2,
+      "nonblank": 2
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0014_demonic_princess_powerful.sql",
+      "category": "upstream_other",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0015_cloudy_revanche.sql",
+      "category": "upstream_other",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0016_cold_la_nuit.sql",
+      "category": "upstream_other",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0017_woozy_thaddeus_ross.sql",
+      "category": "upstream_other",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0018_nervous_iron_lad.sql",
+      "category": "upstream_other",
+      "physical": 2,
+      "nonblank": 2
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0019_dazzling_cable.sql",
+      "category": "upstream_other",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0020_supreme_jack_power.sql",
+      "category": "upstream_other",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0021_flawless_clea.sql",
+      "category": "upstream_other",
+      "physical": 2,
+      "nonblank": 2
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0022_nice_dreadnoughts.sql",
+      "category": "upstream_other",
+      "physical": 3,
+      "nonblank": 3
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0023_optimal_paibok.sql",
+      "category": "upstream_other",
+      "physical": 2,
+      "nonblank": 2
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0024_early_black_crow.sql",
+      "category": "upstream_other",
+      "physical": 2,
+      "nonblank": 2
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0025_legal_joseph.sql",
+      "category": "upstream_other",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0026_numerous_prodigy.sql",
+      "category": "upstream_other",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0027_hot_wong.sql",
+      "category": "upstream_other",
+      "physical": 3,
+      "nonblank": 3
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0028_careful_cerise.sql",
+      "category": "upstream_other",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0029_panoramic_harrier.sql",
+      "category": "upstream_other",
+      "physical": 3,
+      "nonblank": 3
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0030_ordinary_ultragirl.sql",
+      "category": "upstream_other",
+      "physical": 10,
+      "nonblank": 10
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0031_outgoing_outlaw_kid.sql",
+      "category": "upstream_other",
+      "physical": 11,
+      "nonblank": 11
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0032_white_doctor_doom.sql",
+      "category": "upstream_other",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0033_cynical_jack_flag.sql",
+      "category": "upstream_other",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0034_short_bulldozer.sql",
+      "category": "upstream_other",
+      "physical": 10,
+      "nonblank": 10
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0035_narrow_blindfold.sql",
+      "category": "upstream_other",
+      "physical": 3,
+      "nonblank": 3
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0036_slimy_energizer.sql",
+      "category": "upstream_other",
+      "physical": 2,
+      "nonblank": 2
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0037_messy_jackal.sql",
+      "category": "upstream_other",
+      "physical": 2,
+      "nonblank": 2
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0038_famous_magik.sql",
+      "category": "upstream_other",
+      "physical": 8,
+      "nonblank": 8
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0039_striped_forge.sql",
+      "category": "upstream_other",
+      "physical": 12,
+      "nonblank": 12
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0040_broken_gamora.sql",
+      "category": "upstream_other",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0041_odd_misty_knight.sql",
+      "category": "upstream_other",
+      "physical": 6,
+      "nonblank": 6
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0042_flat_nightmare.sql",
+      "category": "upstream_other",
+      "physical": 7,
+      "nonblank": 7
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0043_lame_calypso.sql",
+      "category": "upstream_other",
+      "physical": 2,
+      "nonblank": 2
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0044_tiny_captain_midlands.sql",
+      "category": "upstream_other",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0045_cuddly_diamondback.sql",
+      "category": "upstream_other",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0046_charming_black_bolt.sql",
+      "category": "upstream_other",
+      "physical": 13,
+      "nonblank": 13
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0047_huge_omega_red.sql",
+      "category": "upstream_other",
+      "physical": 6,
+      "nonblank": 6
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0048_mean_frank_castle.sql",
+      "category": "upstream_other",
+      "physical": 2,
+      "nonblank": 2
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0049_noisy_domino.sql",
+      "category": "upstream_other",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0050_bumpy_mephistopheles.sql",
+      "category": "upstream_other",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0051_jazzy_green_goblin.sql",
+      "category": "upstream_other",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/migrations/0052_aromatic_agent_zero.sql",
+      "category": "upstream_other",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/script/credit-workspace.ts",
+      "category": "upstream_other",
+      "physical": 20,
+      "nonblank": 15
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/script/lookup-user.ts",
+      "category": "upstream_other",
+      "physical": 275,
+      "nonblank": 250
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/script/onboard-zen-black.ts",
+      "category": "upstream_other",
+      "physical": 168,
+      "nonblank": 151
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/script/promote-black.ts",
+      "category": "upstream_other",
+      "physical": 22,
+      "nonblank": 16
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/script/promote-models.ts",
+      "category": "upstream_other",
+      "physical": 40,
+      "nonblank": 34
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/script/pull-models.ts",
+      "category": "upstream_other",
+      "physical": 39,
+      "nonblank": 34
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/script/remove-black.ts",
+      "category": "upstream_other",
+      "physical": 78,
+      "nonblank": 66
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/script/reset-db.ts",
+      "category": "upstream_other",
+      "physical": 13,
+      "nonblank": 11
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/script/update-black.ts",
+      "category": "upstream_other",
+      "physical": 28,
+      "nonblank": 22
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/script/update-models.ts",
+      "category": "upstream_other",
+      "physical": 61,
+      "nonblank": 54
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/account.ts",
+      "category": "upstream_other",
+      "physical": 32,
+      "nonblank": 30
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/actor.ts",
+      "category": "upstream_other",
+      "physical": 98,
+      "nonblank": 84
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/aws.ts",
+      "category": "upstream_other",
+      "physical": 65,
+      "nonblank": 62
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/billing.ts",
+      "category": "upstream_other",
+      "physical": 305,
+      "nonblank": 284
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/black.ts",
+      "category": "upstream_other",
+      "physical": 20,
+      "nonblank": 17
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/context.ts",
+      "category": "upstream_other",
+      "physical": 21,
+      "nonblank": 19
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/drizzle/index.ts",
+      "category": "upstream_other",
+      "physical": 86,
+      "nonblank": 78
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/drizzle/types.ts",
+      "category": "upstream_other",
+      "physical": 33,
+      "nonblank": 27
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/identifier.ts",
+      "category": "upstream_other",
+      "physical": 31,
+      "nonblank": 28
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/key.ts",
+      "category": "upstream_other",
+      "physical": 96,
+      "nonblank": 90
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/model.ts",
+      "category": "upstream_other",
+      "physical": 135,
+      "nonblank": 123
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/provider.ts",
+      "category": "upstream_other",
+      "physical": 57,
+      "nonblank": 54
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/schema/account.sql.ts",
+      "category": "upstream_other",
+      "physical": 11,
+      "nonblank": 10
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/schema/auth.sql.ts",
+      "category": "upstream_other",
+      "physical": 20,
+      "nonblank": 18
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/schema/benchmark.sql.ts",
+      "category": "upstream_other",
+      "physical": 14,
+      "nonblank": 13
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/schema/billing.sql.ts",
+      "category": "upstream_other",
+      "physical": 93,
+      "nonblank": 89
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/schema/ip.sql.ts",
+      "category": "upstream_other",
+      "physical": 22,
+      "nonblank": 20
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/schema/key.sql.ts",
+      "category": "upstream_other",
+      "physical": 16,
+      "nonblank": 15
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/schema/model.sql.ts",
+      "category": "upstream_other",
+      "physical": 13,
+      "nonblank": 12
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/schema/provider.sql.ts",
+      "category": "upstream_other",
+      "physical": 14,
+      "nonblank": 13
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/schema/user.sql.ts",
+      "category": "upstream_other",
+      "physical": 29,
+      "nonblank": 27
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/schema/workspace.sql.ts",
+      "category": "upstream_other",
+      "physical": 21,
+      "nonblank": 19
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/user.ts",
+      "category": "upstream_other",
+      "physical": 226,
+      "nonblank": 208
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/util/date.ts",
+      "category": "upstream_other",
+      "physical": 9,
+      "nonblank": 9
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/util/env.cloudflare.ts",
+      "category": "upstream_other",
+      "physical": 0,
+      "nonblank": 0
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/util/fn.ts",
+      "category": "upstream_other",
+      "physical": 11,
+      "nonblank": 10
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/util/log.ts",
+      "category": "upstream_other",
+      "physical": 55,
+      "nonblank": 49
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/util/memo.ts",
+      "category": "upstream_other",
+      "physical": 18,
+      "nonblank": 16
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/util/price.ts",
+      "category": "upstream_other",
+      "physical": 3,
+      "nonblank": 3
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/core/src/workspace.ts",
+      "category": "upstream_other",
+      "physical": 76,
+      "nonblank": 73
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/function/src/auth.ts",
+      "category": "upstream_other",
+      "physical": 223,
+      "nonblank": 209
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/function/src/log-processor.ts",
+      "category": "upstream_other",
+      "physical": 55,
+      "nonblank": 51
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/mail/emails/components.tsx",
+      "category": "upstream_other",
+      "physical": 72,
+      "nonblank": 65
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/mail/emails/styles.ts",
+      "category": "upstream_other",
+      "physical": 91,
+      "nonblank": 81
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/mail/emails/templates/InviteEmail.tsx",
+      "category": "upstream_other",
+      "physical": 82,
+      "nonblank": 76
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/resource/resource.cloudflare.ts",
+      "category": "upstream_other",
+      "physical": 19,
+      "nonblank": 18
+    },
+    {
+      "path": "migration/upstream/opencode/packages/console/resource/resource.node.ts",
+      "category": "upstream_other",
+      "physical": 70,
+      "nonblank": 68
+    },
+    {
+      "path": "migration/upstream/opencode/packages/desktop/scripts/copy-bundles.ts",
+      "category": "upstream_other",
+      "physical": 12,
+      "nonblank": 8
+    },
+    {
+      "path": "migration/upstream/opencode/packages/desktop/scripts/predev.ts",
+      "category": "upstream_other",
+      "physical": 13,
+      "nonblank": 7
+    },
+    {
+      "path": "migration/upstream/opencode/packages/desktop/scripts/prepare.ts",
+      "category": "upstream_other",
+      "physical": 13,
+      "nonblank": 8
+    },
+    {
+      "path": "migration/upstream/opencode/packages/desktop/scripts/utils.ts",
+      "category": "upstream_other",
+      "physical": 53,
+      "nonblank": 45
+    },
+    {
+      "path": "migration/upstream/opencode/packages/desktop/src/cli.ts",
+      "category": "upstream_other",
+      "physical": 13,
+      "nonblank": 12
+    },
+    {
+      "path": "migration/upstream/opencode/packages/desktop/src/index.tsx",
+      "category": "upstream_other",
+      "physical": 339,
+      "nonblank": 294
+    },
+    {
+      "path": "migration/upstream/opencode/packages/desktop/src/menu.ts",
+      "category": "upstream_other",
+      "physical": 99,
+      "nonblank": 96
+    },
+    {
+      "path": "migration/upstream/opencode/packages/desktop/src/updater.ts",
+      "category": "upstream_other",
+      "physical": 47,
+      "nonblank": 40
+    },
+    {
+      "path": "migration/upstream/opencode/packages/desktop/src-tauri/build.rs",
+      "category": "upstream_other",
+      "physical": 3,
+      "nonblank": 3
+    },
+    {
+      "path": "migration/upstream/opencode/packages/desktop/src-tauri/src/cli.rs",
+      "category": "upstream_other",
+      "physical": 174,
+      "nonblank": 141
+    },
+    {
+      "path": "migration/upstream/opencode/packages/desktop/src-tauri/src/job_object.rs",
+      "category": "upstream_other",
+      "physical": 145,
+      "nonblank": 128
+    },
+    {
+      "path": "migration/upstream/opencode/packages/desktop/src-tauri/src/lib.rs",
+      "category": "upstream_other",
+      "physical": 463,
+      "nonblank": 392
+    },
+    {
+      "path": "migration/upstream/opencode/packages/desktop/src-tauri/src/main.rs",
+      "category": "upstream_other",
+      "physical": 63,
+      "nonblank": 55
+    },
+    {
+      "path": "migration/upstream/opencode/packages/desktop/src-tauri/src/window_customizer.rs",
+      "category": "upstream_other",
+      "physical": 34,
+      "nonblank": 28
+    },
+    {
+      "path": "migration/upstream/opencode/packages/desktop/vite.config.ts",
+      "category": "upstream_other",
+      "physical": 38,
+      "nonblank": 36
+    },
+    {
+      "path": "migration/upstream/opencode/packages/enterprise/script/scrap.ts",
+      "category": "upstream_other",
+      "physical": 15,
+      "nonblank": 13
+    },
+    {
+      "path": "migration/upstream/opencode/packages/enterprise/src/app.css",
+      "category": "upstream_other",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/enterprise/src/app.tsx",
+      "category": "upstream_other",
+      "physical": 29,
+      "nonblank": 28
+    },
+    {
+      "path": "migration/upstream/opencode/packages/enterprise/src/core/share.ts",
+      "category": "upstream_other",
+      "physical": 191,
+      "nonblank": 179
+    },
+    {
+      "path": "migration/upstream/opencode/packages/enterprise/src/core/storage.ts",
+      "category": "upstream_other",
+      "physical": 129,
+      "nonblank": 115
+    },
+    {
+      "path": "migration/upstream/opencode/packages/enterprise/src/entry-client.tsx",
+      "category": "upstream_other",
+      "physical": 4,
+      "nonblank": 3
+    },
+    {
+      "path": "migration/upstream/opencode/packages/enterprise/src/entry-server.tsx",
+      "category": "upstream_other",
+      "physical": 23,
+      "nonblank": 22
+    },
+    {
+      "path": "migration/upstream/opencode/packages/enterprise/src/routes/[...404].tsx",
+      "category": "upstream_other",
+      "physical": 25,
+      "nonblank": 24
+    },
+    {
+      "path": "migration/upstream/opencode/packages/enterprise/src/routes/api/[...path].ts",
+      "category": "upstream_other",
+      "physical": 154,
+      "nonblank": 148
+    },
+    {
+      "path": "migration/upstream/opencode/packages/enterprise/src/routes/index.tsx",
+      "category": "upstream_other",
+      "physical": 3,
+      "nonblank": 3
+    },
+    {
+      "path": "migration/upstream/opencode/packages/enterprise/src/routes/share/[shareID].tsx",
+      "category": "upstream_other",
+      "physical": 492,
+      "nonblank": 481
+    },
+    {
+      "path": "migration/upstream/opencode/packages/enterprise/src/routes/share.tsx",
+      "category": "upstream_other",
+      "physical": 5,
+      "nonblank": 4
+    },
+    {
+      "path": "migration/upstream/opencode/packages/enterprise/test/core/share.test.ts",
+      "category": "upstream_tests",
+      "physical": 262,
+      "nonblank": 207
+    },
+    {
+      "path": "migration/upstream/opencode/packages/enterprise/test/core/storage.test.ts",
+      "category": "upstream_tests",
+      "physical": 64,
+      "nonblank": 50
+    },
+    {
+      "path": "migration/upstream/opencode/packages/enterprise/test-debug.ts",
+      "category": "upstream_other",
+      "physical": 40,
+      "nonblank": 31
+    },
+    {
+      "path": "migration/upstream/opencode/packages/enterprise/vite.config.ts",
+      "category": "upstream_other",
+      "physical": 36,
+      "nonblank": 34
+    },
+    {
+      "path": "migration/upstream/opencode/packages/function/src/api.ts",
+      "category": "upstream_other",
+      "physical": 333,
+      "nonblank": 295
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/parsers-config.ts",
+      "category": "upstream_other",
+      "physical": 253,
+      "nonblank": 253
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/script/build.ts",
+      "category": "upstream_other",
+      "physical": 167,
+      "nonblank": 151
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/script/postinstall.mjs",
+      "category": "upstream_other",
+      "physical": 125,
+      "nonblank": 106
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/script/publish-registries.ts",
+      "category": "upstream_other",
+      "physical": 187,
+      "nonblank": 179
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/script/publish.ts",
+      "category": "upstream_other",
+      "physical": 70,
+      "nonblank": 62
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/script/schema.ts",
+      "category": "upstream_other",
+      "physical": 47,
+      "nonblank": 39
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/acp/agent.ts",
+      "category": "upstream_runtime",
+      "physical": 1124,
+      "nonblank": 1033
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/acp/session.ts",
+      "category": "upstream_runtime",
+      "physical": 101,
+      "nonblank": 86
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/acp/types.ts",
+      "category": "upstream_runtime",
+      "physical": 22,
+      "nonblank": 20
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/agent/agent.ts",
+      "category": "upstream_runtime",
+      "physical": 298,
+      "nonblank": 285
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/auth/index.ts",
+      "category": "upstream_runtime",
+      "physical": 73,
+      "nonblank": 63
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/bun/index.ts",
+      "category": "upstream_runtime",
+      "physical": 130,
+      "nonblank": 118
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/bus/bus-event.ts",
+      "category": "upstream_runtime",
+      "physical": 43,
+      "nonblank": 38
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/bus/global.ts",
+      "category": "upstream_runtime",
+      "physical": 10,
+      "nonblank": 9
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/bus/index.ts",
+      "category": "upstream_runtime",
+      "physical": 105,
+      "nonblank": 95
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/bootstrap.ts",
+      "category": "upstream_runtime",
+      "physical": 17,
+      "nonblank": 16
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/acp.ts",
+      "category": "upstream_runtime",
+      "physical": 69,
+      "nonblank": 62
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/agent.ts",
+      "category": "upstream_runtime",
+      "physical": 257,
+      "nonblank": 236
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/auth.ts",
+      "category": "upstream_runtime",
+      "physical": 400,
+      "nonblank": 364
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/cmd.ts",
+      "category": "upstream_runtime",
+      "physical": 7,
+      "nonblank": 5
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/debug/agent.ts",
+      "category": "upstream_runtime",
+      "physical": 166,
+      "nonblank": 156
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/debug/config.ts",
+      "category": "upstream_runtime",
+      "physical": 16,
+      "nonblank": 15
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/debug/file.ts",
+      "category": "upstream_runtime",
+      "physical": 97,
+      "nonblank": 91
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/debug/index.ts",
+      "category": "upstream_runtime",
+      "physical": 48,
+      "nonblank": 46
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/debug/lsp.ts",
+      "category": "upstream_runtime",
+      "physical": 52,
+      "nonblank": 48
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/debug/ripgrep.ts",
+      "category": "upstream_runtime",
+      "physical": 87,
+      "nonblank": 83
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/debug/scrap.ts",
+      "category": "upstream_runtime",
+      "physical": 16,
+      "nonblank": 15
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/debug/skill.ts",
+      "category": "upstream_runtime",
+      "physical": 16,
+      "nonblank": 15
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/debug/snapshot.ts",
+      "category": "upstream_runtime",
+      "physical": 52,
+      "nonblank": 48
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/export.ts",
+      "category": "upstream_runtime",
+      "physical": 88,
+      "nonblank": 76
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/generate.ts",
+      "category": "upstream_runtime",
+      "physical": 38,
+      "nonblank": 36
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/github.ts",
+      "category": "upstream_runtime",
+      "physical": 1548,
+      "nonblank": 1393
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/import.ts",
+      "category": "upstream_runtime",
+      "physical": 98,
+      "nonblank": 85
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/mcp.ts",
+      "category": "upstream_runtime",
+      "physical": 742,
+      "nonblank": 654
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/models.ts",
+      "category": "upstream_runtime",
+      "physical": 77,
+      "nonblank": 70
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/pr.ts",
+      "category": "upstream_runtime",
+      "physical": 112,
+      "nonblank": 97
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/run.ts",
+      "category": "upstream_runtime",
+      "physical": 395,
+      "nonblank": 358
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/serve.ts",
+      "category": "upstream_runtime",
+      "physical": 20,
+      "nonblank": 19
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/session.ts",
+      "category": "upstream_runtime",
+      "physical": 135,
+      "nonblank": 116
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/stats.ts",
+      "category": "upstream_runtime",
+      "physical": 402,
+      "nonblank": 351
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/app.tsx",
+      "category": "upstream_runtime",
+      "physical": 734,
+      "nonblank": 689
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/attach.ts",
+      "category": "upstream_runtime",
+      "physical": 31,
+      "nonblank": 30
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/component/border.tsx",
+      "category": "upstream_runtime",
+      "physical": 21,
+      "nonblank": 20
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/component/dialog-agent.tsx",
+      "category": "upstream_runtime",
+      "physical": 31,
+      "nonblank": 28
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/component/dialog-command.tsx",
+      "category": "upstream_runtime",
+      "physical": 124,
+      "nonblank": 114
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/component/dialog-mcp.tsx",
+      "category": "upstream_runtime",
+      "physical": 86,
+      "nonblank": 79
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/component/dialog-model.tsx",
+      "category": "upstream_runtime",
+      "physical": 233,
+      "nonblank": 218
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/component/dialog-provider.tsx",
+      "category": "upstream_runtime",
+      "physical": 256,
+      "nonblank": 245
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/component/dialog-session-list.tsx",
+      "category": "upstream_runtime",
+      "physical": 115,
+      "nonblank": 105
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/component/dialog-session-rename.tsx",
+      "category": "upstream_runtime",
+      "physical": 31,
+      "nonblank": 28
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/component/dialog-stash.tsx",
+      "category": "upstream_runtime",
+      "physical": 86,
+      "nonblank": 79
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/component/dialog-status.tsx",
+      "category": "upstream_runtime",
+      "physical": 162,
+      "nonblank": 157
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/component/dialog-tag.tsx",
+      "category": "upstream_runtime",
+      "physical": 44,
+      "nonblank": 39
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/component/dialog-theme-list.tsx",
+      "category": "upstream_runtime",
+      "physical": 50,
+      "nonblank": 46
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/component/logo.tsx",
+      "category": "upstream_runtime",
+      "physical": 27,
+      "nonblank": 24
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/component/prompt/autocomplete.tsx",
+      "category": "upstream_runtime",
+      "physical": 763,
+      "nonblank": 692
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/component/prompt/frecency.tsx",
+      "category": "upstream_runtime",
+      "physical": 89,
+      "nonblank": 78
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/component/prompt/history.tsx",
+      "category": "upstream_runtime",
+      "physical": 108,
+      "nonblank": 99
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/component/prompt/index.tsx",
+      "category": "upstream_runtime",
+      "physical": 1088,
+      "nonblank": 1018
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/component/prompt/stash.tsx",
+      "category": "upstream_runtime",
+      "physical": 101,
+      "nonblank": 92
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/component/textarea-keybindings.ts",
+      "category": "upstream_runtime",
+      "physical": 73,
+      "nonblank": 68
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/component/tips.tsx",
+      "category": "upstream_runtime",
+      "physical": 150,
+      "nonblank": 143
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/component/todo-item.tsx",
+      "category": "upstream_runtime",
+      "physical": 32,
+      "nonblank": 29
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/context/args.tsx",
+      "category": "upstream_runtime",
+      "physical": 14,
+      "nonblank": 12
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/context/directory.ts",
+      "category": "upstream_runtime",
+      "physical": 13,
+      "nonblank": 12
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/context/exit.tsx",
+      "category": "upstream_runtime",
+      "physical": 23,
+      "nonblank": 22
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/context/helper.tsx",
+      "category": "upstream_runtime",
+      "physical": 25,
+      "nonblank": 23
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/context/keybind.tsx",
+      "category": "upstream_runtime",
+      "physical": 101,
+      "nonblank": 95
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/context/kv.tsx",
+      "category": "upstream_runtime",
+      "physical": 52,
+      "nonblank": 49
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/context/local.tsx",
+      "category": "upstream_runtime",
+      "physical": 393,
+      "nonblank": 376
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/context/prompt.tsx",
+      "category": "upstream_runtime",
+      "physical": 18,
+      "nonblank": 16
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/context/route.tsx",
+      "category": "upstream_runtime",
+      "physical": 46,
+      "nonblank": 39
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/context/sdk.tsx",
+      "category": "upstream_runtime",
+      "physical": 94,
+      "nonblank": 81
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/context/sync.tsx",
+      "category": "upstream_runtime",
+      "physical": 427,
+      "nonblank": 407
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/context/theme.tsx",
+      "category": "upstream_runtime",
+      "physical": 1150,
+      "nonblank": 1087
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/event.ts",
+      "category": "upstream_runtime",
+      "physical": 46,
+      "nonblank": 45
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/routes/home.tsx",
+      "category": "upstream_runtime",
+      "physical": 140,
+      "nonblank": 131
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/routes/session/dialog-fork-from-timeline.tsx",
+      "category": "upstream_runtime",
+      "physical": 64,
+      "nonblank": 60
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/routes/session/dialog-message.tsx",
+      "category": "upstream_runtime",
+      "physical": 109,
+      "nonblank": 102
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/routes/session/dialog-subagent.tsx",
+      "category": "upstream_runtime",
+      "physical": 26,
+      "nonblank": 24
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/routes/session/dialog-timeline.tsx",
+      "category": "upstream_runtime",
+      "physical": 47,
+      "nonblank": 43
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/routes/session/footer.tsx",
+      "category": "upstream_runtime",
+      "physical": 91,
+      "nonblank": 84
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/routes/session/header.tsx",
+      "category": "upstream_runtime",
+      "physical": 129,
+      "nonblank": 122
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/routes/session/index.tsx",
+      "category": "upstream_runtime",
+      "physical": 1941,
+      "nonblank": 1823
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/routes/session/permission.tsx",
+      "category": "upstream_runtime",
+      "physical": 489,
+      "nonblank": 457
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/routes/session/question.tsx",
+      "category": "upstream_runtime",
+      "physical": 389,
+      "nonblank": 359
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/routes/session/sidebar.tsx",
+      "category": "upstream_runtime",
+      "physical": 319,
+      "nonblank": 309
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/thread.ts",
+      "category": "upstream_runtime",
+      "physical": 165,
+      "nonblank": 152
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/ui/dialog-alert.tsx",
+      "category": "upstream_runtime",
+      "physical": 57,
+      "nonblank": 53
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/ui/dialog-confirm.tsx",
+      "category": "upstream_runtime",
+      "physical": 83,
+      "nonblank": 78
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/ui/dialog-export-options.tsx",
+      "category": "upstream_runtime",
+      "physical": 204,
+      "nonblank": 198
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/ui/dialog-help.tsx",
+      "category": "upstream_runtime",
+      "physical": 38,
+      "nonblank": 35
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/ui/dialog-prompt.tsx",
+      "category": "upstream_runtime",
+      "physical": 77,
+      "nonblank": 71
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/ui/dialog-select.tsx",
+      "category": "upstream_runtime",
+      "physical": 346,
+      "nonblank": 325
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/ui/dialog.tsx",
+      "category": "upstream_runtime",
+      "physical": 172,
+      "nonblank": 162
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/ui/link.tsx",
+      "category": "upstream_runtime",
+      "physical": 28,
+      "nonblank": 25
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/ui/spinner.ts",
+      "category": "upstream_runtime",
+      "physical": 368,
+      "nonblank": 320
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/ui/toast.tsx",
+      "category": "upstream_runtime",
+      "physical": 100,
+      "nonblank": 90
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/util/clipboard.ts",
+      "category": "upstream_runtime",
+      "physical": 128,
+      "nonblank": 116
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/util/editor.ts",
+      "category": "upstream_runtime",
+      "physical": 32,
+      "nonblank": 29
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/util/signal.ts",
+      "category": "upstream_runtime",
+      "physical": 7,
+      "nonblank": 6
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/util/terminal.ts",
+      "category": "upstream_runtime",
+      "physical": 114,
+      "nonblank": 99
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/util/transcript.ts",
+      "category": "upstream_runtime",
+      "physical": 98,
+      "nonblank": 81
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/tui/worker.ts",
+      "category": "upstream_runtime",
+      "physical": 152,
+      "nonblank": 135
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/uninstall.ts",
+      "category": "upstream_runtime",
+      "physical": 344,
+      "nonblank": 291
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/upgrade.ts",
+      "category": "upstream_runtime",
+      "physical": 67,
+      "nonblank": 64
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/cmd/web.ts",
+      "category": "upstream_runtime",
+      "physical": 77,
+      "nonblank": 65
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/error.ts",
+      "category": "upstream_runtime",
+      "physical": 57,
+      "nonblank": 52
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/network.ts",
+      "category": "upstream_runtime",
+      "physical": 53,
+      "nonblank": 47
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/ui.ts",
+      "category": "upstream_runtime",
+      "physical": 84,
+      "nonblank": 73
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/cli/upgrade.ts",
+      "category": "upstream_runtime",
+      "physical": 25,
+      "nonblank": 22
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/command/index.ts",
+      "category": "upstream_runtime",
+      "physical": 131,
+      "nonblank": 120
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/config/config.ts",
+      "category": "upstream_runtime",
+      "physical": 1221,
+      "nonblank": 1133
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/config/markdown.ts",
+      "category": "upstream_runtime",
+      "physical": 41,
+      "nonblank": 35
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/env/index.ts",
+      "category": "upstream_runtime",
+      "physical": 26,
+      "nonblank": 21
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/file/ignore.ts",
+      "category": "upstream_runtime",
+      "physical": 83,
+      "nonblank": 71
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/file/index.ts",
+      "category": "upstream_runtime",
+      "physical": 411,
+      "nonblank": 360
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/file/ripgrep.ts",
+      "category": "upstream_runtime",
+      "physical": 409,
+      "nonblank": 363
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/file/time.ts",
+      "category": "upstream_runtime",
+      "physical": 64,
+      "nonblank": 59
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/file/watcher.ts",
+      "category": "upstream_runtime",
+      "physical": 118,
+      "nonblank": 107
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/flag/flag.ts",
+      "category": "upstream_runtime",
+      "physical": 54,
+      "nonblank": 51
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/format/formatter.ts",
+      "category": "upstream_runtime",
+      "physical": 359,
+      "nonblank": 333
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/format/index.ts",
+      "category": "upstream_runtime",
+      "physical": 137,
+      "nonblank": 123
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/global/index.ts",
+      "category": "upstream_runtime",
+      "physical": 55,
+      "nonblank": 48
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/id/id.ts",
+      "category": "upstream_runtime",
+      "physical": 83,
+      "nonblank": 67
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/ide/index.ts",
+      "category": "upstream_runtime",
+      "physical": 76,
+      "nonblank": 65
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/index.ts",
+      "category": "upstream_runtime",
+      "physical": 159,
+      "nonblank": 151
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/installation/index.ts",
+      "category": "upstream_runtime",
+      "physical": 205,
+      "nonblank": 184
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/lsp/client.ts",
+      "category": "upstream_runtime",
+      "physical": 252,
+      "nonblank": 232
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/lsp/index.ts",
+      "category": "upstream_runtime",
+      "physical": 485,
+      "nonblank": 434
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/lsp/language.ts",
+      "category": "upstream_runtime",
+      "physical": 119,
+      "nonblank": 119
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/lsp/server.ts",
+      "category": "upstream_runtime",
+      "physical": 2032,
+      "nonblank": 1816
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/mcp/auth.ts",
+      "category": "upstream_runtime",
+      "physical": 135,
+      "nonblank": 115
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/mcp/index.ts",
+      "category": "upstream_runtime",
+      "physical": 888,
+      "nonblank": 781
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/mcp/oauth-callback.ts",
+      "category": "upstream_runtime",
+      "physical": 200,
+      "nonblank": 173
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/mcp/oauth-provider.ts",
+      "category": "upstream_runtime",
+      "physical": 154,
+      "nonblank": 134
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/patch/index.ts",
+      "category": "upstream_runtime",
+      "physical": 622,
+      "nonblank": 524
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/permission/arity.ts",
+      "category": "upstream_runtime",
+      "physical": 163,
+      "nonblank": 162
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/permission/index.ts",
+      "category": "upstream_runtime",
+      "physical": 210,
+      "nonblank": 194
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/permission/next.ts",
+      "category": "upstream_runtime",
+      "physical": 269,
+      "nonblank": 242
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/plugin/codex.ts",
+      "category": "upstream_runtime",
+      "physical": 525,
+      "nonblank": 476
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/plugin/index.ts",
+      "category": "upstream_runtime",
+      "physical": 138,
+      "nonblank": 125
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/project/bootstrap.ts",
+      "category": "upstream_runtime",
+      "physical": 31,
+      "nonblank": 29
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/project/instance.ts",
+      "category": "upstream_runtime",
+      "physical": 91,
+      "nonblank": 89
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/project/project.ts",
+      "category": "upstream_runtime",
+      "physical": 316,
+      "nonblank": 285
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/project/state.ts",
+      "category": "upstream_runtime",
+      "physical": 66,
+      "nonblank": 56
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/project/vcs.ts",
+      "category": "upstream_runtime",
+      "physical": 76,
+      "nonblank": 67
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/provider/auth.ts",
+      "category": "upstream_runtime",
+      "physical": 147,
+      "nonblank": 134
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/provider/models-macro.ts",
+      "category": "upstream_runtime",
+      "physical": 11,
+      "nonblank": 11
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/provider/models.ts",
+      "category": "upstream_runtime",
+      "physical": 107,
+      "nonblank": 100
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/provider/provider.ts",
+      "category": "upstream_runtime",
+      "physical": 1190,
+      "nonblank": 1092
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/provider/sdk/openai-compatible/src/index.ts",
+      "category": "upstream_runtime",
+      "physical": 2,
+      "nonblank": 2
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/provider/sdk/openai-compatible/src/openai-compatible-provider.ts",
+      "category": "upstream_runtime",
+      "physical": 100,
+      "nonblank": 79
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/provider/sdk/openai-compatible/src/responses/convert-to-openai-responses-input.ts",
+      "category": "upstream_runtime",
+      "physical": 303,
+      "nonblank": 272
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/provider/sdk/openai-compatible/src/responses/map-openai-responses-finish-reason.ts",
+      "category": "upstream_runtime",
+      "physical": 22,
+      "nonblank": 21
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/provider/sdk/openai-compatible/src/responses/openai-config.ts",
+      "category": "upstream_runtime",
+      "physical": 18,
+      "nonblank": 17
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/provider/sdk/openai-compatible/src/responses/openai-error.ts",
+      "category": "upstream_runtime",
+      "physical": 22,
+      "nonblank": 18
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/provider/sdk/openai-compatible/src/responses/openai-responses-api-types.ts",
+      "category": "upstream_runtime",
+      "physical": 207,
+      "nonblank": 187
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/provider/sdk/openai-compatible/src/responses/openai-responses-language-model.ts",
+      "category": "upstream_runtime",
+      "physical": 1713,
+      "nonblank": 1556
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/provider/sdk/openai-compatible/src/responses/openai-responses-prepare-tools.ts",
+      "category": "upstream_runtime",
+      "physical": 177,
+      "nonblank": 167
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/provider/sdk/openai-compatible/src/responses/openai-responses-settings.ts",
+      "category": "upstream_runtime",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/provider/sdk/openai-compatible/src/responses/tool/code-interpreter.ts",
+      "category": "upstream_runtime",
+      "physical": 88,
+      "nonblank": 79
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/provider/sdk/openai-compatible/src/responses/tool/file-search.ts",
+      "category": "upstream_runtime",
+      "physical": 128,
+      "nonblank": 114
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/provider/sdk/openai-compatible/src/responses/tool/image-generation.ts",
+      "category": "upstream_runtime",
+      "physical": 115,
+      "nonblank": 100
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/provider/sdk/openai-compatible/src/responses/tool/local-shell.ts",
+      "category": "upstream_runtime",
+      "physical": 65,
+      "nonblank": 57
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/provider/sdk/openai-compatible/src/responses/tool/web-search-preview.ts",
+      "category": "upstream_runtime",
+      "physical": 104,
+      "nonblank": 100
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/provider/sdk/openai-compatible/src/responses/tool/web-search.ts",
+      "category": "upstream_runtime",
+      "physical": 103,
+      "nonblank": 96
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/provider/transform.ts",
+      "category": "upstream_runtime",
+      "physical": 680,
+      "nonblank": 608
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/pty/index.ts",
+      "category": "upstream_runtime",
+      "physical": 229,
+      "nonblank": 206
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/question/index.ts",
+      "category": "upstream_runtime",
+      "physical": 171,
+      "nonblank": 149
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/server/error.ts",
+      "category": "upstream_runtime",
+      "physical": 36,
+      "nonblank": 34
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/server/mdns.ts",
+      "category": "upstream_runtime",
+      "physical": 57,
+      "nonblank": 49
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/server/project.ts",
+      "category": "upstream_runtime",
+      "physical": 79,
+      "nonblank": 78
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/server/question.ts",
+      "category": "upstream_runtime",
+      "physical": 95,
+      "nonblank": 94
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/server/server.ts",
+      "category": "upstream_runtime",
+      "physical": 2908,
+      "nonblank": 2877
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/server/tui.ts",
+      "category": "upstream_runtime",
+      "physical": 71,
+      "nonblank": 66
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/session/compaction.ts",
+      "category": "upstream_runtime",
+      "physical": 225,
+      "nonblank": 214
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/session/index.ts",
+      "category": "upstream_runtime",
+      "physical": 489,
+      "nonblank": 452
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/session/llm.ts",
+      "category": "upstream_runtime",
+      "physical": 238,
+      "nonblank": 225
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/session/message-v2.ts",
+      "category": "upstream_runtime",
+      "physical": 685,
+      "nonblank": 639
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/session/message.ts",
+      "category": "upstream_runtime",
+      "physical": 189,
+      "nonblank": 176
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/session/processor.ts",
+      "category": "upstream_runtime",
+      "physical": 406,
+      "nonblank": 381
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/session/prompt.ts",
+      "category": "upstream_runtime",
+      "physical": 1780,
+      "nonblank": 1650
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/session/retry.ts",
+      "category": "upstream_runtime",
+      "physical": 90,
+      "nonblank": 81
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/session/revert.ts",
+      "category": "upstream_runtime",
+      "physical": 108,
+      "nonblank": 100
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/session/status.ts",
+      "category": "upstream_runtime",
+      "physical": 76,
+      "nonblank": 70
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/session/summary.ts",
+      "category": "upstream_runtime",
+      "physical": 149,
+      "nonblank": 135
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/session/system.ts",
+      "category": "upstream_runtime",
+      "physical": 138,
+      "nonblank": 124
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/session/todo.ts",
+      "category": "upstream_runtime",
+      "physical": 37,
+      "nonblank": 33
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/share/share-next.ts",
+      "category": "upstream_runtime",
+      "physical": 194,
+      "nonblank": 182
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/share/share.ts",
+      "category": "upstream_runtime",
+      "physical": 87,
+      "nonblank": 79
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/shell/shell.ts",
+      "category": "upstream_runtime",
+      "physical": 67,
+      "nonblank": 60
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/skill/index.ts",
+      "category": "upstream_runtime",
+      "physical": 1,
+      "nonblank": 1
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/skill/skill.ts",
+      "category": "upstream_runtime",
+      "physical": 127,
+      "nonblank": 111
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/snapshot/index.ts",
+      "category": "upstream_runtime",
+      "physical": 199,
+      "nonblank": 185
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/storage/storage.ts",
+      "category": "upstream_runtime",
+      "physical": 226,
+      "nonblank": 211
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/tool/bash.ts",
+      "category": "upstream_runtime",
+      "physical": 258,
+      "nonblank": 226
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/tool/batch.ts",
+      "category": "upstream_runtime",
+      "physical": 175,
+      "nonblank": 157
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/tool/codesearch.ts",
+      "category": "upstream_runtime",
+      "physical": 132,
+      "nonblank": 117
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/tool/edit.ts",
+      "category": "upstream_runtime",
+      "physical": 645,
+      "nonblank": 559
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/tool/external-directory.ts",
+      "category": "upstream_runtime",
+      "physical": 32,
+      "nonblank": 25
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/tool/glob.ts",
+      "category": "upstream_runtime",
+      "physical": 77,
+      "nonblank": 72
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/tool/grep.ts",
+      "category": "upstream_runtime",
+      "physical": 136,
+      "nonblank": 113
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/tool/invalid.ts",
+      "category": "upstream_runtime",
+      "physical": 17,
+      "nonblank": 16
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/tool/ls.ts",
+      "category": "upstream_runtime",
+      "physical": 121,
+      "nonblank": 104
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/tool/lsp.ts",
+      "category": "upstream_runtime",
+      "physical": 96,
+      "nonblank": 86
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/tool/multiedit.ts",
+      "category": "upstream_runtime",
+      "physical": 46,
+      "nonblank": 45
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/tool/patch.ts",
+      "category": "upstream_runtime",
+      "physical": 201,
+      "nonblank": 171
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/tool/plan.ts",
+      "category": "upstream_runtime",
+      "physical": 130,
+      "nonblank": 117
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/tool/question.ts",
+      "category": "upstream_runtime",
+      "physical": 33,
+      "nonblank": 29
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/tool/read.ts",
+      "category": "upstream_runtime",
+      "physical": 200,
+      "nonblank": 178
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/tool/registry.ts",
+      "category": "upstream_runtime",
+      "physical": 143,
+      "nonblank": 132
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/tool/skill.ts",
+      "category": "upstream_runtime",
+      "physical": 75,
+      "nonblank": 66
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/tool/task.ts",
+      "category": "upstream_runtime",
+      "physical": 188,
+      "nonblank": 172
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/tool/todo.ts",
+      "category": "upstream_runtime",
+      "physical": 53,
+      "nonblank": 49
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/tool/tool.ts",
+      "category": "upstream_runtime",
+      "physical": 88,
+      "nonblank": 83
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/tool/truncation.ts",
+      "category": "upstream_runtime",
+      "physical": 99,
+      "nonblank": 85
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/tool/webfetch.ts",
+      "category": "upstream_runtime",
+      "physical": 182,
+      "nonblank": 161
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/tool/websearch.ts",
+      "category": "upstream_runtime",
+      "physical": 144,
+      "nonblank": 129
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/tool/write.ts",
+      "category": "upstream_runtime",
+      "physical": 80,
+      "nonblank": 73
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/util/archive.ts",
+      "category": "upstream_runtime",
+      "physical": 16,
+      "nonblank": 15
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/util/color.ts",
+      "category": "upstream_runtime",
+      "physical": 19,
+      "nonblank": 17
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/util/context.ts",
+      "category": "upstream_runtime",
+      "physical": 25,
+      "nonblank": 23
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/util/defer.ts",
+      "category": "upstream_runtime",
+      "physical": 12,
+      "nonblank": 12
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/util/eventloop.ts",
+      "category": "upstream_runtime",
+      "physical": 20,
+      "nonblank": 19
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/util/filesystem.ts",
+      "category": "upstream_runtime",
+      "physical": 83,
+      "nonblank": 78
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/util/fn.ts",
+      "category": "upstream_runtime",
+      "physical": 11,
+      "nonblank": 10
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/util/iife.ts",
+      "category": "upstream_runtime",
+      "physical": 3,
+      "nonblank": 3
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/util/keybind.ts",
+      "category": "upstream_runtime",
+      "physical": 102,
+      "nonblank": 90
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/util/lazy.ts",
+      "category": "upstream_runtime",
+      "physical": 18,
+      "nonblank": 15
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/util/locale.ts",
+      "category": "upstream_runtime",
+      "physical": 81,
+      "nonblank": 70
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/util/lock.ts",
+      "category": "upstream_runtime",
+      "physical": 98,
+      "nonblank": 89
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/util/log.ts",
+      "category": "upstream_runtime",
+      "physical": 180,
+      "nonblank": 162
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/util/queue.ts",
+      "category": "upstream_runtime",
+      "physical": 32,
+      "nonblank": 28
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/util/rpc.ts",
+      "category": "upstream_runtime",
+      "physical": 66,
+      "nonblank": 63
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/util/scrap.ts",
+      "category": "upstream_runtime",
+      "physical": 10,
+      "nonblank": 8
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/util/signal.ts",
+      "category": "upstream_runtime",
+      "physical": 12,
+      "nonblank": 12
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/util/timeout.ts",
+      "category": "upstream_runtime",
+      "physical": 14,
+      "nonblank": 14
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/util/token.ts",
+      "category": "upstream_runtime",
+      "physical": 7,
+      "nonblank": 6
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/util/wildcard.ts",
+      "category": "upstream_runtime",
+      "physical": 56,
+      "nonblank": 50
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/src/worktree/index.ts",
+      "category": "upstream_runtime",
+      "physical": 217,
+      "nonblank": 188
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/agent/agent.test.ts",
+      "category": "upstream_tests",
+      "physical": 514,
+      "nonblank": 487
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/bun.test.ts",
+      "category": "upstream_tests",
+      "physical": 53,
+      "nonblank": 44
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/cli/github-action.test.ts",
+      "category": "upstream_tests",
+      "physical": 129,
+      "nonblank": 114
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/cli/github-remote.test.ts",
+      "category": "upstream_tests",
+      "physical": 80,
+      "nonblank": 66
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/cli/tui/transcript.test.ts",
+      "category": "upstream_tests",
+      "physical": 297,
+      "nonblank": 275
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/config/agent-color.test.ts",
+      "category": "upstream_tests",
+      "physical": 66,
+      "nonblank": 62
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/config/config.test.ts",
+      "category": "upstream_tests",
+      "physical": 1376,
+      "nonblank": 1267
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/config/markdown.test.ts",
+      "category": "upstream_tests",
+      "physical": 89,
+      "nonblank": 66
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/file/ignore.test.ts",
+      "category": "upstream_tests",
+      "physical": 10,
+      "nonblank": 9
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/file/path-traversal.test.ts",
+      "category": "upstream_tests",
+      "physical": 198,
+      "nonblank": 172
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/fixture/fixture.ts",
+      "category": "upstream_tests",
+      "physical": 45,
+      "nonblank": 43
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/fixture/lsp/fake-lsp-server.js",
+      "category": "upstream_tests",
+      "physical": 77,
+      "nonblank": 68
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/ide/ide.test.ts",
+      "category": "upstream_tests",
+      "physical": 82,
+      "nonblank": 60
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/keybind.test.ts",
+      "category": "upstream_tests",
+      "physical": 421,
+      "nonblank": 374
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/lsp/client.test.ts",
+      "category": "upstream_tests",
+      "physical": 95,
+      "nonblank": 75
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/mcp/headers.test.ts",
+      "category": "upstream_tests",
+      "physical": 153,
+      "nonblank": 134
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/patch/patch.test.ts",
+      "category": "upstream_tests",
+      "physical": 348,
+      "nonblank": 286
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/permission/arity.test.ts",
+      "category": "upstream_tests",
+      "physical": 33,
+      "nonblank": 27
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/permission/next.test.ts",
+      "category": "upstream_tests",
+      "physical": 652,
+      "nonblank": 578
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/permission-task.test.ts",
+      "category": "upstream_tests",
+      "physical": 319,
+      "nonblank": 289
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/plugin/codex.test.ts",
+      "category": "upstream_tests",
+      "physical": 123,
+      "nonblank": 109
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/preload.ts",
+      "category": "upstream_tests",
+      "physical": 65,
+      "nonblank": 59
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/project/project.test.ts",
+      "category": "upstream_tests",
+      "physical": 120,
+      "nonblank": 90
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/provider/amazon-bedrock.test.ts",
+      "category": "upstream_tests",
+      "physical": 210,
+      "nonblank": 198
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/provider/gitlab-duo.test.ts",
+      "category": "upstream_tests",
+      "physical": 286,
+      "nonblank": 270
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/provider/provider.test.ts",
+      "category": "upstream_tests",
+      "physical": 2149,
+      "nonblank": 2075
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/provider/transform.test.ts",
+      "category": "upstream_tests",
+      "physical": 1155,
+      "nonblank": 1061
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/question/question.test.ts",
+      "category": "upstream_tests",
+      "physical": 300,
+      "nonblank": 265
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/server/session-list.test.ts",
+      "category": "upstream_tests",
+      "physical": 39,
+      "nonblank": 32
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/server/session-select.test.ts",
+      "category": "upstream_tests",
+      "physical": 78,
+      "nonblank": 67
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/session/compaction.test.ts",
+      "category": "upstream_tests",
+      "physical": 251,
+      "nonblank": 227
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/session/message-v2.test.ts",
+      "category": "upstream_tests",
+      "physical": 572,
+      "nonblank": 535
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/session/retry.test.ts",
+      "category": "upstream_tests",
+      "physical": 131,
+      "nonblank": 110
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/session/revert-compact.test.ts",
+      "category": "upstream_tests",
+      "physical": 285,
+      "nonblank": 256
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/session/session.test.ts",
+      "category": "upstream_tests",
+      "physical": 71,
+      "nonblank": 55
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/skill/skill.test.ts",
+      "category": "upstream_tests",
+      "physical": 185,
+      "nonblank": 163
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/snapshot/snapshot.test.ts",
+      "category": "upstream_tests",
+      "physical": 939,
+      "nonblank": 774
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/tool/bash.test.ts",
+      "category": "upstream_tests",
+      "physical": 320,
+      "nonblank": 301
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/tool/external-directory.test.ts",
+      "category": "upstream_tests",
+      "physical": 126,
+      "nonblank": 108
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/tool/grep.test.ts",
+      "category": "upstream_tests",
+      "physical": 109,
+      "nonblank": 101
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/tool/patch.test.ts",
+      "category": "upstream_tests",
+      "physical": 261,
+      "nonblank": 220
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/tool/read.test.ts",
+      "category": "upstream_tests",
+      "physical": 303,
+      "nonblank": 287
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/tool/registry.test.ts",
+      "category": "upstream_tests",
+      "physical": 76,
+      "nonblank": 68
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/tool/truncation.test.ts",
+      "category": "upstream_tests",
+      "physical": 159,
+      "nonblank": 126
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/util/iife.test.ts",
+      "category": "upstream_tests",
+      "physical": 36,
+      "nonblank": 30
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/util/lazy.test.ts",
+      "category": "upstream_tests",
+      "physical": 50,
+      "nonblank": 40
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/util/lock.test.ts",
+      "category": "upstream_tests",
+      "physical": 72,
+      "nonblank": 58
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/util/timeout.test.ts",
+      "category": "upstream_tests",
+      "physical": 21,
+      "nonblank": 17
+    },
+    {
+      "path": "migration/upstream/opencode/packages/opencode/test/util/wildcard.test.ts",
+      "category": "upstream_tests",
+      "physical": 75,
+      "nonblank": 66
+    },
+    {
+      "path": "migration/upstream/opencode/packages/plugin/script/publish.ts",
+      "category": "upstream_other",
+      "physical": 21,
+      "nonblank": 19
+    },
+    {
+      "path": "migration/upstream/opencode/packages/plugin/src/example.ts",
+      "category": "upstream_other",
+      "physical": 18,
+      "nonblank": 17
+    },
+    {
+      "path": "migration/upstream/opencode/packages/plugin/src/index.ts",
+      "category": "upstream_other",
+      "physical": 218,
+      "nonblank": 210
+    },
+    {
+      "path": "migration/upstream/opencode/packages/plugin/src/shell.ts",
+      "category": "upstream_other",
+      "physical": 136,
+      "nonblank": 110
+    },
+    {
+      "path": "migration/upstream/opencode/packages/plugin/src/tool.ts",
+      "category": "upstream_other",
+      "physical": 28,
+      "nonblank": 24
+    },
+    {
+      "path": "migration/upstream/opencode/packages/script/src/index.ts",
+      "category": "upstream_other",
+      "physical": 56,
+      "nonblank": 50
+    },
+    {
+      "path": "migration/upstream/opencode/packages/sdk/js/example/example.ts",
+      "category": "upstream_other",
+      "physical": 55,
+      "nonblank": 51
+    },
+    {
+      "path": "migration/upstream/opencode/packages/sdk/js/script/build.ts",
+      "category": "upstream_other",
+      "physical": 44,
+      "nonblank": 38
+    },
+    {
+      "path": "migration/upstream/opencode/packages/sdk/js/script/publish.ts",
+      "category": "upstream_other",
+      "physical": 24,
+      "nonblank": 20
+    },
+    {
+      "path": "migration/upstream/opencode/packages/sdk/js/src/client.ts",
+      "category": "upstream_other",
+      "physical": 30,
+      "nonblank": 26
+    },
+    {
+      "path": "migration/upstream/opencode/packages/sdk/js/src/gen/client/index.ts",
+      "category": "upstream_other",
+      "physical": 25,
+      "nonblank": 24
+    },
+    {
+      "path": "migration/upstream/opencode/packages/sdk/js/src/index.ts",
+      "category": "upstream_other",
+      "physical": 21,
+      "nonblank": 17
+    },
+    {
+      "path": "migration/upstream/opencode/packages/sdk/js/src/server.ts",
+      "category": "upstream_other",
+      "physical": 123,
+      "nonblank": 112
+    },
+    {
+      "path": "migration/upstream/opencode/packages/sdk/js/src/v2/client.ts",
+      "category": "upstream_other",
+      "physical": 32,
+      "nonblank": 28
+    },
+    {
+      "path": "migration/upstream/opencode/packages/sdk/js/src/v2/gen/client/index.ts",
+      "category": "upstream_other",
+      "physical": 25,
+      "nonblank": 24
+    },
+    {
+      "path": "migration/upstream/opencode/packages/sdk/js/src/v2/index.ts",
+      "category": "upstream_other",
+      "physical": 21,
+      "nonblank": 17
+    },
+    {
+      "path": "migration/upstream/opencode/packages/sdk/js/src/v2/server.ts",
+      "category": "upstream_other",
+      "physical": 123,
+      "nonblank": 112
+    },
+    {
+      "path": "migration/upstream/opencode/packages/slack/src/index.ts",
+      "category": "upstream_other",
+      "physical": 145,
+      "nonblank": 119
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/script/tailwind.ts",
+      "category": "upstream_other",
+      "physical": 23,
+      "nonblank": 18
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/accordion.css",
+      "category": "upstream_other",
+      "physical": 158,
+      "nonblank": 135
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/accordion.tsx",
+      "category": "upstream_other",
+      "physical": 92,
+      "nonblank": 85
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/avatar.css",
+      "category": "upstream_other",
+      "physical": 41,
+      "nonblank": 37
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/avatar.tsx",
+      "category": "upstream_other",
+      "physical": 44,
+      "nonblank": 42
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/basic-tool.css",
+      "category": "upstream_other",
+      "physical": 97,
+      "nonblank": 86
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/basic-tool.tsx",
+      "category": "upstream_other",
+      "physical": 118,
+      "nonblank": 110
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/button.css",
+      "category": "upstream_other",
+      "physical": 165,
+      "nonblank": 145
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/button.tsx",
+      "category": "upstream_other",
+      "physical": 33,
+      "nonblank": 31
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/card.css",
+      "category": "upstream_other",
+      "physical": 29,
+      "nonblank": 26
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/card.tsx",
+      "category": "upstream_other",
+      "physical": 22,
+      "nonblank": 20
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/checkbox.css",
+      "category": "upstream_other",
+      "physical": 121,
+      "nonblank": 104
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/checkbox.tsx",
+      "category": "upstream_other",
+      "physical": 43,
+      "nonblank": 41
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/code.css",
+      "category": "upstream_other",
+      "physical": 4,
+      "nonblank": 4
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/code.tsx",
+      "category": "upstream_other",
+      "physical": 147,
+      "nonblank": 114
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/collapsible.css",
+      "category": "upstream_other",
+      "physical": 97,
+      "nonblank": 86
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/collapsible.tsx",
+      "category": "upstream_other",
+      "physical": 46,
+      "nonblank": 40
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/dialog.css",
+      "category": "upstream_other",
+      "physical": 164,
+      "nonblank": 147
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/dialog.tsx",
+      "category": "upstream_other",
+      "physical": 53,
+      "nonblank": 51
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/diff-changes.css",
+      "category": "upstream_other",
+      "physical": 41,
+      "nonblank": 37
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/diff-changes.tsx",
+      "category": "upstream_other",
+      "physical": 115,
+      "nonblank": 96
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/diff-ssr.tsx",
+      "category": "upstream_other",
+      "physical": 80,
+      "nonblank": 73
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/diff.css",
+      "category": "upstream_other",
+      "physical": 35,
+      "nonblank": 32
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/diff.tsx",
+      "category": "upstream_other",
+      "physical": 60,
+      "nonblank": 51
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/dropdown-menu.css",
+      "category": "upstream_other",
+      "physical": 120,
+      "nonblank": 105
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/dropdown-menu.tsx",
+      "category": "upstream_other",
+      "physical": 308,
+      "nonblank": 287
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/favicon.tsx",
+      "category": "upstream_other",
+      "physical": 13,
+      "nonblank": 12
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/file-icon.css",
+      "category": "upstream_other",
+      "physical": 5,
+      "nonblank": 5
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/file-icon.tsx",
+      "category": "upstream_other",
+      "physical": 583,
+      "nonblank": 533
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/file-icons/types.ts",
+      "category": "upstream_other",
+      "physical": 1095,
+      "nonblank": 1093
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/font.tsx",
+      "category": "upstream_other",
+      "physical": 159,
+      "nonblank": 154
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/icon-button.css",
+      "category": "upstream_other",
+      "physical": 141,
+      "nonblank": 122
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/icon-button.tsx",
+      "category": "upstream_other",
+      "physical": 28,
+      "nonblank": 26
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/icon.css",
+      "category": "upstream_other",
+      "physical": 29,
+      "nonblank": 25
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/icon.tsx",
+      "category": "upstream_other",
+      "physical": 89,
+      "nonblank": 86
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/image-preview.css",
+      "category": "upstream_other",
+      "physical": 63,
+      "nonblank": 57
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/image-preview.tsx",
+      "category": "upstream_other",
+      "physical": 24,
+      "nonblank": 22
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/list.css",
+      "category": "upstream_other",
+      "physical": 236,
+      "nonblank": 208
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/list.tsx",
+      "category": "upstream_other",
+      "physical": 232,
+      "nonblank": 209
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/logo.css",
+      "category": "upstream_other",
+      "physical": 4,
+      "nonblank": 4
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/logo.tsx",
+      "category": "upstream_other",
+      "physical": 44,
+      "nonblank": 43
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/markdown.css",
+      "category": "upstream_other",
+      "physical": 170,
+      "nonblank": 147
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/markdown.tsx",
+      "category": "upstream_other",
+      "physical": 95,
+      "nonblank": 82
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/message-nav.css",
+      "category": "upstream_other",
+      "physical": 118,
+      "nonblank": 102
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/message-nav.tsx",
+      "category": "upstream_other",
+      "physical": 68,
+      "nonblank": 64
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/message-part.css",
+      "category": "upstream_other",
+      "physical": 683,
+      "nonblank": 583
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/message-part.tsx",
+      "category": "upstream_other",
+      "physical": 1359,
+      "nonblank": 1253
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/popover.css",
+      "category": "upstream_other",
+      "physical": 98,
+      "nonblank": 82
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/popover.tsx",
+      "category": "upstream_other",
+      "physical": 44,
+      "nonblank": 41
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/progress-circle.css",
+      "category": "upstream_other",
+      "physical": 12,
+      "nonblank": 10
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/progress-circle.tsx",
+      "category": "upstream_other",
+      "physical": 57,
+      "nonblank": 51
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/provider-icon.css",
+      "category": "upstream_other",
+      "physical": 5,
+      "nonblank": 5
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/provider-icon.tsx",
+      "category": "upstream_other",
+      "physical": 24,
+      "nonblank": 22
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/provider-icons/types.ts",
+      "category": "upstream_other",
+      "physical": 81,
+      "nonblank": 79
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/radio-group.css",
+      "category": "upstream_other",
+      "physical": 157,
+      "nonblank": 136
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/radio-group.tsx",
+      "category": "upstream_other",
+      "physical": 75,
+      "nonblank": 69
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/resize-handle.css",
+      "category": "upstream_other",
+      "physical": 48,
+      "nonblank": 42
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/resize-handle.tsx",
+      "category": "upstream_other",
+      "physical": 71,
+      "nonblank": 62
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/select.css",
+      "category": "upstream_other",
+      "physical": 154,
+      "nonblank": 137
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/select.tsx",
+      "category": "upstream_other",
+      "physical": 120,
+      "nonblank": 117
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/session-message-rail.css",
+      "category": "upstream_other",
+      "physical": 44,
+      "nonblank": 37
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/session-message-rail.tsx",
+      "category": "upstream_other",
+      "physical": 46,
+      "nonblank": 43
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/session-review.css",
+      "category": "upstream_other",
+      "physical": 140,
+      "nonblank": 122
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/session-review.tsx",
+      "category": "upstream_other",
+      "physical": 154,
+      "nonblank": 147
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/session-turn.css",
+      "category": "upstream_other",
+      "physical": 423,
+      "nonblank": 376
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/session-turn.tsx",
+      "category": "upstream_other",
+      "physical": 695,
+      "nonblank": 629
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/spinner.css",
+      "category": "upstream_other",
+      "physical": 6,
+      "nonblank": 6
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/spinner.tsx",
+      "category": "upstream_other",
+      "physical": 41,
+      "nonblank": 39
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/sticky-accordion-header.css",
+      "category": "upstream_other",
+      "physical": 16,
+      "nonblank": 14
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/sticky-accordion-header.tsx",
+      "category": "upstream_other",
+      "physical": 18,
+      "nonblank": 17
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/switch.css",
+      "category": "upstream_other",
+      "physical": 131,
+      "nonblank": 112
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/switch.tsx",
+      "category": "upstream_other",
+      "physical": 29,
+      "nonblank": 27
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/tabs.css",
+      "category": "upstream_other",
+      "physical": 274,
+      "nonblank": 236
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/tabs.tsx",
+      "category": "upstream_other",
+      "physical": 113,
+      "nonblank": 107
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/tag.css",
+      "category": "upstream_other",
+      "physical": 37,
+      "nonblank": 32
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/tag.tsx",
+      "category": "upstream_other",
+      "physical": 22,
+      "nonblank": 20
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/text-field.css",
+      "category": "upstream_other",
+      "physical": 133,
+      "nonblank": 110
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/text-field.tsx",
+      "category": "upstream_other",
+      "physical": 110,
+      "nonblank": 105
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/toast.css",
+      "category": "upstream_other",
+      "physical": 205,
+      "nonblank": 175
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/toast.tsx",
+      "category": "upstream_other",
+      "physical": 174,
+      "nonblank": 154
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/tooltip.css",
+      "category": "upstream_other",
+      "physical": 74,
+      "nonblank": 66
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/tooltip.tsx",
+      "category": "upstream_other",
+      "physical": 70,
+      "nonblank": 63
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/typewriter.css",
+      "category": "upstream_other",
+      "physical": 14,
+      "nonblank": 13
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/components/typewriter.tsx",
+      "category": "upstream_other",
+      "physical": 55,
+      "nonblank": 47
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/context/code.tsx",
+      "category": "upstream_other",
+      "physical": 10,
+      "nonblank": 8
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/context/data.tsx",
+      "category": "upstream_other",
+      "physical": 74,
+      "nonblank": 68
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/context/dialog.tsx",
+      "category": "upstream_other",
+      "physical": 111,
+      "nonblank": 96
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/context/diff.tsx",
+      "category": "upstream_other",
+      "physical": 10,
+      "nonblank": 8
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/context/helper.tsx",
+      "category": "upstream_other",
+      "physical": 37,
+      "nonblank": 33
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/context/index.ts",
+      "category": "upstream_other",
+      "physical": 4,
+      "nonblank": 4
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/context/marked.tsx",
+      "category": "upstream_other",
+      "physical": 411,
+      "nonblank": 409
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/context/worker-pool.tsx",
+      "category": "upstream_other",
+      "physical": 20,
+      "nonblank": 16
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/hooks/create-auto-scroll.tsx",
+      "category": "upstream_other",
+      "physical": 167,
+      "nonblank": 135
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/hooks/index.ts",
+      "category": "upstream_other",
+      "physical": 2,
+      "nonblank": 2
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/hooks/use-filtered-list.tsx",
+      "category": "upstream_other",
+      "physical": 114,
+      "nonblank": 101
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/pierre/index.ts",
+      "category": "upstream_other",
+      "physical": 107,
+      "nonblank": 102
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/pierre/worker.ts",
+      "category": "upstream_other",
+      "physical": 51,
+      "nonblank": 42
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/styles/animations.css",
+      "category": "upstream_other",
+      "physical": 130,
+      "nonblank": 125
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/styles/base.css",
+      "category": "upstream_other",
+      "physical": 388,
+      "nonblank": 318
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/styles/colors.css",
+      "category": "upstream_other",
+      "physical": 592,
+      "nonblank": 592
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/styles/index.css",
+      "category": "upstream_other",
+      "physical": 49,
+      "nonblank": 45
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/styles/tailwind/colors.css",
+      "category": "upstream_other",
+      "physical": 244,
+      "nonblank": 243
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/styles/tailwind/index.css",
+      "category": "upstream_other",
+      "physical": 72,
+      "nonblank": 57
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/styles/tailwind/utilities.css",
+      "category": "upstream_other",
+      "physical": 113,
+      "nonblank": 110
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/styles/theme.css",
+      "category": "upstream_other",
+      "physical": 587,
+      "nonblank": 577
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/styles/utilities.css",
+      "category": "upstream_other",
+      "physical": 131,
+      "nonblank": 115
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/theme/color.ts",
+      "category": "upstream_other",
+      "physical": 194,
+      "nonblank": 157
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/theme/context.tsx",
+      "category": "upstream_other",
+      "physical": 180,
+      "nonblank": 163
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/theme/default-themes.ts",
+      "category": "upstream_other",
+      "physical": 41,
+      "nonblank": 39
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/theme/index.ts",
+      "category": "upstream_other",
+      "physical": 46,
+      "nonblank": 43
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/theme/loader.ts",
+      "category": "upstream_other",
+      "physical": 103,
+      "nonblank": 87
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/theme/resolve.ts",
+      "category": "upstream_other",
+      "physical": 325,
+      "nonblank": 296
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/src/theme/types.ts",
+      "category": "upstream_other",
+      "physical": 53,
+      "nonblank": 44
+    },
+    {
+      "path": "migration/upstream/opencode/packages/ui/vite.config.ts",
+      "category": "upstream_other",
+      "physical": 58,
+      "nonblank": 55
+    },
+    {
+      "path": "migration/upstream/opencode/packages/util/src/binary.ts",
+      "category": "upstream_other",
+      "physical": 41,
+      "nonblank": 34
+    },
+    {
+      "path": "migration/upstream/opencode/packages/util/src/encode.ts",
+      "category": "upstream_other",
+      "physical": 30,
+      "nonblank": 27
+    },
+    {
+      "path": "migration/upstream/opencode/packages/util/src/error.ts",
+      "category": "upstream_other",
+      "physical": 54,
+      "nonblank": 46
+    },
+    {
+      "path": "migration/upstream/opencode/packages/util/src/fn.ts",
+      "category": "upstream_other",
+      "physical": 11,
+      "nonblank": 10
+    },
+    {
+      "path": "migration/upstream/opencode/packages/util/src/identifier.ts",
+      "category": "upstream_other",
+      "physical": 48,
+      "nonblank": 37
+    },
+    {
+      "path": "migration/upstream/opencode/packages/util/src/iife.ts",
+      "category": "upstream_other",
+      "physical": 3,
+      "nonblank": 3
+    },
+    {
+      "path": "migration/upstream/opencode/packages/util/src/lazy.ts",
+      "category": "upstream_other",
+      "physical": 11,
+      "nonblank": 10
+    },
+    {
+      "path": "migration/upstream/opencode/packages/util/src/path.ts",
+      "category": "upstream_other",
+      "physical": 18,
+      "nonblank": 16
+    },
+    {
+      "path": "migration/upstream/opencode/packages/util/src/retry.ts",
+      "category": "upstream_other",
+      "physical": 41,
+      "nonblank": 37
+    },
+    {
+      "path": "migration/upstream/opencode/packages/util/src/slug.ts",
+      "category": "upstream_other",
+      "physical": 74,
+      "nonblank": 72
+    },
+    {
+      "path": "migration/upstream/opencode/packages/web/astro.config.mjs",
+      "category": "upstream_other",
+      "physical": 116,
+      "nonblank": 112
+    },
+    {
+      "path": "migration/upstream/opencode/packages/web/config.mjs",
+      "category": "upstream_other",
+      "physical": 14,
+      "nonblank": 13
+    },
+    {
+      "path": "migration/upstream/opencode/packages/web/src/components/icons/custom.tsx",
+      "category": "upstream_other",
+      "physical": 87,
+      "nonblank": 80
+    },
+    {
+      "path": "migration/upstream/opencode/packages/web/src/components/icons/index.tsx",
+      "category": "upstream_other",
+      "physical": 4454,
+      "nonblank": 4452
+    },
+    {
+      "path": "migration/upstream/opencode/packages/web/src/components/share/common.tsx",
+      "category": "upstream_other",
+      "physical": 77,
+      "nonblank": 66
+    },
+    {
+      "path": "migration/upstream/opencode/packages/web/src/components/share/content-bash.module.css",
+      "category": "upstream_other",
+      "physical": 85,
+      "nonblank": 75
+    },
+    {
+      "path": "migration/upstream/opencode/packages/web/src/components/share/content-bash.tsx",
+      "category": "upstream_other",
+      "physical": 67,
+      "nonblank": 61
+    },
+    {
+      "path": "migration/upstream/opencode/packages/web/src/components/share/content-code.module.css",
+      "category": "upstream_other",
+      "physical": 26,
+      "nonblank": 23
+    },
+    {
+      "path": "migration/upstream/opencode/packages/web/src/components/share/content-code.tsx",
+      "category": "upstream_other",
+      "physical": 32,
+      "nonblank": 31
+    },
+    {
+      "path": "migration/upstream/opencode/packages/web/src/components/share/content-diff.module.css",
+      "category": "upstream_other",
+      "physical": 153,
+      "nonblank": 128
+    },
+    {
+      "path": "migration/upstream/opencode/packages/web/src/components/share/content-diff.tsx",
+      "category": "upstream_other",
+      "physical": 231,
+      "nonblank": 209
+    },
+    {
+      "path": "migration/upstream/opencode/packages/web/src/components/share/content-error.module.css",
+      "category": "upstream_other",
+      "physical": 64,
+      "nonblank": 59
+    },
+    {
+      "path": "migration/upstream/opencode/packages/web/src/components/share/content-error.tsx",
+      "category": "upstream_other",
+      "physical": 24,
+      "nonblank": 22
+    },
+    {
+      "path": "migration/upstream/opencode/packages/web/src/components/share/content-markdown.module.css",
+      "category": "upstream_other",
+      "physical": 154,
+      "nonblank": 128
+    },
+    {
+      "path": "migration/upstream/opencode/packages/web/src/components/share/content-markdown.tsx",
+      "category": "upstream_other",
+      "physical": 75,
+      "nonblank": 70
+    },
+    {
+      "path": "migration/upstream/opencode/packages/web/src/components/share/content-text.module.css",
+      "category": "upstream_other",
+      "physical": 63,
+      "nonblank": 54
+    },
+    {
+      "path": "migration/upstream/opencode/packages/web/src/components/share/content-text.tsx",
+      "category": "upstream_other",
+      "physical": 37,
+      "nonblank": 35
+    },
+    {
+      "path": "migration/upstream/opencode/packages/web/src/components/share/copy-button.module.css",
+      "category": "upstream_other",
+      "physical": 30,
+      "nonblank": 26
+    },
+    {
+      "path": "migration/upstream/opencode/packages/web/src/components/share/copy-button.tsx",
+      "category": "upstream_other",
+      "physical": 28,
+      "nonblank": 23
+    },
+    {
+      "path": "migration/upstream/opencode/packages/web/src/components/share/part.module.css",
+      "category": "upstream_other",
+      "physical": 428,
+      "nonblank": 369
+    },
+    {
+      "path": "migration/upstream/opencode/packages/web/src/components/share/part.tsx",
+      "category": "upstream_other",
+      "physical": 780,
+      "nonblank": 727
+    },
+    {
+      "path": "migration/upstream/opencode/packages/web/src/components/share.module.css",
+      "category": "upstream_other",
+      "physical": 832,
+      "nonblank": 706
+    },
+    {
+      "path": "migration/upstream/opencode/packages/web/src/components/Share.tsx",
+      "category": "upstream_other",
+      "physical": 634,
+      "nonblank": 577
+    },
+    {
+      "path": "migration/upstream/opencode/packages/web/src/content.config.ts",
+      "category": "upstream_other",
+      "physical": 7,
+      "nonblank": 6
+    },
+    {
+      "path": "migration/upstream/opencode/packages/web/src/pages/[...slug].md.ts",
+      "category": "upstream_other",
+      "physical": 18,
+      "nonblank": 15
+    },
+    {
+      "path": "migration/upstream/opencode/packages/web/src/styles/custom.css",
+      "category": "upstream_other",
+      "physical": 405,
+      "nonblank": 330
+    },
+    {
+      "path": "migration/upstream/opencode/script/changelog.ts",
+      "category": "upstream_other",
+      "physical": 299,
+      "nonblank": 253
+    },
+    {
+      "path": "migration/upstream/opencode/script/duplicate-pr.ts",
+      "category": "upstream_other",
+      "physical": 78,
+      "nonblank": 65
+    },
+    {
+      "path": "migration/upstream/opencode/script/format.ts",
+      "category": "upstream_other",
+      "physical": 5,
+      "nonblank": 3
+    },
+    {
+      "path": "migration/upstream/opencode/script/generate.ts",
+      "category": "upstream_other",
+      "physical": 9,
+      "nonblank": 5
+    },
+    {
+      "path": "migration/upstream/opencode/script/publish-complete.ts",
+      "category": "upstream_other",
+      "physical": 14,
+      "nonblank": 9
+    },
+    {
+      "path": "migration/upstream/opencode/script/publish-start.ts",
+      "category": "upstream_other",
+      "physical": 67,
+      "nonblank": 52
+    },
+    {
+      "path": "migration/upstream/opencode/script/stats.ts",
+      "category": "upstream_other",
+      "physical": 225,
+      "nonblank": 186
+    },
+    {
+      "path": "migration/upstream/opencode/script/sync-zed.ts",
+      "category": "upstream_other",
+      "physical": 130,
+      "nonblank": 102
+    },
+    {
+      "path": "migration/upstream/opencode/sdks/vscode/.vscode-test.mjs",
+      "category": "upstream_other",
+      "physical": 5,
+      "nonblank": 4
+    },
+    {
+      "path": "migration/upstream/opencode/sdks/vscode/esbuild.js",
+      "category": "upstream_other",
+      "physical": 54,
+      "nonblank": 49
+    },
+    {
+      "path": "migration/upstream/opencode/sdks/vscode/eslint.config.mjs",
+      "category": "upstream_other",
+      "physical": 34,
+      "nonblank": 30
+    },
+    {
+      "path": "migration/upstream/opencode/sdks/vscode/src/extension.ts",
+      "category": "upstream_other",
+      "physical": 137,
+      "nonblank": 115
+    },
+    {
+      "path": "migration/upstream/opencode/sst.config.ts",
+      "category": "upstream_other",
+      "physical": 23,
+      "nonblank": 22
+    }
+  ]
+}

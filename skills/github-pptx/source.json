@@ -1,0 +1,25 @@
+{
+  "id": "github-pptx",
+  "repository": "https://github.com/darce07/pptx-mit-claude-skill",
+  "commit": "ae38be7fff43d1c26cada9db5cfbe7b04e91c4aa",
+  "license": "MIT",
+  "mode": "adapted-workflow",
+  "upstream_skill_url": "https://github.com/darce07/pptx-mit-claude-skill/blob/ae38be7fff43d1c26cada9db5cfbe7b04e91c4aa/SKILL.md",
+  "upstream_files": {
+    "SKILL.md": "f608a5a366213355fb32737bd736505408dfe25a46feef0f1f2f6d0f239b643b",
+    "LICENSE": "0bfc640e27afeb66fa10fcf9e64e9230133126907de0879b1f6a94d654b7dc49",
+    "scripts/spellcheck.py": "fcf756863b88ec49cec55a16d975e3c3721bd3950e3623731a4116bc0c92c182"
+  },
+  "native_tools": [
+    "inspect_office",
+    "write_presentation",
+    "edit_presentation"
+  ],
+  "adaptations": [
+    "Chinese instructions and native C# tool mapping",
+    "Frozen, bounded markdown references via read_skill(resource)",
+    "Own-task artifact readback and heuristic proofread findings",
+    "No upstream scripts, Python runtimes, COM automation, remote services or media assets bundled",
+    "Unavailable capabilities explicitly excluded"
+  ]
+}

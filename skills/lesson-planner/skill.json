@@ -1,0 +1,16 @@
+{
+  "Id": "lesson-planner",
+  "Name": "教案编写与优化",
+  "Description": "组织教学目标、课堂环节、评价与作业，生成结构清晰的 Word 教案。",
+  "Version": "1.1",
+  "AllowedTools": [
+    "list_files",
+    "read_document_text",
+    "search_input_text",
+    "inspect_office",
+    "write_word",
+    "edit_word",
+    "ask_user",
+    "document_workspace"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "Id": "github-docx",
+  "Name": "Word 文档编辑（GitHub 迁移）",
+  "Description": "从 MIT Word 技能适配的默认流程：编写、修改修订副本、回读校对新闻稿、教案与正式文档。",
+  "Version": "1.1",
+  "AllowedTools": [
+    "list_files",
+    "read_document_text",
+    "search_input_text",
+    "inspect_office",
+    "write_word",
+    "edit_word",
+    "preview_docx_fields",
+    "fill_docx_template",
+    "ask_user",
+    "document_workspace"
+  ]
+}

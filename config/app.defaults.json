@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "default_profile": "DeepSeek Flash",
+  "api_key": "",
+  "profiles": [
+    {
+      "name": "DeepSeek Flash",
+      "base_url": "https://api.deepseek.com",
+      "model": "deepseek-flash"
+    },
+    {
+      "name": "DeepSeek V4 Pro",
+      "base_url": "https://api.deepseek.com",
+      "model": "deepseek-v4-pro"
+    }
+  ]
+}

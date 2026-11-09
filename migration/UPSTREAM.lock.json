@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/anomalyco/opencode",
+  "tag": "v1.1.20",
+  "commit": "09ff3b9bb925903b36aa35fec25394133a42cf6d",
+  "license": "MIT",
+  "source_directory": "upstream/opencode",
+  "source_modified": false,
+  "runtime_package": "opencode-ai",
+  "runtime_version": "1.1.20",
+  "runtime_lock": "gateway/package-lock.json",
+  "runtime_built_from_checked_out_source": false,
+  "runtime_windows_sha256": "b76d19a0090b00ede5121251d563329bda914e256ebcf4fe1c0fd7efefabc174",
+  "license_sha256": "b5c625d157735f04e1b2b7ceccee849130b554bdb23cd58db55a38a257efbbdd"
+}

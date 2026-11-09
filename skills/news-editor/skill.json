@@ -1,0 +1,16 @@
+{
+  "Id": "news-editor",
+  "Name": "新闻稿编写与修改",
+  "Description": "根据资料起草、核对和润色新闻稿，生成 Word 或保留修订的新版本。",
+  "Version": "1.1",
+  "AllowedTools": [
+    "list_files",
+    "read_document_text",
+    "search_input_text",
+    "inspect_office",
+    "write_word",
+    "edit_word",
+    "ask_user",
+    "document_workspace"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "Id": "document-assistant",
+  "Name": "文档与模板",
+  "Description": "编写 Word 正文、修改文档副本、填充模板和生成数据报告。",
+  "Version": "1.3",
+  "AllowedTools": [
+    "list_files",
+    "preview_docx_fields",
+    "fill_docx_template",
+    "preview_csv",
+    "preview_table",
+    "aggregate_table",
+    "generate_docx",
+    "ask_user",
+    "read_document_text",
+    "search_input_text",
+    "inspect_office",
+    "write_word",
+    "edit_word",
+    "document_workspace"
+  ]
+}

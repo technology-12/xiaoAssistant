@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- XP 线桌面端：WPF 4.0；链接主线源码与 XAML；MainWindow.xaml 使用 XP 变体（4.5 滚动属性）。 -->
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <AssemblyTitle>晓助手</AssemblyTitle>
+    <RootNamespace>WorkAssistant.Desktop</RootNamespace>
+    <AssemblyName>WorkAssistant.Desktop</AssemblyName>
+    <UseWPF>true</UseWPF>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>..\..\src\WorkAssistant.Desktop\Assets\AppIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\src\WorkAssistant.Desktop\**\*.cs"
+             Exclude="..\..\src\WorkAssistant.Desktop\obj\**;..\..\src\WorkAssistant.Desktop\bin\**"
+             Link="%(RecursiveDir)%(Filename)%(Extension)" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="..\..\src\WorkAssistant.Desktop\App.xaml" Link="App.xaml" />
+    <Page Include="..\..\src\WorkAssistant.Desktop\**\*.xaml" Exclude="..\..\src\WorkAssistant.Desktop\App.xaml;..\..\src\WorkAssistant.Desktop\MainWindow.xaml" Link="%(RecursiveDir)%(Filename)%(Extension)" />
+    <Page Include="..\WorkAssistant.Desktop\MainWindow.Xp.xaml" Link="MainWindow.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WorkAssistant.Host.Xp\WorkAssistant.Host.Xp.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="..\WorkAssistant.Core.Xp\WorkAssistant.Core.Xp.csproj" />
+    <ProjectReference Include="..\WorkAssistant.OpenCode.Xp\WorkAssistant.OpenCode.Xp.csproj" />
+    <ProjectReference Include="..\WorkAssistant.Infrastructure.Xp\WorkAssistant.Infrastructure.Xp.csproj" />
+    <ProjectReference Include="..\WorkAssistant.Tools.Xp\WorkAssistant.Tools.Xp.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\config\app.defaults.json" Link="app.defaults.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="..\..\config\kernel.policy.json" Link="kernel.policy.json" CopyToOutputDirectory="PreserveNewest" />
+    <Resource Include="..\..\src\WorkAssistant.Desktop\Assets\AppIcon.png" Link="Assets\AppIcon.png" />
+    <Resource Include="..\..\src\WorkAssistant.Desktop\Assets\AppIcon.ico" Link="Assets\AppIcon.ico" />
+    <Content Include="..\..\src\WorkAssistant.Desktop\Assets\AppIcon.ico" Link="Assets\AppIcon.ico" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="..\..\skills\**\*" Link="skills\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <Target Name="CopyTaskHost" AfterTargets="Build">
+    <MSBuild Projects="..\WorkAssistant.Host.Xp\WorkAssistant.Host.Xp.csproj" Targets="GetTargetPath" BuildInParallel="false">
+      <Output TaskParameter="TargetOutputs" ItemName="HostExecutable" />
+    </MSBuild>
+    <ItemGroup>
+      <HostFiles Include="@(HostExecutable)" />
+      <HostFiles Include="@(HostExecutable->'%(FullPath).config')" Condition="Exists('%(FullPath).config')" />
+    </ItemGroup>
+    <Copy SourceFiles="@(HostFiles)" DestinationFolder="$(OutDir)" SkipUnchangedFiles="true" />
+  </Target>
+</Project>

@@ -1,0 +1,20 @@
+services:
+  gateway:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:4388:4388"
+    environment:
+      XIAO_GATEWAY_TOKEN_FILE: /run/secrets/gateway_token
+    secrets:
+      - gateway_token
+    volumes:
+      - gateway_data:/data
+    init: true
+secrets:
+  gateway_token:
+    file: ../.local/gateway.token
+volumes:
+  gateway_data:

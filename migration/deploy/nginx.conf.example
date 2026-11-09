@@ -1,0 +1,17 @@
+# Replace hostname and certificate paths with your deployment values.
+server {
+    listen 443 ssl;
+    server_name xiao.example.internal;
+    ssl_certificate /etc/nginx/certs/fullchain.pem;
+    ssl_certificate_key /etc/nginx/certs/privkey.pem;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    client_max_body_size 1m;
+    location / {
+        proxy_pass http://127.0.0.1:4388;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header Authorization $http_authorization;
+        proxy_read_timeout 330s;
+        proxy_buffering off;
+    }
+}

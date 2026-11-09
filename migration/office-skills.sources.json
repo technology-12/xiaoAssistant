@@ -1,0 +1,94 @@
+{
+  "selected": [
+    {
+      "id": "github-docx",
+      "repository": "https://github.com/darce07/docx-mit-claude-skill",
+      "commit": "cd1100a20fa83d2b77fa0405c9298f228e5df214",
+      "license": "MIT",
+      "mode": "adapted-workflow",
+      "upstream_skill_url": "https://github.com/darce07/docx-mit-claude-skill/blob/cd1100a20fa83d2b77fa0405c9298f228e5df214/SKILL.md",
+      "upstream_files": {
+        "SKILL.md": "e9ba168c21b2ea479a267bf9cab293cc349d551cec72657c52a09b74cafc6584",
+        "LICENSE": "0bfc640e27afeb66fa10fcf9e64e9230133126907de0879b1f6a94d654b7dc49",
+        "scripts/spellcheck.py": "08d4f492aeb633847b2d1a0cf81a98edcc2fc1b2caf16f044fb6d4d3ba79aef3"
+      },
+      "native_tools": [
+        "inspect_office",
+        "write_word",
+        "edit_word"
+      ],
+      "adaptations": [
+        "Chinese instructions and native C# tool mapping",
+        "Frozen, bounded markdown references via read_skill(resource)",
+        "Own-task artifact readback and heuristic proofread findings",
+        "No upstream scripts, Python runtimes, COM automation, remote services or media assets bundled",
+        "Unavailable capabilities explicitly excluded"
+      ]
+    },
+    {
+      "id": "github-pptx",
+      "repository": "https://github.com/darce07/pptx-mit-claude-skill",
+      "commit": "ae38be7fff43d1c26cada9db5cfbe7b04e91c4aa",
+      "license": "MIT",
+      "mode": "adapted-workflow",
+      "upstream_skill_url": "https://github.com/darce07/pptx-mit-claude-skill/blob/ae38be7fff43d1c26cada9db5cfbe7b04e91c4aa/SKILL.md",
+      "upstream_files": {
+        "SKILL.md": "f608a5a366213355fb32737bd736505408dfe25a46feef0f1f2f6d0f239b643b",
+        "LICENSE": "0bfc640e27afeb66fa10fcf9e64e9230133126907de0879b1f6a94d654b7dc49",
+        "scripts/spellcheck.py": "fcf756863b88ec49cec55a16d975e3c3721bd3950e3623731a4116bc0c92c182"
+      },
+      "native_tools": [
+        "inspect_office",
+        "write_presentation",
+        "edit_presentation"
+      ],
+      "adaptations": [
+        "Chinese instructions and native C# tool mapping",
+        "Frozen, bounded markdown references via read_skill(resource)",
+        "Own-task artifact readback and heuristic proofread findings",
+        "No upstream scripts, Python runtimes, COM automation, remote services or media assets bundled",
+        "Unavailable capabilities explicitly excluded"
+      ]
+    },
+    {
+      "id": "github-pptx-review",
+      "repository": "https://github.com/PeterKalmstrom/claude-powerpoint-skill",
+      "commit": "130f0d794ffe0b9712ef9e6d8717aa95d90ffc7e",
+      "license": "MIT",
+      "mode": "adapted-workflow",
+      "upstream_skill_url": "https://github.com/PeterKalmstrom/claude-powerpoint-skill/blob/130f0d794ffe0b9712ef9e6d8717aa95d90ffc7e/SKILL.md",
+      "upstream_files": {
+        "SKILL.md": "886335aee179cad7431f12f147dc750728d93bf6cda35116a6e7a7a5630575aa",
+        "LICENSE": "f21ca4c10d7dd50fbd44aaf2030923cf2ca0d8c7bba240f68124331c55c9315a",
+        "reference/AUDIT.md": "8f6885b879984fb6c5bcc0c4aa334d66e8c93882ba98ebdfb4eba242d5bd8239"
+      },
+      "native_tools": [
+        "inspect_office",
+        "write_presentation",
+        "edit_presentation"
+      ],
+      "adaptations": [
+        "Chinese instructions and native C# tool mapping",
+        "Frozen, bounded markdown references via read_skill(resource)",
+        "Own-task artifact readback and heuristic proofread findings",
+        "No upstream scripts, Python runtimes, COM automation, remote services or media assets bundled",
+        "Unavailable capabilities explicitly excluded"
+      ]
+    }
+  ],
+  "inspected_not_bundled": [
+    {
+      "repository": "https://github.com/anthropics/skills",
+      "paths": [
+        "skills/docx",
+        "skills/pptx"
+      ],
+      "reason": "Source-available proprietary per-skill terms; not redistributed or adapted here"
+    },
+    {
+      "repository": "https://github.com/openai/skills",
+      "commit": "49f948faa9258a0c61caceaf225e179651397431",
+      "reason": "No doc/docx/slides/pptx directories in inspected tree at this commit; no unofficial ChatGPT export copied"
+    }
+  ]
+}

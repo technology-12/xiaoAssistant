@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>WorkAssistant.Tests.Console</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\WorkAssistant.Core\WorkAssistant.Core.csproj" />
+    <ProjectReference Include="..\..\src\WorkAssistant.Infrastructure\WorkAssistant.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\WorkAssistant.Tools\WorkAssistant.Tools.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="CsvHelper" Version="33.0.1" />
+  </ItemGroup>
+</Project>

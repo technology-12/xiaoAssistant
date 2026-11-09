@@ -1,0 +1,25 @@
+{
+  "id": "github-pptx-review",
+  "repository": "https://github.com/PeterKalmstrom/claude-powerpoint-skill",
+  "commit": "130f0d794ffe0b9712ef9e6d8717aa95d90ffc7e",
+  "license": "MIT",
+  "mode": "adapted-workflow",
+  "upstream_skill_url": "https://github.com/PeterKalmstrom/claude-powerpoint-skill/blob/130f0d794ffe0b9712ef9e6d8717aa95d90ffc7e/SKILL.md",
+  "upstream_files": {
+    "SKILL.md": "886335aee179cad7431f12f147dc750728d93bf6cda35116a6e7a7a5630575aa",
+    "LICENSE": "f21ca4c10d7dd50fbd44aaf2030923cf2ca0d8c7bba240f68124331c55c9315a",
+    "reference/AUDIT.md": "8f6885b879984fb6c5bcc0c4aa334d66e8c93882ba98ebdfb4eba242d5bd8239"
+  },
+  "native_tools": [
+    "inspect_office",
+    "write_presentation",
+    "edit_presentation"
+  ],
+  "adaptations": [
+    "Chinese instructions and native C# tool mapping",
+    "Frozen, bounded markdown references via read_skill(resource)",
+    "Own-task artifact readback and heuristic proofread findings",
+    "No upstream scripts, Python runtimes, COM automation, remote services or media assets bundled",
+    "Unavailable capabilities explicitly excluded"
+  ]
+}

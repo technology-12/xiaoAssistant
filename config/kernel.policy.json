@@ -1,0 +1,5 @@
+{
+  "ForceLocalKernel": true,
+  "Engine": "csharp-net48",
+  "Description": "Win7-compatible local orchestration; model endpoint remains configurable."
+}

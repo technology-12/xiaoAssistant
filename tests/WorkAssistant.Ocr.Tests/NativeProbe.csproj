@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType><TargetFramework>net48</TargetFramework>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <AssemblyName>OcrAcceptance-$(PlatformTarget)</AssemblyName>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <Payload>$(MSBuildThisFileDirectory)..\..\artifacts\repair-1.0.7\main\</Payload>
+    <OutputPath>$(Payload)</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Reference Include="WorkAssistant.Core"><HintPath>$(Payload)WorkAssistant.Core.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="WorkAssistant.Tools"><HintPath>$(Payload)WorkAssistant.Tools.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="WorkAssistant.Infrastructure"><HintPath>$(Payload)WorkAssistant.Infrastructure.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Newtonsoft.Json"><HintPath>$(Payload)Newtonsoft.Json.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>

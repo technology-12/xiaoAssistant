@@ -1,0 +1,147 @@
+{
+  "schema_version": 2,
+  "id": "xiao-windows-xp-b0",
+  "name": "晓助手 Windows XP 兼容产品基线",
+  "established_on": "2026-11-08",
+  "stage": "xp-port-implemented-pending-real-machine-acceptance",
+  "based_on": "1.0.6 (XP line shares sources with mainline 1.0.6)",
+  "release_ready": false,
+  "targets": [
+    {
+      "id": "xp-sp3-x86",
+      "os": "Windows XP",
+      "service_pack": 3,
+      "architecture": "x86",
+      "runtime": "net40-full",
+      "pe_subsystem_version": "5.01",
+      "minimum_memory_mb_provisional": 2048,
+      "minimum_display": "1024x768",
+      "evidence_pending": "real XP machine acceptance (XP-10)"
+    },
+    {
+      "id": "xp-professional-x64-sp2",
+      "os": "Windows XP Professional x64 Edition",
+      "service_pack": 2,
+      "architecture": "x64",
+      "runtime": "net40-full",
+      "pe_subsystem_version": "5.02",
+      "minimum_memory_mb_provisional": 2048,
+      "minimum_display": "1024x768",
+      "evidence_pending": "real XP machine acceptance (XP-10)"
+    }
+  ],
+  "all_targets_required_for_release": true,
+  "execution": {
+    "kernel": "local-csharp",
+    "tools": "local-controlled-workers",
+    "remote_model_requests_allowed": true,
+    "remote_kernel_allowed": false,
+    "remote_document_processing_required": false,
+    "default_child_agent_concurrency": 2
+  },
+  "required_capabilities": [
+    "continuous-chat-and-streaming",
+    "local-projects-and-workspace-discovery",
+    "local-tool-execution-and-recovery",
+    "parallel-read-write-subagents-and-write-coordination",
+    "context-compaction-and-original-message-retrieval",
+    "request-approval-assisted-full-access",
+    "inline-question-and-approval-cards",
+    "builtin-skills-and-skill-creator",
+    "local-docx-pptx-xlsx-generation-and-editing",
+    "local-pdf-text-extraction",
+    "document-workspace-checkpoints-and-resume",
+    "local-conversation-and-settings-persistence",
+    "artifact-links-and-open-actions",
+    "clean-portable-distribution"
+  ],
+  "network": {
+    "direct_https": "requires-xp-validated-tls-provider",
+    "model_only_gateway": "allowed-on-explicitly-configured-endpoint",
+    "plain_http": "requires-explicit-trusted-network-configuration",
+    "disable_certificate_validation": false,
+    "automatic_http_downgrade": false,
+    "provider_key_at_gateway_preferred": true
+  },
+  "release_gates": [
+    "net40-reference-build",
+    "all-managed-and-native-dependencies-audited",
+    "xp-api-and-path-ipc-security-validation",
+    "xp-network-streaming-and-cancellation",
+    "xp-agent-permissions-and-concurrent-writes",
+    "xp-office-and-context-recovery",
+    "xp-ui-and-performance",
+    "clean-package-and-runtime-prerequisites",
+    "actual-target-os-execution-evidence"
+  ],
+  "evidence": {
+    "implementation_record": "docs/XP_PORT_1.0.6.md",
+    "solution": "src-xp/Xiao.Xp.sln (net40, explicit x86/x64, subsystem 5.01/5.02)",
+    "compatibility_layer": "src-xp/WorkAssistant.Compatibility.Xp (async infrastructure, AsyncLocal logical context, ZipArchive/HttpClient namespace shims, stream/pipe/dispatcher extensions)",
+    "packages": [
+      {
+        "id": "windows-xp-x86",
+        "file": "artifacts/packages/XiaoAssistant-1.0.6-portable-windows-xp-x86.zip",
+        "sha256": "9e675c965a55b3386229a8674ec809ecb94448c2c475b2471a1227033bc40ebc"
+      },
+      {
+        "id": "windows-xp-x64",
+        "file": "artifacts/packages/XiaoAssistant-1.0.6-portable-windows-xp-x64.zip",
+        "sha256": "a656842e959c64ca4ed951d07ebae846eb9ebc75938c55f709aaf6d03c74a41f"
+      }
+    ],
+    "parity_on_modern_runtime": {
+      "note": "net40 binaries executed on .NET 4.8 runtime for functional parity; NOT real XP evidence",
+      "console_cases_total": 105,
+      "mainline_net48": {
+        "pass": 75,
+        "fail": 17
+      },
+      "xp_x86": {
+        "pass": 91,
+        "fail": 15,
+        "xp_specific_failures": 0
+      },
+      "xp_x64": {
+        "pass": 91,
+        "fail": 15,
+        "xp_specific_failures": 0
+      },
+      "ui_selftest": {
+        "mainline": "28/14",
+        "xp_x86": "28/14",
+        "xp_x64": "28/14"
+      },
+      "shared_failures_are_preexisting": "17 console + 14 UI failures exist identically on mainline (demo pipeline out of sync with tests); verified by reverting substitutions and rebuilding",
+      "mainline_snapshot_at_verification": {
+        "pass": 74,
+        "fail": 17
+      },
+      "mainline_latest_note": "mainline later merged local OCR integration (64/27 at the time of packaging); the XP line recompiled against those latest sources with 0 errors, excluded OCR by design, and held 74/17 — the shipped zips contain these verified latest-source binaries",
+      "mainline_note": "mainline still fails 2 PDF cases that the fixed XP parser passes",
+      "attribution_correction": "the earlier 64/27 mainline dip was caused by R01 (illegal -1-tick timeout), not the concurrent OCR merge; corrected after independent review",
+      "xp_regressions": "14/14 on both platforms (R02-R07, S03, S05 scenarios)",
+      "zip_equals_frozen_manifest": "24/24 entries on both packages",
+      "mainline_rebuilt_package": "XiaoAssistant-1.0.6-portable.zip rebuilt with R01 fix (sha256 28a3b9e9...); defective predecessor archived under artifacts/packages/archive-r01-defective/"
+    },
+    "pe_audit": "artifacts/diagnostics/windows-xp/xp-package-pe-audit.json (machines and subsystem versions match targets; SQLite.Interop statically linked CRT, no Vista+ imports)",
+    "capability_deltas": [
+      "no local PDF OCR on XP line (no net40 assets for SkiaSharp/Tesseract)",
+      "remote OpenCode kernel force-disabled per baseline",
+      "update installer disabled (unsigned XP build, fail-closed)"
+    ],
+    "review": {
+      "document": "docs/XP_PORT_1.0.6_REVIEW.md",
+      "findings_total": 10,
+      "fixed_in": "revision 2 (see docs/XP_PORT_1.0.6_DELIVERY_REPORT.md section 1)",
+      "regressions_added": "12 XP-specific cases (R02-R07 scenarios) + shared constructor case (R01); all pass on both platforms"
+    },
+    "review_r2": {
+      "document": "docs/XP_PORT_1.0.6_REVIEW_R2.md",
+      "findings_total": 7,
+      "fixed_in": "revision 3 (docs/XP_PORT_1.0.6_DELIVERY_REPORT.md section 1)",
+      "key_change": "frozen build manifest flow: same-snapshot dual-platform build, tested binaries hash-locked into packaging (zip == manifest 24/24)"
+    }
+  },
+  "current_mainline_unchanged": true
+}

@@ -1,0 +1,1333 @@
+{
+  "totals": {
+    "production": {
+      "physical": 18396,
+      "nonblank": 17459,
+      "files": 142
+    },
+    "tests": {
+      "physical": 2388,
+      "nonblank": 2193,
+      "files": 12
+    },
+    "build": {
+      "physical": 870,
+      "nonblank": 805,
+      "files": 10
+    }
+  },
+  "files": [
+    {
+      "path": "src/WorkAssistant.Core/AgentController.cs",
+      "category": "production",
+      "project": "WorkAssistant.Core",
+      "extension": ".cs",
+      "physical": 774,
+      "nonblank": 728
+    },
+    {
+      "path": "src/WorkAssistant.Core/AgentExecutionPolicy.cs",
+      "category": "production",
+      "project": "WorkAssistant.Core",
+      "extension": ".cs",
+      "physical": 31,
+      "nonblank": 27
+    },
+    {
+      "path": "src/WorkAssistant.Core/AgentLoopGuard.cs",
+      "category": "production",
+      "project": "WorkAssistant.Core",
+      "extension": ".cs",
+      "physical": 66,
+      "nonblank": 62
+    },
+    {
+      "path": "src/WorkAssistant.Core/AgentRole.cs",
+      "category": "production",
+      "project": "WorkAssistant.Core",
+      "extension": ".cs",
+      "physical": 51,
+      "nonblank": 50
+    },
+    {
+      "path": "src/WorkAssistant.Core/AgentToolRegistry.cs",
+      "category": "production",
+      "project": "WorkAssistant.Core",
+      "extension": ".cs",
+      "physical": 43,
+      "nonblank": 40
+    },
+    {
+      "path": "src/WorkAssistant.Core/ConversationContextManager.cs",
+      "category": "production",
+      "project": "WorkAssistant.Core",
+      "extension": ".cs",
+      "physical": 94,
+      "nonblank": 91
+    },
+    {
+      "path": "src/WorkAssistant.Core/DurableFiles.cs",
+      "category": "production",
+      "project": "WorkAssistant.Core",
+      "extension": ".cs",
+      "physical": 30,
+      "nonblank": 29
+    },
+    {
+      "path": "src/WorkAssistant.Core/ErrorCodes.cs",
+      "category": "production",
+      "project": "WorkAssistant.Core",
+      "extension": ".cs",
+      "physical": 67,
+      "nonblank": 61
+    },
+    {
+      "path": "src/WorkAssistant.Core/FakeModelClient.cs",
+      "category": "production",
+      "project": "WorkAssistant.Core",
+      "extension": ".cs",
+      "physical": 449,
+      "nonblank": 423
+    },
+    {
+      "path": "src/WorkAssistant.Core/Interfaces.cs",
+      "category": "production",
+      "project": "WorkAssistant.Core",
+      "extension": ".cs",
+      "physical": 153,
+      "nonblank": 136
+    },
+    {
+      "path": "src/WorkAssistant.Core/ModelContextBudget.cs",
+      "category": "production",
+      "project": "WorkAssistant.Core",
+      "extension": ".cs",
+      "physical": 60,
+      "nonblank": 59
+    },
+    {
+      "path": "src/WorkAssistant.Core/ModelOutputTruncatedException.cs",
+      "category": "production",
+      "project": "WorkAssistant.Core",
+      "extension": ".cs",
+      "physical": 14,
+      "nonblank": 14
+    },
+    {
+      "path": "src/WorkAssistant.Core/ModelProtocol.cs",
+      "category": "production",
+      "project": "WorkAssistant.Core",
+      "extension": ".cs",
+      "physical": 160,
+      "nonblank": 143
+    },
+    {
+      "path": "src/WorkAssistant.Core/ModelRequestJson.cs",
+      "category": "production",
+      "project": "WorkAssistant.Core",
+      "extension": ".cs",
+      "physical": 72,
+      "nonblank": 68
+    },
+    {
+      "path": "src/WorkAssistant.Core/ModelRetryInfo.cs",
+      "category": "production",
+      "project": "WorkAssistant.Core",
+      "extension": ".cs",
+      "physical": 17,
+      "nonblank": 16
+    },
+    {
+      "path": "src/WorkAssistant.Core/ProjectRecord.cs",
+      "category": "production",
+      "project": "WorkAssistant.Core",
+      "extension": ".cs",
+      "physical": 15,
+      "nonblank": 14
+    },
+    {
+      "path": "src/WorkAssistant.Core/SkillDefinition.cs",
+      "category": "production",
+      "project": "WorkAssistant.Core",
+      "extension": ".cs",
+      "physical": 39,
+      "nonblank": 38
+    },
+    {
+      "path": "src/WorkAssistant.Core/SubAgents.cs",
+      "category": "production",
+      "project": "WorkAssistant.Core",
+      "extension": ".cs",
+      "physical": 125,
+      "nonblank": 124
+    },
+    {
+      "path": "src/WorkAssistant.Core/SystemPrompts.cs",
+      "category": "production",
+      "project": "WorkAssistant.Core",
+      "extension": ".cs",
+      "physical": 118,
+      "nonblank": 111
+    },
+    {
+      "path": "src/WorkAssistant.Core/TaskInterruption.cs",
+      "category": "production",
+      "project": "WorkAssistant.Core",
+      "extension": ".cs",
+      "physical": 26,
+      "nonblank": 25
+    },
+    {
+      "path": "src/WorkAssistant.Core/TaskPermissionMode.cs",
+      "category": "production",
+      "project": "WorkAssistant.Core",
+      "extension": ".cs",
+      "physical": 48,
+      "nonblank": 46
+    },
+    {
+      "path": "src/WorkAssistant.Core/TaskPlanning.cs",
+      "category": "production",
+      "project": "WorkAssistant.Core",
+      "extension": ".cs",
+      "physical": 25,
+      "nonblank": 24
+    },
+    {
+      "path": "src/WorkAssistant.Core/TaskRecords.cs",
+      "category": "production",
+      "project": "WorkAssistant.Core",
+      "extension": ".cs",
+      "physical": 238,
+      "nonblank": 223
+    },
+    {
+      "path": "src/WorkAssistant.Core/TextEditApproval.cs",
+      "category": "production",
+      "project": "WorkAssistant.Core",
+      "extension": ".cs",
+      "physical": 54,
+      "nonblank": 53
+    },
+    {
+      "path": "src/WorkAssistant.Core/TextEditProposal.cs",
+      "category": "production",
+      "project": "WorkAssistant.Core",
+      "extension": ".cs",
+      "physical": 103,
+      "nonblank": 101
+    },
+    {
+      "path": "src/WorkAssistant.Core/ToolContracts.cs",
+      "category": "production",
+      "project": "WorkAssistant.Core",
+      "extension": ".cs",
+      "physical": 166,
+      "nonblank": 150
+    },
+    {
+      "path": "src/WorkAssistant.Core/ToolDispatcher.cs",
+      "category": "production",
+      "project": "WorkAssistant.Core",
+      "extension": ".cs",
+      "physical": 114,
+      "nonblank": 102
+    },
+    {
+      "path": "src/WorkAssistant.Core/ToolResultJson.cs",
+      "category": "production",
+      "project": "WorkAssistant.Core",
+      "extension": ".cs",
+      "physical": 73,
+      "nonblank": 69
+    },
+    {
+      "path": "src/WorkAssistant.Core/UserQuestions.cs",
+      "category": "production",
+      "project": "WorkAssistant.Core",
+      "extension": ".cs",
+      "physical": 15,
+      "nonblank": 15
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/App.xaml",
+      "category": "production",
+      "project": "WorkAssistant.Desktop",
+      "extension": ".xaml",
+      "physical": 15,
+      "nonblank": 15
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/App.xaml.cs",
+      "category": "production",
+      "project": "WorkAssistant.Desktop",
+      "extension": ".cs",
+      "physical": 328,
+      "nonblank": 304
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/ApprovalWindow.xaml",
+      "category": "production",
+      "project": "WorkAssistant.Desktop",
+      "extension": ".xaml",
+      "physical": 46,
+      "nonblank": 46
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/ApprovalWindow.xaml.cs",
+      "category": "production",
+      "project": "WorkAssistant.Desktop",
+      "extension": ".cs",
+      "physical": 61,
+      "nonblank": 55
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Converters.cs",
+      "category": "production",
+      "project": "WorkAssistant.Desktop",
+      "extension": ".cs",
+      "physical": 87,
+      "nonblank": 80
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/DiagnosticsWindow.xaml",
+      "category": "production",
+      "project": "WorkAssistant.Desktop",
+      "extension": ".xaml",
+      "physical": 13,
+      "nonblank": 13
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/DiagnosticsWindow.xaml.cs",
+      "category": "production",
+      "project": "WorkAssistant.Desktop",
+      "extension": ".cs",
+      "physical": 37,
+      "nonblank": 36
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MaintenanceWindow.cs",
+      "category": "production",
+      "project": "WorkAssistant.Desktop",
+      "extension": ".cs",
+      "physical": 125,
+      "nonblank": 124
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MainViewModel.cs",
+      "category": "production",
+      "project": "WorkAssistant.Desktop",
+      "extension": ".cs",
+      "physical": 1268,
+      "nonblank": 1179
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MainViewModel.Permissions.cs",
+      "category": "production",
+      "project": "WorkAssistant.Desktop",
+      "extension": ".cs",
+      "physical": 36,
+      "nonblank": 35
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MainViewModel.Projects.cs",
+      "category": "production",
+      "project": "WorkAssistant.Desktop",
+      "extension": ".cs",
+      "physical": 171,
+      "nonblank": 169
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MainViewModel.Runtime.cs",
+      "category": "production",
+      "project": "WorkAssistant.Desktop",
+      "extension": ".cs",
+      "physical": 27,
+      "nonblank": 26
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MainWindow.Projects.cs",
+      "category": "production",
+      "project": "WorkAssistant.Desktop",
+      "extension": ".cs",
+      "physical": 95,
+      "nonblank": 94
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MainWindow.xaml",
+      "category": "production",
+      "project": "WorkAssistant.Desktop",
+      "extension": ".xaml",
+      "physical": 445,
+      "nonblank": 438
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/MainWindow.xaml.cs",
+      "category": "production",
+      "project": "WorkAssistant.Desktop",
+      "extension": ".cs",
+      "physical": 324,
+      "nonblank": 307
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Mvvm.cs",
+      "category": "production",
+      "project": "WorkAssistant.Desktop",
+      "extension": ".cs",
+      "physical": 48,
+      "nonblank": 40
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Presentation/ConversationItem.cs",
+      "category": "production",
+      "project": "WorkAssistant.Desktop",
+      "extension": ".cs",
+      "physical": 269,
+      "nonblank": 243
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Presentation/ProjectItemVm.cs",
+      "category": "production",
+      "project": "WorkAssistant.Desktop",
+      "extension": ".cs",
+      "physical": 19,
+      "nonblank": 18
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Presentation/QuestionCardVm.cs",
+      "category": "production",
+      "project": "WorkAssistant.Desktop",
+      "extension": ".cs",
+      "physical": 43,
+      "nonblank": 42
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/ProductionWindows.cs",
+      "category": "production",
+      "project": "WorkAssistant.Desktop",
+      "extension": ".cs",
+      "physical": 139,
+      "nonblank": 136
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/ProjectEditorWindow.cs",
+      "category": "production",
+      "project": "WorkAssistant.Desktop",
+      "extension": ".cs",
+      "physical": 65,
+      "nonblank": 64
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/SettingsWindow.xaml",
+      "category": "production",
+      "project": "WorkAssistant.Desktop",
+      "extension": ".xaml",
+      "physical": 92,
+      "nonblank": 90
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/SettingsWindow.xaml.cs",
+      "category": "production",
+      "project": "WorkAssistant.Desktop",
+      "extension": ".cs",
+      "physical": 379,
+      "nonblank": 355
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/SkillLibraryWindow.cs",
+      "category": "production",
+      "project": "WorkAssistant.Desktop",
+      "extension": ".cs",
+      "physical": 85,
+      "nonblank": 84
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Themes/Controls.xaml",
+      "category": "production",
+      "project": "WorkAssistant.Desktop",
+      "extension": ".xaml",
+      "physical": 357,
+      "nonblank": 344
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Themes/Icons.xaml",
+      "category": "production",
+      "project": "WorkAssistant.Desktop",
+      "extension": ".xaml",
+      "physical": 22,
+      "nonblank": 22
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Themes/Studio.xaml",
+      "category": "production",
+      "project": "WorkAssistant.Desktop",
+      "extension": ".xaml",
+      "physical": 99,
+      "nonblank": 99
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/Themes/Tokens.xaml",
+      "category": "production",
+      "project": "WorkAssistant.Desktop",
+      "extension": ".xaml",
+      "physical": 57,
+      "nonblank": 51
+    },
+    {
+      "path": "src/WorkAssistant.Desktop/UserInputProvider.cs",
+      "category": "production",
+      "project": "WorkAssistant.Desktop",
+      "extension": ".cs",
+      "physical": 16,
+      "nonblank": 15
+    },
+    {
+      "path": "src/WorkAssistant.Host/ArtifactHandoff.cs",
+      "category": "production",
+      "project": "WorkAssistant.Host",
+      "extension": ".cs",
+      "physical": 137,
+      "nonblank": 136
+    },
+    {
+      "path": "src/WorkAssistant.Host/DelegateTasksTool.cs",
+      "category": "production",
+      "project": "WorkAssistant.Host",
+      "extension": ".cs",
+      "physical": 205,
+      "nonblank": 200
+    },
+    {
+      "path": "src/WorkAssistant.Host/FileReferenceTool.cs",
+      "category": "production",
+      "project": "WorkAssistant.Host",
+      "extension": ".cs",
+      "physical": 91,
+      "nonblank": 90
+    },
+    {
+      "path": "src/WorkAssistant.Host/ImportTaskArtifactsTool.cs",
+      "category": "production",
+      "project": "WorkAssistant.Host",
+      "extension": ".cs",
+      "physical": 40,
+      "nonblank": 39
+    },
+    {
+      "path": "src/WorkAssistant.Host/IsolatedTool.cs",
+      "category": "production",
+      "project": "WorkAssistant.Host",
+      "extension": ".cs",
+      "physical": 85,
+      "nonblank": 84
+    },
+    {
+      "path": "src/WorkAssistant.Host/Program.cs",
+      "category": "production",
+      "project": "WorkAssistant.Host",
+      "extension": ".cs",
+      "physical": 325,
+      "nonblank": 323
+    },
+    {
+      "path": "src/WorkAssistant.Host/ProjectCommandsTool.cs",
+      "category": "production",
+      "project": "WorkAssistant.Host",
+      "extension": ".cs",
+      "physical": 31,
+      "nonblank": 30
+    },
+    {
+      "path": "src/WorkAssistant.Host/SkillReferenceTool.cs",
+      "category": "production",
+      "project": "WorkAssistant.Host",
+      "extension": ".cs",
+      "physical": 52,
+      "nonblank": 51
+    },
+    {
+      "path": "src/WorkAssistant.Host/WorkspaceToolPermissions.cs",
+      "category": "production",
+      "project": "WorkAssistant.Host",
+      "extension": ".cs",
+      "physical": 65,
+      "nonblank": 63
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/AnthropicMessageCodec.cs",
+      "category": "production",
+      "project": "WorkAssistant.Infrastructure",
+      "extension": ".cs",
+      "physical": 214,
+      "nonblank": 213
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/AnthropicModelClient.cs",
+      "category": "production",
+      "project": "WorkAssistant.Infrastructure",
+      "extension": ".cs",
+      "physical": 98,
+      "nonblank": 97
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ApplicationDataPaths.cs",
+      "category": "production",
+      "project": "WorkAssistant.Infrastructure",
+      "extension": ".cs",
+      "physical": 24,
+      "nonblank": 22
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/DefaultOfficeSkillRouter.cs",
+      "category": "production",
+      "project": "WorkAssistant.Infrastructure",
+      "extension": ".cs",
+      "physical": 28,
+      "nonblank": 27
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/EnvironmentReport.cs",
+      "category": "production",
+      "project": "WorkAssistant.Infrastructure",
+      "extension": ".cs",
+      "physical": 33,
+      "nonblank": 32
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/HostFailureInfo.cs",
+      "category": "production",
+      "project": "WorkAssistant.Infrastructure",
+      "extension": ".cs",
+      "physical": 39,
+      "nonblank": 38
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/HostProtocol.cs",
+      "category": "production",
+      "project": "WorkAssistant.Infrastructure",
+      "extension": ".cs",
+      "physical": 81,
+      "nonblank": 78
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/HttpModelClient.cs",
+      "category": "production",
+      "project": "WorkAssistant.Infrastructure",
+      "extension": ".cs",
+      "physical": 566,
+      "nonblank": 518
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/LimitedReadStream.cs",
+      "category": "production",
+      "project": "WorkAssistant.Infrastructure",
+      "extension": ".cs",
+      "physical": 23,
+      "nonblank": 22
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/LocalConversationArchive.cs",
+      "category": "production",
+      "project": "WorkAssistant.Infrastructure",
+      "extension": ".cs",
+      "physical": 49,
+      "nonblank": 48
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/LocalTaskStore.cs",
+      "category": "production",
+      "project": "WorkAssistant.Infrastructure",
+      "extension": ".cs",
+      "physical": 506,
+      "nonblank": 471
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/MarkdownConfiguration.cs",
+      "category": "production",
+      "project": "WorkAssistant.Infrastructure",
+      "extension": ".cs",
+      "physical": 128,
+      "nonblank": 127
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ModelCapabilities.cs",
+      "category": "production",
+      "project": "WorkAssistant.Infrastructure",
+      "extension": ".cs",
+      "physical": 26,
+      "nonblank": 25
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ModelCapabilityCache.cs",
+      "category": "production",
+      "project": "WorkAssistant.Infrastructure",
+      "extension": ".cs",
+      "physical": 19,
+      "nonblank": 18
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ModelClientFactory.cs",
+      "category": "production",
+      "project": "WorkAssistant.Infrastructure",
+      "extension": ".cs",
+      "physical": 37,
+      "nonblank": 36
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ModelConnectionProbe.cs",
+      "category": "production",
+      "project": "WorkAssistant.Infrastructure",
+      "extension": ".cs",
+      "physical": 59,
+      "nonblank": 58
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ModelResponseLimits.cs",
+      "category": "production",
+      "project": "WorkAssistant.Infrastructure",
+      "extension": ".cs",
+      "physical": 19,
+      "nonblank": 18
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ModelRetryPolicy.cs",
+      "category": "production",
+      "project": "WorkAssistant.Infrastructure",
+      "extension": ".cs",
+      "physical": 36,
+      "nonblank": 35
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ModelServiceError.cs",
+      "category": "production",
+      "project": "WorkAssistant.Infrastructure",
+      "extension": ".cs",
+      "physical": 26,
+      "nonblank": 25
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ProcessJob.cs",
+      "category": "production",
+      "project": "WorkAssistant.Infrastructure",
+      "extension": ".cs",
+      "physical": 34,
+      "nonblank": 33
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/ProjectConfigurationFiles.cs",
+      "category": "production",
+      "project": "WorkAssistant.Infrastructure",
+      "extension": ".cs",
+      "physical": 82,
+      "nonblank": 81
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/SerializedApprovalChannel.cs",
+      "category": "production",
+      "project": "WorkAssistant.Infrastructure",
+      "extension": ".cs",
+      "physical": 41,
+      "nonblank": 40
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/SettingsStore.cs",
+      "category": "production",
+      "project": "WorkAssistant.Infrastructure",
+      "extension": ".cs",
+      "physical": 430,
+      "nonblank": 394
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/SkillCatalog.cs",
+      "category": "production",
+      "project": "WorkAssistant.Infrastructure",
+      "extension": ".cs",
+      "physical": 93,
+      "nonblank": 92
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/SqliteStateStore.cs",
+      "category": "production",
+      "project": "WorkAssistant.Infrastructure",
+      "extension": ".cs",
+      "physical": 189,
+      "nonblank": 188
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/TaskHostClient.cs",
+      "category": "production",
+      "project": "WorkAssistant.Infrastructure",
+      "extension": ".cs",
+      "physical": 105,
+      "nonblank": 103
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/TrustedUpdates.cs",
+      "category": "production",
+      "project": "WorkAssistant.Infrastructure",
+      "extension": ".cs",
+      "physical": 138,
+      "nonblank": 137
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/WorkspaceAgentConfiguration.cs",
+      "category": "production",
+      "project": "WorkAssistant.Infrastructure",
+      "extension": ".cs",
+      "physical": 159,
+      "nonblank": 158
+    },
+    {
+      "path": "src/WorkAssistant.Infrastructure/WorkspaceModelCatalog.cs",
+      "category": "production",
+      "project": "WorkAssistant.Infrastructure",
+      "extension": ".cs",
+      "physical": 65,
+      "nonblank": 64
+    },
+    {
+      "path": "src/WorkAssistant.Launcher/Program.cs",
+      "category": "production",
+      "project": "WorkAssistant.Launcher",
+      "extension": ".cs",
+      "physical": 40,
+      "nonblank": 39
+    },
+    {
+      "path": "src/WorkAssistant.OpenCode/OpenCodeConnection.cs",
+      "category": "production",
+      "project": "WorkAssistant.OpenCode",
+      "extension": ".cs",
+      "physical": 68,
+      "nonblank": 67
+    },
+    {
+      "path": "src/WorkAssistant.OpenCode/OpenCodeGatewayClient.cs",
+      "category": "production",
+      "project": "WorkAssistant.OpenCode",
+      "extension": ".cs",
+      "physical": 45,
+      "nonblank": 44
+    },
+    {
+      "path": "src/WorkAssistant.OpenCode/OpenCodeTaskRunner.cs",
+      "category": "production",
+      "project": "WorkAssistant.OpenCode",
+      "extension": ".cs",
+      "physical": 142,
+      "nonblank": 140
+    },
+    {
+      "path": "src/WorkAssistant.Tools/AgentToolBase.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 71,
+      "nonblank": 66
+    },
+    {
+      "path": "src/WorkAssistant.Tools/AggregateCsvTool.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 164,
+      "nonblank": 147
+    },
+    {
+      "path": "src/WorkAssistant.Tools/AggregateTableTool.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 252,
+      "nonblank": 230
+    },
+    {
+      "path": "src/WorkAssistant.Tools/ArtifactDelivery.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 66,
+      "nonblank": 64
+    },
+    {
+      "path": "src/WorkAssistant.Tools/AskUserTool.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 37,
+      "nonblank": 37
+    },
+    {
+      "path": "src/WorkAssistant.Tools/AtomicTextTransaction.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 101,
+      "nonblank": 99
+    },
+    {
+      "path": "src/WorkAssistant.Tools/CommitTextEditTool.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 117,
+      "nonblank": 116
+    },
+    {
+      "path": "src/WorkAssistant.Tools/CsvReading.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 164,
+      "nonblank": 150
+    },
+    {
+      "path": "src/WorkAssistant.Tools/DocumentLimits.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 43,
+      "nonblank": 42
+    },
+    {
+      "path": "src/WorkAssistant.Tools/DocumentTextTools.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 148,
+      "nonblank": 147
+    },
+    {
+      "path": "src/WorkAssistant.Tools/DocumentWorkspaceTool.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 340,
+      "nonblank": 339
+    },
+    {
+      "path": "src/WorkAssistant.Tools/DocxWriting.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 300,
+      "nonblank": 273
+    },
+    {
+      "path": "src/WorkAssistant.Tools/DraftSkillTool.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 34,
+      "nonblank": 33
+    },
+    {
+      "path": "src/WorkAssistant.Tools/ExportSummaryTool.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 240,
+      "nonblank": 217
+    },
+    {
+      "path": "src/WorkAssistant.Tools/ExportValidators.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 25,
+      "nonblank": 24
+    },
+    {
+      "path": "src/WorkAssistant.Tools/ExportXlsxTool.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 439,
+      "nonblank": 386
+    },
+    {
+      "path": "src/WorkAssistant.Tools/FilePlanTools.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 301,
+      "nonblank": 275
+    },
+    {
+      "path": "src/WorkAssistant.Tools/InMemoryAggregationStore.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 28,
+      "nonblank": 25
+    },
+    {
+      "path": "src/WorkAssistant.Tools/ListFilesTool.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 93,
+      "nonblank": 83
+    },
+    {
+      "path": "src/WorkAssistant.Tools/OfficeAutomationTool.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 168,
+      "nonblank": 167
+    },
+    {
+      "path": "src/WorkAssistant.Tools/OfficePackage.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 68,
+      "nonblank": 67
+    },
+    {
+      "path": "src/WorkAssistant.Tools/OfficeTextProofreader.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 30,
+      "nonblank": 29
+    },
+    {
+      "path": "src/WorkAssistant.Tools/OutputRecovery.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 62,
+      "nonblank": 61
+    },
+    {
+      "path": "src/WorkAssistant.Tools/OutputSanitizer.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 55,
+      "nonblank": 52
+    },
+    {
+      "path": "src/WorkAssistant.Tools/PackageZip.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 137,
+      "nonblank": 130
+    },
+    {
+      "path": "src/WorkAssistant.Tools/Parsing.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 259,
+      "nonblank": 245
+    },
+    {
+      "path": "src/WorkAssistant.Tools/PdfText.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 79,
+      "nonblank": 74
+    },
+    {
+      "path": "src/WorkAssistant.Tools/PersistentAggregationStore.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 28,
+      "nonblank": 27
+    },
+    {
+      "path": "src/WorkAssistant.Tools/PersistentFilePlanStore.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 33,
+      "nonblank": 32
+    },
+    {
+      "path": "src/WorkAssistant.Tools/PresentationAutomation.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 108,
+      "nonblank": 107
+    },
+    {
+      "path": "src/WorkAssistant.Tools/PreviewCsvTool.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 57,
+      "nonblank": 49
+    },
+    {
+      "path": "src/WorkAssistant.Tools/SafePreview.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 68,
+      "nonblank": 67
+    },
+    {
+      "path": "src/WorkAssistant.Tools/TableReading.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 196,
+      "nonblank": 186
+    },
+    {
+      "path": "src/WorkAssistant.Tools/TaskMemoryTools.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 91,
+      "nonblank": 90
+    },
+    {
+      "path": "src/WorkAssistant.Tools/TextEditTools.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 82,
+      "nonblank": 81
+    },
+    {
+      "path": "src/WorkAssistant.Tools/VerifiedFiles.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 141,
+      "nonblank": 140
+    },
+    {
+      "path": "src/WorkAssistant.Tools/WordAutomation.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 104,
+      "nonblank": 103
+    },
+    {
+      "path": "src/WorkAssistant.Tools/WordDraftStore.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 52,
+      "nonblank": 51
+    },
+    {
+      "path": "src/WorkAssistant.Tools/WorkspaceDiscovery.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 85,
+      "nonblank": 84
+    },
+    {
+      "path": "src/WorkAssistant.Tools/WorkspacePolicy.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 291,
+      "nonblank": 270
+    },
+    {
+      "path": "src/WorkAssistant.Tools/XlsxReading.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 353,
+      "nonblank": 336
+    },
+    {
+      "path": "src/WorkAssistant.Tools/XlsxWriting.cs",
+      "category": "production",
+      "project": "WorkAssistant.Tools",
+      "extension": ".cs",
+      "physical": 205,
+      "nonblank": 188
+    },
+    {
+      "path": "tests/WorkAssistant.Tests.Console/AgentFlowTests.cs",
+      "category": "tests",
+      "project": "WorkAssistant.Tests.Console",
+      "extension": ".cs",
+      "physical": 265,
+      "nonblank": 236
+    },
+    {
+      "path": "tests/WorkAssistant.Tests.Console/ConversationTests.cs",
+      "category": "tests",
+      "project": "WorkAssistant.Tests.Console",
+      "extension": ".cs",
+      "physical": 371,
+      "nonblank": 331
+    },
+    {
+      "path": "tests/WorkAssistant.Tests.Console/CsvToolTests.cs",
+      "category": "tests",
+      "project": "WorkAssistant.Tests.Console",
+      "extension": ".cs",
+      "physical": 248,
+      "nonblank": 224
+    },
+    {
+      "path": "tests/WorkAssistant.Tests.Console/DocumentWorkflowTests.cs",
+      "category": "tests",
+      "project": "WorkAssistant.Tests.Console",
+      "extension": ".cs",
+      "physical": 191,
+      "nonblank": 190
+    },
+    {
+      "path": "tests/WorkAssistant.Tests.Console/HttpModelClientTests.cs",
+      "category": "tests",
+      "project": "WorkAssistant.Tests.Console",
+      "extension": ".cs",
+      "physical": 260,
+      "nonblank": 242
+    },
+    {
+      "path": "tests/WorkAssistant.Tests.Console/OfficeFileTests.cs",
+      "category": "tests",
+      "project": "WorkAssistant.Tests.Console",
+      "extension": ".cs",
+      "physical": 309,
+      "nonblank": 279
+    },
+    {
+      "path": "tests/WorkAssistant.Tests.Console/PathPolicyTests.cs",
+      "category": "tests",
+      "project": "WorkAssistant.Tests.Console",
+      "extension": ".cs",
+      "physical": 119,
+      "nonblank": 107
+    },
+    {
+      "path": "tests/WorkAssistant.Tests.Console/PermissionTests.cs",
+      "category": "tests",
+      "project": "WorkAssistant.Tests.Console",
+      "extension": ".cs",
+      "physical": 90,
+      "nonblank": 89
+    },
+    {
+      "path": "tests/WorkAssistant.Tests.Console/Program.cs",
+      "category": "tests",
+      "project": "WorkAssistant.Tests.Console",
+      "extension": ".cs",
+      "physical": 75,
+      "nonblank": 70
+    },
+    {
+      "path": "tests/WorkAssistant.Tests.Console/SampleWriter.cs",
+      "category": "tests",
+      "project": "WorkAssistant.Tests.Console",
+      "extension": ".cs",
+      "physical": 158,
+      "nonblank": 147
+    },
+    {
+      "path": "tests/WorkAssistant.Tests.Console/StreamingTests.cs",
+      "category": "tests",
+      "project": "WorkAssistant.Tests.Console",
+      "extension": ".cs",
+      "physical": 167,
+      "nonblank": 155
+    },
+    {
+      "path": "tests/WorkAssistant.Tests.Console/TestSupport.cs",
+      "category": "tests",
+      "project": "WorkAssistant.Tests.Console",
+      "extension": ".cs",
+      "physical": 135,
+      "nonblank": 123
+    },
+    {
+      "path": "scripts/Build-PortableBaseline.py",
+      "category": "build",
+      "project": "scripts",
+      "extension": ".py",
+      "physical": 115,
+      "nonblank": 106
+    },
+    {
+      "path": "scripts/Build-PortableRelease.py",
+      "category": "build",
+      "project": "scripts",
+      "extension": ".py",
+      "physical": 104,
+      "nonblank": 95
+    },
+    {
+      "path": "scripts/Build-PortableRelease_1_0_2.py",
+      "category": "build",
+      "project": "scripts",
+      "extension": ".py",
+      "physical": 107,
+      "nonblank": 98
+    },
+    {
+      "path": "scripts/Build-PortableRelease_1_0_3.py",
+      "category": "build",
+      "project": "scripts",
+      "extension": ".py",
+      "physical": 107,
+      "nonblank": 98
+    },
+    {
+      "path": "scripts/Build-PortableRelease_1_0_4.py",
+      "category": "build",
+      "project": "scripts",
+      "extension": ".py",
+      "physical": 108,
+      "nonblank": 99
+    },
+    {
+      "path": "scripts/Build-PortableRelease_1_0_5.py",
+      "category": "build",
+      "project": "scripts",
+      "extension": ".py",
+      "physical": 107,
+      "nonblank": 98
+    },
+    {
+      "path": "scripts/Build-SignedRelease.ps1",
+      "category": "build",
+      "project": "scripts",
+      "extension": ".ps1",
+      "physical": 61,
+      "nonblank": 61
+    },
+    {
+      "path": "scripts/Collect-ThirdPartyNotices.py",
+      "category": "build",
+      "project": "scripts",
+      "extension": ".py",
+      "physical": 42,
+      "nonblank": 41
+    },
+    {
+      "path": "scripts/Count-SourceLines.py",
+      "category": "build",
+      "project": "scripts",
+      "extension": ".py",
+      "physical": 39,
+      "nonblank": 38
+    },
+    {
+      "path": "installer/WorkAssistant.iss",
+      "category": "build",
+      "project": "installer",
+      "extension": ".iss",
+      "physical": 80,
+      "nonblank": 71
+    }
+  ]
+}

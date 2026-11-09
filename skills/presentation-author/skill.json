@@ -1,0 +1,15 @@
+{
+  "Id": "presentation-author",
+  "Name": "PPT 编写与优化",
+  "Description": "把资料组织成逐页演示文稿、讲者备注，并修改现有 PPT 普通文本。",
+  "Version": "1.1",
+  "AllowedTools": [
+    "list_files",
+    "read_document_text",
+    "inspect_office",
+    "write_presentation",
+    "edit_presentation",
+    "ask_user",
+    "document_workspace"
+  ]
+}

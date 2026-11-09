@@ -1,0 +1,19 @@
+{
+  "product": "Microsoft Visual C++ 2019 Redistributable",
+  "files": [
+    {
+      "file": "VC2019_redist.x86.exe",
+      "url": "https://aka.ms/vs/16/release/vc_redist.x86.exe",
+      "version": "14.29.30157.0",
+      "sha256": "38c9437e6e9ef1db2671b3f0c879febec08521bd2c23231199f626b69ae1c65e",
+      "bytes": 13889072
+    },
+    {
+      "file": "VC2019_redist.x64.exe",
+      "url": "https://aka.ms/vs/16/release/vc_redist.x64.exe",
+      "version": "14.29.30157.0",
+      "sha256": "6afae68a783f11292149175844aed0e2ce3f247bc0250f6cb18c931295b3f399",
+      "bytes": 25333272
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- XP 线任务宿主 Worker：链接主线源码；IsolatedTool 使用 XP 变体（无 Vista+ PID API）。 -->
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WorkAssistant.Host</RootNamespace>
+    <AssemblyName>WorkAssistant.Host</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\src\WorkAssistant.Host\*.cs"
+             Exclude="..\..\src\WorkAssistant.Host\IsolatedTool.cs"
+             Link="%(RecursiveDir)%(Filename)%(Extension)" />
+    <Compile Include="..\WorkAssistant.Host\IsolatedTool.Xp.cs" Link="IsolatedTool.Xp.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WorkAssistant.Core.Xp\WorkAssistant.Core.Xp.csproj" />
+    <ProjectReference Include="..\WorkAssistant.Infrastructure.Xp\WorkAssistant.Infrastructure.Xp.csproj" />
+    <ProjectReference Include="..\WorkAssistant.Tools.Xp\WorkAssistant.Tools.Xp.csproj" />
+  </ItemGroup>
+</Project>
